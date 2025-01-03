@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
+
+    <xacro:property name="lidar_radius"             value="0.025"/>
+    <xacro:property name="lidar_thickness"          value="0.040"/>
+    <xacro:property name="lidar_offset_x"           value="0.230"/>
+    <xacro:property name="lidar_offset_z"           value="0.098"/>
+
+    <!-- Lidar -->
+    <joint name="lidar_joint" type="fixed">
+        <parent link="chasis"/>
+        <child link="lidar_frame"/>
+        <origin xyz="${lidar_offset_x} 0.0 ${lidar_offset_z}" rpy="0 0 ${pi}"/>    
+    </joint>
+
+    <link name="lidar_frame">
+        <visual>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_thickness}"/>
+            </geometry>
+            <material name="orange"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${lidar_radius}" length="${lidar_thickness}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" radius="${lidar_radius}" length="${lidar_thickness}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <!-- Lidar in gazebo-->  
+    <gazebo reference="lidar_frame">
+        <sensor name="lidar" type="gpu_lidar">
+
+            <gz_frame_id>lidar_frame</gz_frame_id> 
+            <pose>0 0 0 0 0 0</pose>
+            <topic>scan</topic>
+            <update_rate>10</update_rate>
+            <always_on>1</always_on>
+            <visualize>true</visualize>
+
+            <lidar>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-3.14159</min_angle>
+                        <max_angle>3.14159</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>1</samples>
+                        <resolution>0.1</resolution>
+                        <min_angle>0.</min_angle>
+                        <max_angle>0.</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.08</min>
+                    <max>10.0</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </lidar>
+
+        <plugin filename="gz-sim-sensors-system"
+                name="gz::sim::systems::Sensors">
+                <render_engine>ogre2</render_engine>
+        </plugin>
+
+        </sensor>
+    </gazebo>
+</robot>

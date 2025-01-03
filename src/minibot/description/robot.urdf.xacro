@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+    
+    <xacro:arg name="use_ros2_control"              default="true"/>
+    <xacro:arg name="use_ros2_control_gz_sim"       default="false"/>
+
+    <!-- Robot_frames -->
+    <xacro:include filename = "robot_main.xacro" />
+
+    <!-- Controls -->
+    <xacro:if value="$(arg use_ros2_control)">
+        <xacro:include filename = "ros2_control.xacro" />
+    </xacro:if>
+    <xacro:unless value="$(arg use_ros2_control)">
+        <xacro:include filename = "gz_diff_drive_control.xacro" />
+    </xacro:unless>
+        
+    <!-- Sensors -->
+    <xacro:include filename = "lidar.xacro" />
+    <!-- <xacro:include filename = "camera.xacro" /> -->
+    <xacro:include filename = "depth_camera.xacro" />
+
+</robot>
