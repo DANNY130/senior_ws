@@ -69,12 +69,7 @@
    #define ESP32_ENC_COUNTER
 
    /* Cytron MDD3A Motor driver*/
-   //#define CYTRON_MDD3A
-
-
-   /* DM542T Stepper Motor Driver */
-   #define DM542T_NEW
-   
+   #define CYTRON_MDD3A
    
 #endif
 
