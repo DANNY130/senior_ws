@@ -109,6 +109,43 @@
     setMotorSpeed(LEFT, leftSpeed);
     setMotorSpeed(RIGHT, rightSpeed);
   }
+
+#elif defined DM542T_NEW
+  void initMotorController()
+  {
+    // motor
+    motor1.setMaxSpeed(4500.0);
+    motor1.setAcceleration(2500.0);
+
+    motor2.setMaxSpeed(4500.0);
+    motor2.setAcceleration(2500.0);
+  }
+
+  void setMotorSpeed(int motor, int speed)
+  {
+    bool direction;
+    long mappedSpeed = 0;
+    // Map PWM speed to stepper speed
+    mappedSpeed = map(abs(speed), 0, 255, 0, 10000);
+    if (speed < 0)
+    {
+      mappedSpeed *= -1;
+    }
+    // Determine which motor
+    if (motor == LEFT)
+    {
+      motor1.setSpeed(mappedSpeed);
+    } else if (motor == RIGHT) {
+      motor2.setSpeed(-mappedSpeed);
+    }
+  }
+  // Set speeds for both motors
+  void setMotorSpeeds(int leftSpeed, int rightSpeed)
+  {
+    setMotorSpeed(LEFT, leftSpeed);
+    setMotorSpeed(RIGHT, rightSpeed);
+  }
+
 #else
   #error A motor driver must be selected!
 #endif

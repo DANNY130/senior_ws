@@ -69,18 +69,24 @@
    #define ESP32_ENC_COUNTER
 
    /* Cytron MDD3A Motor driver*/
-   #define CYTRON_MDD3A
-   
+   //#define CYTRON_MDD3A
+
+
+   /* DM542T Stepper Motor Driver */
+   #define DM542T_NEW
 #endif
 
 //#define USE_SERVOS  // Enable use of PWM servos as defined in servos.h
 #undef USE_SERVOS     // Disable use of PWM servos
 
 /* Serial port baud rate */
-#define BAUDRATE     115200
+#define BAUDRATE     57600
 
 /* Maximum PWM signal */
 #define MAX_PWM        255
+
+/* Minimum delay in microseconds between step pulses for Stepper motor*/
+//#define MIN_STEP_DELAY 10
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
@@ -108,7 +114,7 @@
   #include "encoder_driver.h"
 
   /* PID parameters and functions */
- #include "diff_controller.h"
+  #include "diff_controller.h"
 
   /* Run the PID loop at 30 times per second */
   #define PID_RATE           30     // Hz
@@ -354,6 +360,10 @@ void loop() {
     setMotorSpeeds(0, 0);
     moving = 0;
   }
+
+  // Run the motors to apply the set speeds
+  motor1.runSpeed();
+  motor2.runSpeed();
 #endif
 
 // Sweep servos
@@ -364,4 +374,3 @@ void loop() {
   }
 #endif
 }
-
