@@ -5,25 +5,17 @@
     #include <Wire.h>
     #include <Arduino_LSM9DS1.h>
 
-    void readIMU() {
+    float* readIMU() {
         // Read the accelerometer    For Linear Acceleration (m/s^2)
         float x, y, z;
         if (IMU.accelerationAvailable()) {
             IMU.readAcceleration(x, y, z);
-
-            // Store the x, y, z data into a variable and return it
-            float imuAcc[3] = {x, y, z};
-            return imuAcc;
         }
 
         // Read gyroscope data      For Angular Velocity (degrees/s)
         float a,b,c;
         if (IMU.gyroscopeAvailable()) {
-            IMU.readGyroscope(x, y, z);
-
-            // Store the x, y, z data into a variable and return it
-            float imuGyro[3] = {a, b, c};
-            return imuGyro;
+            IMU.readGyroscope(a, b, c);
         }
 
         // // Read magnetometer data       For Magnetic Field (uT)
@@ -36,5 +28,35 @@
         //     return imuMag;
         // }
 
-        
+        // Store the x, y, z, a, b, c data into a variable and return it
+        static float imuData[6] = {x, y, z, a, b, c};
+        return imuData;
+
     }
+
+    void setupIMU() {
+        if (!IMU.begin()) {
+            Serial.println("Failed to initialize IMU!");
+            // Retry initialization
+            for(int i = 0; i < 5; i++) {
+                if (IMU.begin()) {
+                    return;
+                }
+                delay(100);
+            }
+            // If we still can't initialize the IMU, throw an error
+            throw std::runtime_error("IMU initialization failed");
+        } else {
+            return;
+        }
+    }
+
+    void resetIMU() {
+        // Reset the IMU
+        IMU.begin();
+    }
+#else
+    #error "IMU not defined"
+#endif
+
+#endif
