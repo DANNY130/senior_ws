@@ -62,6 +62,9 @@
    /* Encoders directly attached to Arduino board */
    #define ARDUINO_ENC_COUNTER
 
+   /* IMU built-in to Arduino board LSM9DS1.h */
+   #define IMU
+
    /* L298 Motor driver*/
    //#define L298_MOTOR_DRIVER
 
