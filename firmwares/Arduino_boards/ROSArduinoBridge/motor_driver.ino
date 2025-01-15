@@ -194,7 +194,7 @@ void setMotorSpeed(int motor, int speed)
   bool direction;
   long mappedSpeed = 0;
   // Map PWM speed to stepper speed
-  mappedSpeed = map(abs(speed), 0, 255, 0, 10000);
+  mappedSpeed = map(abs(speed), 0, 255, 0, 4500);
   if (speed < 0)
   {
     mappedSpeed *= -1;
