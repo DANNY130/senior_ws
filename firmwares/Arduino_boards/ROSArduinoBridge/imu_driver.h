@@ -11,7 +11,7 @@
 
 // Function declarations
 void setupIMU();
-void readIMU();
+float* readIMU();
 void resetIMU();
 void publishIMUState();
 

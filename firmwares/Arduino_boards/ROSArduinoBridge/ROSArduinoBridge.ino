@@ -250,7 +250,6 @@ int runCommand() {
     Ko = pid_args[3];
     Serial.println("OK");
     break;
-
   case IMU_READ:
     setupIMU();
     float* imuData = readIMU();
