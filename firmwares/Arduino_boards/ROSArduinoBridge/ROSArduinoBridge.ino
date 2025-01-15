@@ -112,6 +112,9 @@
   /* PID parameters and functions */
   #include "diff_controller.h"
 
+  /* IMU driver function definitions */
+  #include "imu_driver.h"
+
   /* Run the PID loop at 30 times per second */
   #define PID_RATE           30     // Hz
 
@@ -249,7 +252,7 @@ int runCommand() {
     break;
 
   case IMU_READ:
-    setup
+    setupIMU();
     float* imuData = readIMU();
     for (int i = 0; i < 6; i++) {
       Serial.print(imuData[i]);
