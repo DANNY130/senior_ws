@@ -247,6 +247,16 @@ int runCommand() {
     Ko = pid_args[3];
     Serial.println("OK");
     break;
+
+  case IMU_READ:
+    setup
+    float* imuData = readIMU();
+    for (int i = 0; i < 6; i++) {
+      Serial.print(imuData[i]);
+      Serial.print(" ");
+    }
+    Serial.println();
+    break;
 #endif
   default:
     Serial.println("Invalid Command");
