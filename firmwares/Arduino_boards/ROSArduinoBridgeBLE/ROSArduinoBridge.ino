@@ -281,6 +281,9 @@ void setup() {
   #endif
   initMotorController();
   resetPID();
+  #ifdef IMU
+    setupIMU();
+  #endif
 #endif
 
 /* Attach servos if used */
