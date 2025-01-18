@@ -18,20 +18,15 @@
             IMU.readGyroscope(a, b, c);
         }
 
-        // // Read magnetometer data       For Magnetic Field (uT)
-        // float d,e,f;
-        // if (IMU.magneticFieldAvailable()) {
-        //     IMU.readMagneticField(x, y, z);
+        // Read orientation data    For Orientation (quaternion)
+        float qx, qy, qz, qw;
+        if (IMU.orientationAvailable()) {
+            IMU.readOrientation(qx, qy, qz, qw);
+        }
 
-        //     // Store the x, y, z data into a variable and return it
-        //     float imuMag[3] = {d, e, f};
-        //     return imuMag;
-        // }
-
-        // Store the x, y, z, a, b, c data into a variable and return it
-        static float imuData[6] = {x, y, z, a, b, c};
+        // Store the x, y, z, a, b, c, qx, qy, qz, qw data into a variable and return it
+        static float imuData[10] = {x, y, z, a, b, c, qx, qy, qz, qw};
         return imuData;
-
     }
 
     void setupIMU() {

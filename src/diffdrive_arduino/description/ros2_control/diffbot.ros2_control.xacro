@@ -28,6 +28,11 @@
         <state_interface name="position"/>
         <state_interface name="velocity"/>
       </joint>
+      <sensor name="imu_sensor">
+        <state_interface name="orientation"/>
+        <state_interface name="angular_velocity"/>
+        <state_interface name="linear_acceleration"/>
+      </sensor>
     </ros2_control>
 
   </xacro:macro>

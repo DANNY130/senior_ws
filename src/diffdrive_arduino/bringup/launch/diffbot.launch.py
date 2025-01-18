@@ -80,6 +80,14 @@ def generate_launch_description():
         arguments=["diffbot_base_controller", "--controller-manager", "/controller_manager"],
     )
 
+    ekf_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[robot_description, robot_controllers]  # Include robot_description
+    )
+
     # Delay rviz start after `joint_state_broadcaster`
     delay_rviz_after_joint_state_broadcaster_spawner = RegisterEventHandler(
         event_handler=OnProcessExit(
@@ -102,6 +110,7 @@ def generate_launch_description():
         joint_state_broadcaster_spawner,
         delay_rviz_after_joint_state_broadcaster_spawner,
         delay_robot_controller_spawner_after_joint_state_broadcaster_spawner,
+        ekf_node,  # Add EKF node to the list of nodes to launch
     ]
 
     return LaunchDescription(nodes)
