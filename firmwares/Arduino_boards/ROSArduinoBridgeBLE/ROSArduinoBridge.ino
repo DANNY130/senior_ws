@@ -63,7 +63,7 @@
    #define ARDUINO_ENC_COUNTER
 
    /* IMU built-in to Arduino board LSM9DS1.h */
-   //#define IMU
+   #define IMU
 
    /* L298 Motor driver*/
    //#define L298_MOTOR_DRIVER
@@ -76,7 +76,7 @@
 #undef USE_SERVOS     // Disable use of PWM servos
 
 /* Serial port baud rate */
-#define BAUDRATE     57600
+#define SERIAL_BAUDRATE     57600
 
 /* Maximum PWM signal */
 #define MAX_PWM        255
@@ -134,7 +134,7 @@
 
 // A pair of varibles to help parse serial commands (thanks Fergs)
 int arg = 0;
-int index = 0;
+int cmdIndex = 0; // Renamed from index to avoid conflict
 
 // Variable to hold an input character
 char chr;
@@ -158,7 +158,7 @@ void resetCommand() {
   arg1 = 0;
   arg2 = 0;
   arg = 0;
-  index = 0;
+  cmdIndex = 0; // Renamed from index to avoid conflict
 }
 
 /* Run a command.  Commands are defined in commands.h */
@@ -170,10 +170,10 @@ int runCommand() {
   arg1 = atoi(argv1);
   arg2 = atoi(argv2);
   float* imuData = nullptr; // Initialize imuData outside the switch case
-  
+
   switch(cmd) {
   case GET_BAUDRATE:
-    Serial.println(BAUDRATE);
+    Serial.println(SERIAL_BAUDRATE);
     break;
   case ANALOG_READ:
     Serial.println(analogRead(arg1));
@@ -241,7 +241,7 @@ int runCommand() {
     Serial.println("OK"); 
     break;
   case UPDATE_PID:
-    while ((str = strtok_r(p, ":", &p)) != '\0') {
+    while ((str = strtok_r(p, ":", &p)) != NULL) { // Corrected comparison
        pid_args[i] = atoi(str);
        i++;
     }
@@ -251,17 +251,18 @@ int runCommand() {
     Ko = pid_args[3];
     Serial.println("OK");
     break;
-  #ifdef IMU
   case IMU_READ:
-    setupIMU();
-    imuData = readIMU();
-    for (int i = 0; i < 6; i++) {
-      Serial.print(imuData[i]);
-      Serial.print(" ");
+    if (imuInitialized) {
+      imuData = readIMU(); // Assign imuData here
+      for (int i = 0; i < 6; i++) {
+        Serial.print(imuData[i]);
+        Serial.print(" ");
+      }
+      Serial.println();
+    } else {
+      Serial.println("IMU not initialized.");
     }
-    Serial.println();
     break;
-  #endif
 #endif
   default:
     Serial.println("Invalid Command");
@@ -271,33 +272,18 @@ int runCommand() {
 
 /* Setup function--runs once at startup. */
 void setup() {
-  Serial.begin(BAUDRATE);
+  Serial.begin(SERIAL_BAUDRATE);
 
 // Initialize the motor controller if used */
 #ifdef USE_BASE
   #ifdef ARDUINO_ENC_COUNTER
-    //set as inputs
-    DDRD &= ~(1<<LEFT_ENC_PIN_A);
-    DDRD &= ~(1<<LEFT_ENC_PIN_B);
-    DDRC &= ~(1<<RIGHT_ENC_PIN_A);
-    DDRC &= ~(1<<RIGHT_ENC_PIN_B);
-    
-    //enable pull up resistors
-    PORTD |= (1<<LEFT_ENC_PIN_A);
-    PORTD |= (1<<LEFT_ENC_PIN_B);
-    PORTC |= (1<<RIGHT_ENC_PIN_A);
-    PORTC |= (1<<RIGHT_ENC_PIN_B);
-    
-    // tell pin change mask to listen to left encoder pins
-    PCMSK2 |= (1 << LEFT_ENC_PIN_A)|(1 << LEFT_ENC_PIN_B);
-    // tell pin change mask to listen to right encoder pins
-    PCMSK1 |= (1 << RIGHT_ENC_PIN_A)|(1 << RIGHT_ENC_PIN_B);
-    
-    // enable PCINT1 and PCINT2 interrupt in the general interrupt mask
-    PCICR |= (1 << PCIE1) | (1 << PCIE2);
+    setupEncoders();
   #endif
   initMotorController();
   resetPID();
+  #ifdef IMU
+    setupIMU();
+  #endif
 #endif
 
 /* Attach servos if used */
@@ -324,8 +310,8 @@ void loop() {
 
     // Terminate a command with a CR
     if (chr == 13) {
-      if (arg == 1) argv1[index] = NULL;
-      else if (arg == 2) argv2[index] = NULL;
+      if (arg == 1) argv1[cmdIndex] = NULL; // Renamed from index to avoid conflict
+      else if (arg == 2) argv2[cmdIndex] = NULL; // Renamed from index to avoid conflict
       runCommand();
       resetCommand();
     }
@@ -334,9 +320,9 @@ void loop() {
       // Step through the arguments
       if (arg == 0) arg = 1;
       else if (arg == 1)  {
-        argv1[index] = NULL;
+        argv1[cmdIndex] = NULL; // Renamed from index to avoid conflict
         arg = 2;
-        index = 0;
+        cmdIndex = 0; // Renamed from index to avoid conflict
       }
       continue;
     }
@@ -347,12 +333,12 @@ void loop() {
       }
       else if (arg == 1) {
         // Subsequent arguments can be more than one character
-        argv1[index] = chr;
-        index++;
+        argv1[cmdIndex] = chr; // Renamed from index to avoid conflict
+        cmdIndex++; // Renamed from index to avoid conflict
       }
       else if (arg == 2) {
-        argv2[index] = chr;
-        index++;
+        argv2[cmdIndex] = chr; // Renamed from index to avoid conflict
+        cmdIndex++; // Renamed from index to avoid conflict
       }
     }
   }

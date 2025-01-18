@@ -110,6 +110,26 @@ public:
     send_msg(ss.str());
   }
 
+  void read_imu_values(float &val_1, float &val_2, float &val_3, float &val_4, float &val_5, float &val_6) {
+    std::string response = send_msg("i\r");
+
+    std::string delimiter = " ";
+    size_t del_pos = 0;
+    std::string tokens[6];
+    for (int i = 0; i < 6; ++i) {
+      del_pos = response.find(delimiter);
+      tokens[i] = response.substr(0, del_pos);
+      response.erase(0, del_pos + delimiter.length());
+    }
+
+    val_1 = std::stof(tokens[0]);
+    val_2 = std::stof(tokens[1]);
+    val_3 = std::stof(tokens[2]);
+    val_4 = std::stof(tokens[3]);
+    val_5 = std::stof(tokens[4]);
+    val_6 = std::stof(tokens[5]);
+  }
+
 private:
     LibSerial::SerialPort serial_conn_;
     int timeout_ms_;
