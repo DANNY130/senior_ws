@@ -80,6 +80,14 @@ def generate_launch_description():
         arguments=["diffbot_base_controller", "--controller-manager", "/controller_manager"],
     )
 
+    # IMU Broadcaster
+    imu_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["imu_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+
+    # EKF node configuration
     ekf_node = Node(
         package='robot_localization',
         executable='ekf_node',
@@ -111,6 +119,7 @@ def generate_launch_description():
         delay_rviz_after_joint_state_broadcaster_spawner,
         delay_robot_controller_spawner_after_joint_state_broadcaster_spawner,
         ekf_node,  # Add EKF node to the list of nodes to launch
+        imu_broadcaster_spawner,
     ]
 
     return LaunchDescription(nodes)
