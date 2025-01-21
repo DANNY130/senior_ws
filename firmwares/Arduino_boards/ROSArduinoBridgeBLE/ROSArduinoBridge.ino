@@ -254,7 +254,7 @@ int runCommand() {
   case IMU_READ:
     if (imuInitialized) {
       imuData = readIMU(); // Assign imuData here
-      for (int i = 0; i < 6; i++) {
+      for (int i = 0; i < 10; i++) {
         Serial.print(imuData[i]);
         Serial.print(" ");
       }

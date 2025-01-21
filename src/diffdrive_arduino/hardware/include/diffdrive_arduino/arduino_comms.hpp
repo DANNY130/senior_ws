@@ -110,24 +110,28 @@ public:
     send_msg(ss.str());
   }
 
-  void read_imu_values(float &val_1, float &val_2, float &val_3, float &val_4, float &val_5, float &val_6) {
+  void read_imu_values(float &acc_x, float &acc_y, float &acc_z, float &gyro_x, float &gyro_y, float &gyro_z, float &ori_x, float &ori_y, float &ori_z, float &ori_w) {
     std::string response = send_msg("i\r");
 
     std::string delimiter = " ";
     size_t del_pos = 0;
-    std::string tokens[6];
-    for (int i = 0; i < 6; ++i) {
+    std::string tokens[10];
+    for (int i = 0; i < 10; ++i) {
       del_pos = response.find(delimiter);
       tokens[i] = response.substr(0, del_pos);
       response.erase(0, del_pos + delimiter.length());
     }
 
-    val_1 = std::stof(tokens[0]);
-    val_2 = std::stof(tokens[1]);
-    val_3 = std::stof(tokens[2]);
-    val_4 = std::stof(tokens[3]);
-    val_5 = std::stof(tokens[4]);
-    val_6 = std::stof(tokens[5]);
+    acc_x = std::stof(tokens[0]);
+    acc_y = std::stof(tokens[1]);
+    acc_z = std::stof(tokens[2]);
+    gyro_x = std::stof(tokens[3]);
+    gyro_y = std::stof(tokens[4]);
+    gyro_z = std::stof(tokens[5]);
+    ori_x = std::stof(tokens[6]);
+    ori_y = std::stof(tokens[7]);
+    ori_z = std::stof(tokens[8]);
+    ori_w = std::stof(tokens[9]);
   }
 
 private:
