@@ -1,9 +1,9 @@
 # senior_ws
 
+Welcome to the `senior_ws` repository! This workspace is designed for developing and deploying robotic systems using ROS 2. It includes various packages and tools for controlling differential drive robots, interfacing with hardware, and performing tasks such as localization and navigation.
+
 ## Contributors:
 Danny, Tamana, Matthew
-
-Welcome to the `senior_ws` repository! This workspace is designed for developing and deploying robotic systems using ROS 2. It includes various packages and tools for controlling differential drive robots, interfacing with hardware, and performing tasks such as localization and navigation.
 
 ## Repository Structure
 
