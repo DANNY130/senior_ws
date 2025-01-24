@@ -2,6 +2,9 @@
 
 Welcome to the `senior_ws` repository! This workspace is designed for developing and deploying robotic systems using ROS 2. It includes various packages and tools for controlling differential drive robots, interfacing with hardware, and performing tasks such as localization and navigation.
 
+## Control Design Detail Diagram
+![Control Block Diagram](https://github.com/DANNY130/senior_ws/issues/2#issue-2809050334)
+
 ## Contributors:
 Danny, Tamana, Matthew
 
