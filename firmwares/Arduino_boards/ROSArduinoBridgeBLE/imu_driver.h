@@ -11,9 +11,8 @@
 
 // Function declarations
 void setupIMU();
-float* readIMU();
+float* readIMU(float* imuData);
 void resetIMU();
-void publishIMUState();
 bool imuInitialized = false; // Flag to indicate IMU initialization status
 
 #endif // IMU_DRIVER_H

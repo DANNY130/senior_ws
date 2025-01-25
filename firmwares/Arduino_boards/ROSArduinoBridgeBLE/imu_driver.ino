@@ -5,7 +5,7 @@
     #include <Wire.h>
     #include <Arduino_LSM9DS1.h>
 
-    float* readIMU() {
+    float* readIMU(float* imuData) {
         // Read the accelerometer    For Linear Acceleration (m/s^2)
         float x, y, z;
         if (IMU.accelerationAvailable()) {
@@ -25,7 +25,17 @@
         }
 
         // Store the x, y, z, a, b, c, qx, qy, qz, qw data into a variable and return it
-        static float imuData[10] = {x, y, z, a, b, c, qx, qy, qz, qw};
+        imuData[0] = x;
+        imuData[1] = y;
+        imuData[2] = z;
+        imuData[3] = a;
+        imuData[4] = b;
+        imuData[5] = c;
+        imuData[6] = qx;
+        imuData[7] = qy;
+        imuData[8] = qz;
+        imuData[9] = qw;
+        
         return imuData;
     }
 
