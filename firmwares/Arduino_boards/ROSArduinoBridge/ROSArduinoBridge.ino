@@ -269,6 +269,13 @@ int runCommand() {
   }
 }
 
+// /* Function to log PID data */
+// void logPIDData() {
+//   Serial.println(leftPID.TargetTicksPerFrame);
+//   Serial.print('\t');
+//   Serial.println(leftPID.output*8.9167);
+// }
+
 /* Setup function--runs once at startup. */
 void setup() {
   Serial.begin(BAUDRATE);
@@ -361,6 +368,7 @@ void loop() {
 #ifdef USE_BASE
   if (millis() > nextPID) {
     updatePID();
+    // logPIDData();
     nextPID += PID_INTERVAL;
   }
   
