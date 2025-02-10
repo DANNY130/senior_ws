@@ -2,12 +2,7 @@
 
 Welcome to the `senior_ws` repository! This workspace is designed for developing and deploying robotic systems using ROS 2. It includes various packages and tools for controlling differential drive robots, interfacing with hardware, and performing tasks such as localization and navigation.
 
-## Control Design Detail Diagram
-![Control Block Diagram](https://github.com/DANNY130/senior_ws/issues/2#issue-2809050334)
-
-## Contributors:
-Danny, Tamana, Matthew
-
+(Final merged content, combining relevant changes)
 ## Repository Structure
 
 - **.vscode/**: Configuration files for Visual Studio Code, including settings and tasks.
@@ -61,4 +56,4 @@ Before you start, ensure you have the following prerequisites installed:
 For detailed documentation on each package, refer to the respective README files in the src directory.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+(Final merged content, combining relevant changes)

@@ -169,7 +169,7 @@ int runCommand() {
   int pid_args[4];
   arg1 = atoi(argv1);
   arg2 = atoi(argv2);
-  float* imuData = nullptr; // Initialize imuData outside the switch case
+  float imuData[10]; // Initialize imuData outside the switch case
 
   switch(cmd) {
   case GET_BAUDRATE:
@@ -253,8 +253,8 @@ int runCommand() {
     break;
   case IMU_READ:
     if (imuInitialized) {
-      imuData = readIMU(); // Assign imuData here
-      for (int i = 0; i < 6; i++) {
+      readIMU(imuData); // Pass imuData array to readIMU function
+      for (int i = 0; i < 10; i++) {
         Serial.print(imuData[i]);
         Serial.print(" ");
       }

@@ -8,6 +8,41 @@ controller_manager:
     diffbot_base_controller:
       type: diff_drive_controller/DiffDriveController
 
+    imu_broadcaster:
+      type: imu_sensor_broadcaster/IMUSensorBroadcaster
+
+imu_broadcaster:
+  ros_parameters:
+    sensor_name: "imu"
+    frame_id: "imu"
+    publish_acceleration: true # Publish acceleration
+    publish_angular_velocity: true # Publish angular velocity
+    publish_orientation: true # Publish orientation
+
+# Configure EKF filter node
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0 # Hz  # Frequency of the filter running
+    sensor_timeout: 0.1 # seconds  # Time after which a sensor is considered to be not active
+    two_d_mode: false # Enable 3D mode
+    publish_tf: true
+    # Frame IDs used by the EKF
+    map_frame: "map"
+    odom_frame: "odom"
+    base_link_frame: "base_link"
+    world_frame: "odom"
+    odom0: "odom"   # Name of the odometry source
+    odom0_config: [false, false, false, false, false, false,
+                   true,  true,  true,  false, false, true,
+                   false, false, false]
+    imu0: "imu"
+    imu0_config: [true,  true,  true,  # Enable orientation
+                  true,  true,  true,  # Enable angular velocity
+                  false, false, false,
+                  true,  true,  true]  # Enable linear acceleration
+    imu0_differential: false
+    imu0_remove_gravitational_acceleration: true
+
 diffbot_base_controller:
   ros__parameters:
     left_wheel_names: ["left_wheel_joint"]
@@ -21,12 +56,14 @@ diffbot_base_controller:
     left_wheel_radius_multiplier: 1.0
     right_wheel_radius_multiplier: 1.0
 
+    #Feedback from motors is published at around 50Hz
     publish_rate: 50.0
     odom_frame_id: odom
     base_frame_id: base_link
     pose_covariance_diagonal : [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
 
+    #Whether to use feedback or commands for odometry calculations
     open_loop: true
     enable_odom_tf: true
 

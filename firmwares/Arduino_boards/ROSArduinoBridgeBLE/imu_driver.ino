@@ -5,7 +5,7 @@
     #include <Wire.h>
     #include <Arduino_LSM9DS1.h>
 
-    float* readIMU() {
+    float* readIMU(float* imuData) {
         // Read the accelerometer    For Linear Acceleration (m/s^2)
         float x, y, z;
         if (IMU.accelerationAvailable()) {
@@ -18,20 +18,25 @@
             IMU.readGyroscope(a, b, c);
         }
 
-        // // Read magnetometer data       For Magnetic Field (uT)
-        // float d,e,f;
-        // if (IMU.magneticFieldAvailable()) {
-        //     IMU.readMagneticField(x, y, z);
+        // Read orientation data    For Orientation (quaternion)
+        float qx, qy, qz, qw;
+        if (IMU.orientationAvailable()) {
+            IMU.readOrientation(qx, qy, qz, qw);
+        }
 
-        //     // Store the x, y, z data into a variable and return it
-        //     float imuMag[3] = {d, e, f};
-        //     return imuMag;
-        // }
-
-        // Store the x, y, z, a, b, c data into a variable and return it
-        static float imuData[6] = {x, y, z, a, b, c};
+        // Store the x, y, z, a, b, c, qx, qy, qz, qw data into a variable and return it
+        imuData[0] = x;
+        imuData[1] = y;
+        imuData[2] = z;
+        imuData[3] = a;
+        imuData[4] = b;
+        imuData[5] = c;
+        imuData[6] = qx;
+        imuData[7] = qy;
+        imuData[8] = qz;
+        imuData[9] = qw;
+        
         return imuData;
-
     }
 
     void setupIMU() {
