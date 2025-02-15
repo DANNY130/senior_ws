@@ -3,16 +3,16 @@
 
     <xacro:include filename = "inertial_macros.xacro" />
 
-    <xacro:property name="chassis_length"           value="0.320"/>
-    <xacro:property name="chassis_width"            value="0.240"/>
-    <xacro:property name="chassis_height"           value="0.078"/>
+    <xacro:property name="chassis_length"           value="0.464"/>
+    <xacro:property name="chassis_width"            value="0.48"/>
+    <xacro:property name="chassis_height"           value="0.3"/>
     <xacro:property name="chassis_mass"             value="0.700"/>
 
-    <xacro:property name="wheel_radius"             value="0.034"/>
-    <xacro:property name="wheel_thickness"          value="0.026"/>
+    <xacro:property name="wheel_radius"             value="0.1"/>
+    <xacro:property name="wheel_thickness"          value="0.08"/>
     <xacro:property name="wheel_mass"               value="0.050"/>
     <xacro:property name="wheel_offset_x"           value="0.133"/>
-    <xacro:property name="wheel_offset_y"           value="0.133"/>
+    <xacro:property name="wheel_offset_y"           value="0.275"/>
     <xacro:property name="wheel_offset_z"           value="0.020"/>
 
     <xacro:property name="caster_wheel_radius"      value="${wheel_radius - wheel_offset_z}"/>
@@ -41,6 +41,11 @@
     <material name="indigo">
         <color rgba= "0.294 0 0.51 1"/>    
     </material>
+
+    <material name="blue">
+        <color rgba= "0 0 1 1"/>
+    </material>
+
 
 
     <!-- convention (except base_link): joint followed by link -->
@@ -175,6 +180,111 @@
         <mu1 value= "0.0001"/>
         <mu2 value= "0.0001"/>
     </gazebo>
+
+    <!--Extender Left Arm-->
+    <joint name="extender_left_arm_joint" type="fixed">
+        <parent link= "chasis"/>
+        <child link= "extender_left_arm"/>
+        <origin xyz= "${chassis_length+0.15} 0.1 ${wheel_offset_z}" rpy= "0 0 0"/>
+    </joint>
+    <link name="extender_left_arm">
+        <visual>
+            <origin xyz= "0 0 0" rpy= "0 0 0"/>
+            <geometry>
+                <box size = "0.3 0.05 0.05"/>
+            </geometry>
+            <material name= "blue"/>
+        </visual>
+        <collision>
+            <origin xyz= "0 0 0" rpy= "0 0 0"/>
+            <geometry>
+                <box size = "0.3 0.05 0.05"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass= "0.5" x="0.1" y="0.1" z="0.1">
+            <origin xyz= "0 0 0" rpy= "0 0 0"/>
+        </xacro:inertial_box>
+
+    </link>
+
+    <!--Extender Right Arm-->
+    <joint name="extender_right_arm_joint" type="fixed">
+        <parent link= "chasis"/>
+        <child link= "extender_right_arm"/>
+        <origin xyz= "${chassis_length+0.15} -0.1 ${wheel_offset_z}" rpy= "0 0 0"/>
+
+    </joint>
+    <link name="extender_right_arm">
+        <visual>
+            <origin xyz= "0 0 0" rpy= "0 0 0"/>
+            <geometry>
+                <box size = "0.3 0.05 0.05"/>
+            </geometry>
+            <material name= "blue"/>
+        </visual>
+        <collision>
+            <origin xyz= "0 0 0" rpy= "0 0 0"/>
+            <geometry>
+                <box size = "0.3 0.05 0.05"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass= "0.5" x="0.1" y="0.1" z="0.1">
+            <origin xyz= "0 0 0" rpy= "0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    <!-- Slider on Extender Left Arm -->
+    <joint name="slider_left_joint" type="prismatic">
+        <parent link="extender_left_arm"/>
+        <child link="slider_left"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="0" upper="0.3" effort="10" velocity="0.1"/>
+    </joint>
+    <link name="slider_left">
+        <visual>
+            <origin xyz="0.05 0 0.025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.3 0.05 0.01"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0.05 0 0.025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.3 0.05 0.01"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.1" x="0.3" y="0.05" z="0.01">
+            <origin xyz="0.05 0 0.025" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <!-- Slider on Extender Right Arm -->
+    <joint name="slider_right_joint" type="prismatic">
+        <parent link="extender_right_arm"/>
+        <child link="slider_right"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="0" upper="0.3" effort="10" velocity="0.1"/>
+    </joint>
+    <link name="slider_right">
+        <visual>
+            <origin xyz="0.05 0 0.025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.3 0.05 0.01"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <origin xyz="0.05 0 0.025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.3 0.05 0.01"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.1" x="0.3" y="0.05" z="0.01">
+            <origin xyz="0.05 0 0.025" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
 
 
 </robot>
