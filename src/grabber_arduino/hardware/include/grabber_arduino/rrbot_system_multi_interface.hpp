@@ -38,6 +38,21 @@ namespace ros2_control_demo_example_3
 {
 class RRBotSystemMultiInterfaceHardware : public hardware_interface::SystemInterface
 {
+
+
+struct Config
+{
+  std::string extender_name = "";
+  std::string grabber_left_name = "";
+  std::string grabber_right_name = "";
+  float loop_rate = 0.0;
+  std::string device = "";
+  int baud_rate = 0;
+  int timeout_ms = 0;
+  int force_sensor = 0;
+};;
+
+
 public:
   RCLCPP_SHARED_PTR_DEFINITIONS(RRBotSystemMultiInterfaceHardware);
 
@@ -65,21 +80,10 @@ public:
 
 private:
   // Parameters for the RRBot simulation
-  ArduinoComms arduino_comms_;
+  ArduinoComms comms_;
+  Config cfg_;
   
-
-  // Enum defining at which control level we are
-  // Dumb way of maintaining the command_interface type per joint.
-  enum integration_level_t : std::uint8_t
-  {
-    UNDEFINED = 0,
-    POSITION = 1,
-    VELOCITY = 2,
-    ACCELERATION = 3
-  };
-
-  // Active control mode for each actuator
-  std::vector<integration_level_t> control_level_;
+  
 };
 
 }  // namespace ros2_control_demo_example_3

@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
-project(grabber_arduino LANGUAGES CXX)
+project(ros2_control_demo_example_3 LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
   add_compile_options(-Wall -Wextra)
 endif()
+
+# set the same behavior for windows as it is on linux
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # find dependencies
 set(THIS_PACKAGE_INCLUDE_DEPENDS
@@ -13,7 +16,16 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   rclcpp_lifecycle
 )
 
+# Specify the required version of ros2_control
+find_package(controller_manager 4.0.0)
+# Handle the case where the required version is not found
+if(NOT controller_manager_FOUND)
+  message(FATAL_ERROR "ros2_control version 4.0.0 or higher is required. "
+  "Are you using the correct branch of the ros2_control_demos repository?")
+endif()
+
 # find dependencies
+find_package(backward_ros REQUIRED)
 find_package(ament_cmake REQUIRED)
 foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
@@ -21,54 +33,52 @@ endforeach()
 
 ## COMPILE
 add_library(
-  grabber_arduino
+  ros2_control_demo_example_3
   SHARED
-  hardware/grabber_system.cpp
+  hardware/rrbot_system_multi_interface.cpp
 )
-target_compile_features(grabber_arduino PUBLIC cxx_std_17)
-target_include_directories(grabber_arduino PUBLIC
+target_compile_features(ros2_control_demo_example_3 PUBLIC cxx_std_17)
+target_include_directories(ros2_control_demo_example_3 PUBLIC
 $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
-$<INSTALL_INTERFACE:include/grabber_arduino>
+$<INSTALL_INTERFACE:include/ros2_control_demo_example_3>
 )
 ament_target_dependencies(
-  grabber_arduino PUBLIC
+  ros2_control_demo_example_3 PUBLIC
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
-target_link_libraries(grabber_arduino PUBLIC serial)
-
-# Causes the visibility macros to use dllexport rather than dllimport,
-# which is appropriate when building the dll but not consuming it.
-target_compile_definitions(${PROJECT_NAME} PRIVATE "GRABBER_ARDUINO_BUILDING_DLL")
-
 # Export hardware plugins
-pluginlib_export_plugin_description_file(hardware_interface grabber_arduino.xml)
+pluginlib_export_plugin_description_file(hardware_interface ros2_control_demo_example_3.xml)
 
 # INSTALL
 install(
   DIRECTORY hardware/include/
-  DESTINATION include/grabber_arduino
+  DESTINATION include/ros2_control_demo_example_3
 )
 install(
-  DIRECTORY description/launch description/ros2_control description/urdf description/rviz
-  DESTINATION share/grabber_arduino
+  DIRECTORY description/launch description/ros2_control description/urdf
+  DESTINATION share/ros2_control_demo_example_3
 )
 install(
   DIRECTORY bringup/launch bringup/config
-  DESTINATION share/grabber_arduino
+  DESTINATION share/ros2_control_demo_example_3
 )
-install(TARGETS grabber_arduino
-  EXPORT export_grabber_arduino
+install(TARGETS ros2_control_demo_example_3
+  EXPORT export_ros2_control_demo_example_3
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
 )
 
 if(BUILD_TESTING)
-  find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_cmake_pytest REQUIRED)
+
+  ament_add_pytest_test(example_3_urdf_xacro test/test_urdf_xacro.py)
+  ament_add_pytest_test(view_example_3_launch test/test_view_robot_launch.py)
+  ament_add_pytest_test(run_example_3_launch test/test_rrbot_system_multi_interface_launch.py)
 endif()
 
 ## EXPORTS
-ament_export_targets(export_grabber_arduino HAS_LIBRARY_TARGET)
+ament_export_targets(export_ros2_control_demo_example_3 HAS_LIBRARY_TARGET)
 ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 ament_package()

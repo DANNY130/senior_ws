@@ -38,12 +38,14 @@ hardware_interface::CallbackReturn RRBotSystemMultiInterfaceHardware::on_init(
     return hardware_interface::CallbackReturn::ERROR;
   }
 
-  // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
-  hw_start_sec_ = stod(info_.hardware_parameters["example_param_hw_start_duration_sec"]);
-  hw_stop_sec_ = stod(info_.hardware_parameters["example_param_hw_stop_duration_sec"]);
-  hw_slowdown_ = stod(info_.hardware_parameters["example_param_hw_slowdown"]);
-  // END: This part here is for exemplary purposes - Please do not copy to your production code
-  control_level_.resize(info_.joints.size(), integration_level_t::POSITION);
+  cfg_.extender_name = info_.hardware_parameters["extender_name"];
+  cfg_.grabber_left_name = info_.hardware_parameters["grabber_left_name"];
+  cfg_.grabber_right_name = info_.hardware_parameters["grabber_right_name"];
+  cfg_.loop_rate = std::stof(info_.hardware_parameters["loop_rate"]);;
+  cfg_.device = info_.hardware_parameters["device"];
+  cfg_.baud_rate = std::stoi(info_.hardware_parameters["baud_rate"]);
+  cfg_.timeout_ms = std::stoi(info_.hardware_parameters["timeout_ms"]);
+  cfg_.force_sensor = std::stoi(info_.hardware_parameters["force_sensor"]);
 
   for (const hardware_interface::ComponentInfo & joint : info_.joints)
   {
@@ -192,7 +194,7 @@ hardware_interface::CallbackReturn RRBotSystemMultiInterfaceHardware::on_activat
   // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
   RCLCPP_INFO(get_logger(), "Activating... please wait...");
 
-  // coms_.connect();
+  coms_.connect(cfg_.device, cfg_.baud_rate, cfg_.timeout_ms);
 
   RCLCPP_INFO(get_logger(), "System successfully activated! %u", control_level_[0]);
   return hardware_interface::CallbackReturn::SUCCESS;
@@ -201,10 +203,9 @@ hardware_interface::CallbackReturn RRBotSystemMultiInterfaceHardware::on_activat
 hardware_interface::CallbackReturn RRBotSystemMultiInterfaceHardware::on_deactivate(
   const rclcpp_lifecycle::State & /*previous_state*/)
 {
-  // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
   RCLCPP_INFO(get_logger(), "Deactivating... please wait...");
 
-  // coms_.disconnect();
+  coms_.disconnect();
   
   RCLCPP_INFO(get_logger(), "Successfully deactivated!");
   // END: This part here is for exemplary purposes - Please do not copy to your production code
@@ -215,71 +216,14 @@ hardware_interface::CallbackReturn RRBotSystemMultiInterfaceHardware::on_deactiv
 hardware_interface::return_type RRBotSystemMultiInterfaceHardware::read(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & period)
 {
-  // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
-  std::stringstream ss;
-  ss << "Reading states:";
-  for (std::size_t i = 0; i < info_.joints.size(); i++)
-  {
-    const auto name_acc = info_.joints[i].name + "/" + hardware_interface::HW_IF_ACCELERATION;
-    const auto name_vel = info_.joints[i].name + "/" + hardware_interface::HW_IF_VELOCITY;
-    const auto name_pos = info_.joints[i].name + "/" + hardware_interface::HW_IF_POSITION;
-    switch (control_level_[i])
-    {
-      case integration_level_t::UNDEFINED:
-        RCLCPP_INFO(get_logger(), "Nothing is using the hardware interface!");
-        return hardware_interface::return_type::OK;
-        break;
-      case integration_level_t::POSITION:
-        set_state(name_acc, 0.);
-        set_state(name_vel, 0.);
-        set_state(
-          name_pos,
-          get_state(name_pos) + (get_command(name_pos) - get_state(name_pos)) / hw_slowdown_);
-        break;
-      case integration_level_t::VELOCITY:
-        set_state(name_acc, 0.);
-        set_state(name_vel, get_command(name_vel));
-        set_state(
-          name_pos, get_state(name_pos) + get_state(name_vel) * period.seconds() / hw_slowdown_);
-        break;
-      case integration_level_t::ACCELERATION:
-        set_state(name_acc, get_command(name_acc));
-        set_state(
-          name_vel, get_state(name_vel) + get_state(name_acc) * period.seconds() / hw_slowdown_);
-        set_state(
-          name_pos, get_state(name_pos) + get_state(name_vel) * period.seconds() / hw_slowdown_);
-        break;
-    }
-    ss << std::fixed << std::setprecision(2) << std::endl
-       << "\t"
-       << "pos: " << get_state(name_pos) << ", vel: " << get_state(name_vel)
-       << ", acc: " << get_state(name_acc) << " for joint " << i;
-  }
-  RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500, "%s", ss.str().c_str());
-  // END: This part here is for exemplary purposes - Please do not copy to your production code
+  // comms_.read_encoder_value();
   return hardware_interface::return_type::OK;
 }
 
 hardware_interface::return_type RRBotSystemMultiInterfaceHardware::write(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
-  // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
-  std::stringstream ss;
-  ss << "Writing commands:";
-  for (std::size_t i = 0; i < info_.joints.size(); i++)
-  {
-    // Simulate sending commands to the hardware
-    const auto name_acc = info_.joints[i].name + "/" + hardware_interface::HW_IF_ACCELERATION;
-    const auto name_vel = info_.joints[i].name + "/" + hardware_interface::HW_IF_VELOCITY;
-    const auto name_pos = info_.joints[i].name + "/" + hardware_interface::HW_IF_POSITION;
-    ss << std::fixed << std::setprecision(2) << std::endl
-       << "\t"
-       << "command pos: " << get_command(name_pos) << ", vel: " << get_command(name_vel)
-       << ", acc: " << get_command(name_acc) << " for joint " << i
-       << ", control lvl: " << static_cast<int>(control_level_[i]);
-  }
-  RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500, "%s", ss.str().c_str());
-  // END: This part here is for exemplary purposes - Please do not copy to your production code
+  // comms_.set_motor_value();
 
   return hardware_interface::return_type::OK;
 }
