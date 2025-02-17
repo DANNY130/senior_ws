@@ -33,6 +33,9 @@
 #include "rclcpp_lifecycle/state.hpp"
 
 #include "grabber_arduino/arduino_comms.hpp"
+#include "grabber_arduino/visibility_control.h"
+#include "grabber_arduino/grabber.hpp"
+#include "grabber_arduino/extender.hpp"
 
 namespace ros2_control_demo_example_3
 {
@@ -56,32 +59,58 @@ struct Config
 public:
   RCLCPP_SHARED_PTR_DEFINITIONS(RRBotSystemMultiInterfaceHardware);
 
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::CallbackReturn on_init(
     const hardware_interface::HardwareInfo & info) override;
 
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::CallbackReturn on_configure(
     const rclcpp_lifecycle::State & previous_state) override;
 
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::return_type prepare_command_mode_switch(
     const std::vector<std::string> & start_interfaces,
     const std::vector<std::string> & stop_interfaces) override;
 
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::CallbackReturn on_activate(
     const rclcpp_lifecycle::State & previous_state) override;
 
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::CallbackReturn on_deactivate(
     const rclcpp_lifecycle::State & previous_state) override;
 
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::return_type read(
-    const rclcpp::Time & time, const rclcpp::Duration & period) override;
+    const rclcpp::Time & time, const rclcpp::Duration & period) override
+  {
+    // Update joint states for grabbers and extender
+    grabber_left_.update_state(comms_.read_grabber_position(cfg_.grabber_left_name));
+    grabber_right_.update_state(comms_.read_grabber_position(cfg_.grabber_right_name));
+    extender_.update_state(comms_.read_extender_position(cfg_.extender_name));
 
+    // ...existing code...
+  }
+
+  GRABBER_ARDUINO_PUBLIC
   hardware_interface::return_type write(
-    const rclcpp::Time & time, const rclcpp::Duration & period) override;
+    const rclcpp::Time & time, const rclcpp::Duration & period) override
+  {
+    // Send commands to grabbers and extender
+    comms_.write_grabber_command(cfg_.grabber_left_name, grabber_left_.get_command());
+    comms_.write_grabber_command(cfg_.grabber_right_name, grabber_right_.get_command());
+    comms_.write_extender_command(cfg_.extender_name, extender_.get_command());
+
+    // ...existing code...
+  }
 
 private:
   // Parameters for the RRBot simulation
   ArduinoComms comms_;
   Config cfg_;
+  Grabber grabber_left_;
+  Grabber grabber_right_;
+  Extender extender_;
   
   
 };

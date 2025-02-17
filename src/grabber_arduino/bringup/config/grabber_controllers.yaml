@@ -1,0 +1,79 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz, adjust as needed
+
+    # Extender Controllers (Position Control & PID Effort Control)
+    extender_position_controller:
+      type: position_controllers/JointPositionController
+    # extender_pid_controller:
+    #   type: effort_controllers/JointEffortController
+
+    # Grabber Controllers (Position Control & PID Effort Control)
+    grabber_position_controller:
+      type: position_controllers/JointGroupPositionController
+    # grabber_pid_controller:
+    #   type: effort_controllers/JointGroupEffortController
+
+    # Joint State Broadcaster
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+# ----- EXTENDER CONFIGURATION -----
+extender_position_controller:
+  ros__parameters:
+    joints:
+      - extender_joint
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    limits:
+      max_velocity: 1.0  # rad/s or m/s
+      max_acceleration: 0.5  # rad/s^2 or m/s^2
+
+# extender_pid_controller:
+#   ros__parameters:
+#     joints:
+#       - extender_joint
+#     interface_name: effort
+#     command_interfaces:
+#       - effort
+#     state_interfaces:
+#       - position
+#       - velocity
+#     pid:
+#       p: 1.0
+#       i: 0.1
+#       d: 0.01
+
+# ----- GRABBER CONFIGURATION -----
+grabber_position_controller:
+  ros__parameters:
+    joints:
+      - grabber_left_joint
+      - grabber_right_joint
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    limits:
+      max_velocity: 0.8  # rad/s or m/s
+      max_acceleration: 0.4  # rad/s^2 or m/s^2
+
+# grabber_pid_controller:
+#   ros__parameters:
+#     joints:
+#       - grabber_left_joint
+#       - grabber_right_joint
+#     interface_name: effort
+#     command_interfaces:
+#       - effort
+#     state_interfaces:
+#       - position
+#     pid:
+#       p: 1.5
+#       i: 0.05
+#       d: 0.02
