@@ -1,0 +1,8 @@
+publisher_forward_position_controller:
+  ros__parameters:
+
+    wait_sec_between_publish: 5
+    publish_topic: "/extender_velocity_controller/commands"
+
+    goal_names: ["vel1"]
+    vel1: [0.5, 0.5]

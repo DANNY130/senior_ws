@@ -1,0 +1,9 @@
+<library path="example_3">
+  <class name="example_3/RRBotSystemMultiInterfaceHardware"
+         type="example_3::RRBotSystemMultiInterfaceHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      The ros2_control RRbot example using a multi-interface hardware interface-type.
+    </description>
+  </class>
+</library>

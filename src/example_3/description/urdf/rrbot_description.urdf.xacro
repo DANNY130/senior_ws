@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="inertial_macros.xacro" />
+
+    <xacro:property name="base_length" value="0.5"/>
+    <xacro:property name="base_width" value="0.5"/>
+    <xacro:property name="base_height" value="0.1"/>
+    <xacro:property name="base_mass" value="1.0"/>
+
+    <xacro:property name="extender_length" value="0.5"/>
+    <xacro:property name="extender_radius" value="0.05"/>
+    <xacro:property name="extender_mass" value="0.5"/>
+
+    <!-- Base Link -->
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+            <mass value="${base_mass}"/>
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+        </inertial>
+    </link>
+
+    <!-- Extender Link -->
+    <joint name="joint1" type="revolute">
+        <parent link="base_link"/>
+        <child link="extender"/>
+        <origin xyz="0 0 ${base_height}" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+    </joint>
+    <link name="extender">
+        <visual>
+            <origin xyz="0 0 ${extender_length/2}" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="${extender_length}" radius="${extender_radius}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 ${extender_length/2}" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="${extender_length}" radius="${extender_radius}"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 ${extender_length/2}" rpy="0 0 0"/>
+            <mass value="${extender_mass}"/>
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+        </inertial>
+    </link>
+
+</robot>
