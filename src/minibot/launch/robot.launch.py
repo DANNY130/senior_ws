@@ -134,6 +134,15 @@ def generate_launch_description():
         ],
     )
 
+    extender_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["extender_controller", 
+                   "--param-file", 
+                   robot_controllers_file_dir
+        ],
+    )
+
     node_twist_mux = Node(
         package="twist_mux",
         executable="twist_mux",
@@ -181,6 +190,13 @@ def generate_launch_description():
         )
     )
 
+    register_extender_controller_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action= joint_state_broadcaster_spawner,
+            on_start=[extender_controller_spawner],
+        )
+    )
+
     node_rplidar_drive = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('sllidar_ros2'),
@@ -204,6 +220,7 @@ def generate_launch_description():
     ld.add_action(register_node_ros2_control)
     ld.add_action(register_joint_state_broadcaster_spawner)
     ld.add_action(register_diff_drive_controller_spawner)
+    ld.add_action(register_extender_controller_spawner)
 
     ld.add_action(node_robot_state_publisher)
     ld.add_action(node_twist_mux)

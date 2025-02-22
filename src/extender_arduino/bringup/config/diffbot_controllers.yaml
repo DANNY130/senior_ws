@@ -1,26 +1,27 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30  # Hz
-    # use_sim_time: true
-    
+    update_rate: 10  # Hz
+
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-diff_drive_controller:
+    diffbot_base_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diffbot_base_controller:
   ros__parameters:
-    type: diff_drive_controller/DiffDriveController
     left_wheel_names: ["left_wheel_joint"]
     right_wheel_names: ["right_wheel_joint"]
 
-    wheel_separation: 0.266
-    # wheels_per_side: 1  # actually 2, but both are controlled by 1 signal
-    wheel_radius: 0.034
+    wheel_separation: 0.10
+    #wheels_per_side: 1  # actually 2, but both are controlled by 1 signal
+    wheel_radius: 0.015
 
     wheel_separation_multiplier: 1.0
     left_wheel_radius_multiplier: 1.0
     right_wheel_radius_multiplier: 1.0
 
-    publish_rate: 30.0
+    publish_rate: 50.0
     odom_frame_id: odom
     base_frame_id: base_link
     pose_covariance_diagonal : [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
@@ -30,9 +31,9 @@ diff_drive_controller:
     enable_odom_tf: true
 
     cmd_vel_timeout: 0.5
-    # publish_limited_velocity: true
+    #publish_limited_velocity: true
     use_stamped_vel: false
-    # velocity_rolling_window_size: 10
+    #velocity_rolling_window_size: 10
 
     # Velocity and acceleration limits
     # Whenever a min_* is unspecified, default to -max_*
@@ -54,46 +55,3 @@ diff_drive_controller:
     angular.z.min_acceleration: -1.0
     angular.z.max_jerk: 0.0
     angular.z.min_jerk: 0.0
-
-extender_controller:
-  ros__parameters:
-    type: velocity_controllers/JointGroupVelocityController
-    joints: 
-    - "slider_left_joint"
-
-    publish_rate: 30.0
-
-    # Velocity and acceleration limits
-    has_velocity_limits: true
-    has_acceleration_limits: true
-    has_jerk_limits: false
-    max_velocity: 5.0
-    min_velocity: -5.0
-    max_acceleration: 0.5
-    max_jerk: 0.0
-    min_jerk: 0.0
-
-    # Topic for receiving velocity setpoints
-    command_topic: "cmd_vel_extender"
-    command_interface: 
-    - "velocity"
-    state_inferfaces:
-    - "position"
-    - "velocity"
-
-    # Encoder feedback
-    encoder:
-      type: "incremental"
-      resolution: 3200  # Number of pulses per revolution
-      joint: "slider_left_joint"
-      topic: "encoder_feedback"
-
-    # PID controller
-    pid:
-      p: 49.0
-      i: 1.0
-      d: 1.0
-      i_clamp: 0.0
-      antiwindup: false
-
-  

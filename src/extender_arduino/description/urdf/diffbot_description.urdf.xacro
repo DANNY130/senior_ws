@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="diffbot" params="prefix">
+
+  <!-- Constants for robot dimensions -->
+  <xacro:property name="PI" value="3.1415926535897931"/>
+  <xacro:property name="base_mass" value="0.3" /> <!-- arbitrary value for base mass -->
+  <xacro:property name="base_width" value="0.1" />
+  <xacro:property name="base_length" value="0.1" />
+  <xacro:property name="base_height" value="0.05" />
+  <xacro:property name="extender_mass" value="0.3" /> <!-- arbitrary value for extender mass -->
+  <xacro:property name="extender_len" value="0.020" />
+  <xacro:property name="extender_radius" value="0.015" />
+  <xacro:property name="z_offset" value="-${base_height/2}" /> <!-- Space btw top of beam and the each joint -->
+
+  <!-- Base Link -->
+  <link name="${prefix}base_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_width} ${base_length} ${base_height}"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_width} ${base_length} ${base_height}"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${base_mass}"/>
+      <inertia
+        ixx="${base_mass / 12.0 * (base_length*base_length + base_height*base_height)}" ixy="0.0" ixz="0.0"
+        iyy="${base_mass / 12.0 * (base_height*base_height + base_width*base_width)}" iyz="0.0"
+        izz="${base_mass / 12.0 * (base_width*base_width + base_length*base_length)}"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}extender_joint" type="continuous">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}extender"/>
+      <origin xyz="0 -${base_width/2} ${z_offset}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <dynamics damping="0.2"/>
+    </joint>
+
+    <!-- Extender Link -->
+    <link name="${prefix}extender">
+      <collision>
+        <origin xyz="0 0 0" rpy="${PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${extender_len}" radius="${extender_radius}"/>
+        </geometry>
+      </collision>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="${PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${extender_len}" radius="${extender_radius}"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+
+      <inertial>
+        <origin xyz="0 0 0" rpy="${PI/2} 0 0"/>
+        <mass value="${extender_mass}"/>
+        <inertia
+          ixx="${extender_mass / 12.0 * (3*extender_radius + extender_len*extender_len)}" ixy="0.0" ixz="0.0"
+          iyy="${extender_mass / 12.0 * extender_radius*extender_radius}" iyz="0.0"
+          izz="${extender_mass / 12.0 * extender_radius*extender_radius}"/>
+        </inertial>
+      </link>
+
+  </xacro:macro>
+
+</robot>
