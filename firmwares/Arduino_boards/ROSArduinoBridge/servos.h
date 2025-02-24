@@ -10,7 +10,7 @@
 // Decreasing this number will make the servo sweep more quickly.
 // Zero is the default number and will make the servos spin at
 // full speed.  150 ms makes them spin very slowly.
-int stepDelay [N_SERVOS] = { 0, 0 }; // ms
+int stepDelay [N_SERVOS] = { 6, 6 }; // ms
 
 // Pins
 byte servoPins [N_SERVOS] = { 3, 4 };
