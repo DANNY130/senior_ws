@@ -1,0 +1,24 @@
+[3.392s] Invoking command in '/home/olympusolutions/senior_ws/build/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data
+[6.059s] running develop
+[8.770s] running egg_info
+[8.772s] creating my_package.egg-info
+[8.988s] writing my_package.egg-info/PKG-INFO
+[8.990s] writing dependency_links to my_package.egg-info/dependency_links.txt
+[8.991s] writing entry points to my_package.egg-info/entry_points.txt
+[8.994s] writing requirements to my_package.egg-info/requires.txt
+[8.995s] writing top-level names to my_package.egg-info/top_level.txt
+[8.998s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[9.194s] reading manifest file 'my_package.egg-info/SOURCES.txt'
+[9.196s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[9.268s] running build_ext
+[9.269s] Creating /home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages/my-package.egg-link (link to .)
+[9.271s] Installing my_node script to /home/olympusolutions/senior_ws/install/my_package/lib/my_package
+[9.273s] 
+[9.273s] Installed /home/olympusolutions/senior_ws/build/my_package
+[9.273s] running symlink_data
+[9.275s] creating /home/olympusolutions/senior_ws/install/my_package/share/ament_index
+[9.275s] creating /home/olympusolutions/senior_ws/install/my_package/share/ament_index/resource_index
+[9.277s] creating /home/olympusolutions/senior_ws/install/my_package/share/ament_index/resource_index/packages
+[9.277s] symbolically linking /home/olympusolutions/senior_ws/build/my_package/resource/my_package -> /home/olympusolutions/senior_ws/install/my_package/share/ament_index/resource_index/packages
+[9.280s] symbolically linking /home/olympusolutions/senior_ws/build/my_package/package.xml -> /home/olympusolutions/senior_ws/install/my_package/share/my_package
+[9.450s] Invoked command in '/home/olympusolutions/senior_ws/build/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data

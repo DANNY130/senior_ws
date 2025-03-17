@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
+#include "serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h"
 #include "serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h"
 #include "serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h"
-#include "serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

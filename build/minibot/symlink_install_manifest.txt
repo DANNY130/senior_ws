@@ -22,6 +22,7 @@
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/joystick_teleop.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard_combine.launch.py
+/home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/navigation_launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot_remote_station.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim.launch.py
@@ -49,6 +50,7 @@
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/joystick_teleop.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard_combine.launch.py
+/home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/navigation_launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot_remote_station.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim.launch.py

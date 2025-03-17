@@ -1,1 +1,0 @@
-/home/olympusolutions/senior_ws/src/imu_publisher/setup.py

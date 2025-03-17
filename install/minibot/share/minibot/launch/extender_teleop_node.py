@@ -1,1 +1,0 @@
-/home/olympusolutions/senior_ws/src/minibot/launch/extender_teleop_node.py
