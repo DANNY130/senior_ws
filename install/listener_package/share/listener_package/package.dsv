@@ -1,0 +1,9 @@
+source;share/listener_package/hook/pythonpath.ps1
+source;share/listener_package/hook/pythonpath.dsv
+source;share/listener_package/hook/pythonpath.sh
+source;share/listener_package/hook/ament_prefix_path.ps1
+source;share/listener_package/hook/ament_prefix_path.dsv
+source;share/listener_package/hook/ament_prefix_path.sh
+source;../../build/listener_package/share/listener_package/hook/pythonpath_develop.ps1
+source;../../build/listener_package/share/listener_package/hook/pythonpath_develop.dsv
+source;../../build/listener_package/share/listener_package/hook/pythonpath_develop.sh

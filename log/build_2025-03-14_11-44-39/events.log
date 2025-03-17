@@ -1,0 +1,828 @@
+[0.000000] (-) TimerEvent: {}
+[0.000392] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict()}
+[0.000820] (extender_arduino) JobQueued: {'identifier': 'extender_arduino', 'dependencies': OrderedDict()}
+[0.001253] (joy_tester) JobQueued: {'identifier': 'joy_tester', 'dependencies': OrderedDict()}
+[0.002038] (listener_package) JobQueued: {'identifier': 'listener_package', 'dependencies': OrderedDict()}
+[0.002172] (minibot) JobQueued: {'identifier': 'minibot', 'dependencies': OrderedDict()}
+[0.002217] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.002259] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002299] (serial_motor_demo_msgs) JobQueued: {'identifier': 'serial_motor_demo_msgs', 'dependencies': OrderedDict()}
+[0.002322] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.002341] (twist_stamper) JobQueued: {'identifier': 'twist_stamper', 'dependencies': OrderedDict()}
+[0.002359] (serial_motor_demo) JobQueued: {'identifier': 'serial_motor_demo', 'dependencies': OrderedDict({'serial_motor_demo_msgs': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs'})}
+[0.002417] (serial_motor_demo_msgs) JobStarted: {'identifier': 'serial_motor_demo_msgs'}
+[0.099650] (-) TimerEvent: {}
+[0.148919] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.165158] (extender_arduino) JobStarted: {'identifier': 'extender_arduino'}
+[0.182214] (joy_tester) JobStarted: {'identifier': 'joy_tester'}
+[0.199780] (-) TimerEvent: {}
+[0.261446] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'cmake'}
+[0.271479] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'build'}
+[0.272549] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs', '--', '-j4', '-l4'], 'cwd': '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[0.299868] (-) TimerEvent: {}
+[0.324660] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.334136] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[0.336511] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olympusolutions/senior_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/olympusolutions/senior_ws/build/diffdrive_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/diffdrive_arduino', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[0.339661] (extender_arduino) JobProgress: {'identifier': 'extender_arduino', 'progress': 'cmake'}
+[0.348057] (extender_arduino) JobProgress: {'identifier': 'extender_arduino', 'progress': 'build'}
+[0.348473] (extender_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olympusolutions/senior_ws/build/extender_arduino', '--', '-j4', '-l4'], 'cwd': '/home/olympusolutions/senior_ws/build/extender_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/extender_arduino', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[0.400002] (-) TimerEvent: {}
+[0.500402] (-) TimerEvent: {}
+[0.600785] (-) TimerEvent: {}
+[0.701215] (-) TimerEvent: {}
+[0.801651] (-) TimerEvent: {}
+[0.902135] (-) TimerEvent: {}
+[1.002558] (-) TimerEvent: {}
+[1.102963] (-) TimerEvent: {}
+[1.203376] (-) TimerEvent: {}
+[1.303770] (-) TimerEvent: {}
+[1.371049] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description\n'}
+[1.384188] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_serial_motor_demo_msgs\n'}
+[1.403893] (-) TimerEvent: {}
+[1.442967] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  3%] Built target serial_motor_demo_msgs__cpp\n'}
+[1.504013] (-) TimerEvent: {}
+[1.531329] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c\n'}
+[1.604140] (-) TimerEvent: {}
+[1.704739] (-) TimerEvent: {}
+[1.805216] (-) TimerEvent: {}
+[1.905657] (-) TimerEvent: {}
+[2.006095] (-) TimerEvent: {}
+[2.106522] (-) TimerEvent: {}
+[2.173303] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 33%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.192538] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 42%] Built target serial_motor_demo_msgs__rosidl_typesupport_c\n'}
+[2.192877] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c\n'}
+[2.193048] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[2.199294] (extender_arduino) StdoutLine: {'line': b'[100%] Built target extender_arduino\n'}
+[2.206672] (-) TimerEvent: {}
+[2.284052] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 61%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.304427] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp\n'}
+[2.304758] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.307253] (-) TimerEvent: {}
+[2.357455] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs\n'}
+[2.407366] (-) TimerEvent: {}
+[2.421658] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 81%] Built target serial_motor_demo_msgs__py\n'}
+[2.507483] (-) TimerEvent: {}
+[2.536138] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py\n'}
+[2.607605] (-) TimerEvent: {}
+[2.628667] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 92%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c\n'}
+[2.629970] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c\n'}
+[2.647863] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[2.707719] (-) TimerEvent: {}
+[2.735386] (serial_motor_demo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.774539] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[2.775112] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing serial_motor_demo_msgs.egg-info/PKG-INFO\n'}
+[2.776691] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt\n'}
+[2.779064] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt\n'}
+[2.787643] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[2.808060] (-) TimerEvent: {}
+[2.815753] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/olympusolutions/senior_ws/build/diffdrive_arduino'], 'cwd': '/home/olympusolutions/senior_ws/build/diffdrive_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/diffdrive_arduino', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[2.818539] (extender_arduino) CommandEnded: {'returncode': 0}
+[2.822707] (extender_arduino) JobProgress: {'identifier': 'extender_arduino', 'progress': 'install'}
+[2.822821] (extender_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/olympusolutions/senior_ws/build/extender_arduino'], 'cwd': '/home/olympusolutions/senior_ws/build/extender_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/extender_arduino', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[2.839061] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.843527] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.844274] (extender_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.844501] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino//diffdrive_arduino.xml\n'}
+[2.849420] (extender_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.850562] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp\n'}
+[2.850748] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp\n'}
+[2.851432] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h\n'}
+[2.851829] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp\n'}
+[2.851935] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py\n'}
+[2.852489] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro\n'}
+[2.852922] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro\n'}
+[2.853065] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino//extender_arduino.xml\n'}
+[2.854137] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/arduino_comms.hpp\n'}
+[2.854879] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/diffbot_system.hpp\n'}
+[2.855585] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/gripper.hpp\n'}
+[2.856055] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/visibility_control.h\n'}
+[2.856606] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/wheel.hpp\n'}
+[2.857224] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro\n'}
+[2.857410] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro\n'}
+[2.857536] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/launch/view_robot.launch.py\n'}
+[2.857652] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz\n'}
+[2.857751] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz\n'}
+[2.857837] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/ros2_control/diffbot.ros2_control.xacro\n'}
+[2.857936] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/urdf/diffbot.materials.xacro\n'}
+[2.859224] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/urdf/diffbot.urdf.xacro\n'}
+[2.859342] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/urdf/diffbot_description.urdf.xacro\n'}
+[2.859431] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py\n'}
+[2.859527] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml\n'}
+[2.859643] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/rviz/diffbot.rviz\n'}
+[2.859730] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/rviz/diffbot_view.rviz\n'}
+[2.859813] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[2.859898] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[2.860006] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[2.860151] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[2.860263] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[2.860373] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/launch/diffbot.launch.py\n'}
+[2.860492] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/config/diffbot_controllers.yaml\n'}
+[2.860600] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/config/extender_controllers.yaml\n'}
+[2.860690] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/library_path.sh\n'}
+[2.860792] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[2.860884] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/library_path.dsv\n'}
+[2.860970] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/package_run_dependencies/extender_arduino\n'}
+[2.861106] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[2.861225] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[2.861323] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[2.861419] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[2.861502] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/parent_prefix_path/extender_arduino\n'}
+[2.861591] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/ament_prefix_path.sh\n'}
+[2.861683] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/ament_prefix_path.dsv\n'}
+[2.861791] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/path.sh\n'}
+[2.861878] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[2.861963] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[2.865312] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[2.865432] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/path.dsv\n'}
+[2.865542] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.bash\n'}
+[2.865631] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.sh\n'}
+[2.865721] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.zsh\n'}
+[2.865807] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.dsv\n'}
+[2.865892] (extender_arduino) StdoutLine: {'line': b'-- Symlinking: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.dsv\n'}
+[2.878823] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/packages/extender_arduino\n'}
+[2.880062] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/extender_arduino\n'}
+[2.880412] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[2.880560] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[2.880677] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.880802] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.880904] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.881023] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.881129] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/extender_arduinoConfig.cmake\n'}
+[2.881220] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/extender_arduinoConfig-version.cmake\n'}
+[2.881306] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[2.881426] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[2.881516] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.xml\n'}
+[2.881603] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[2.883822] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/olympusolutions/senior_ws/install/extender_arduino/lib/libextender_arduino.so\n'}
+[2.884175] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/olympusolutions/senior_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[2.886310] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake\n'}
+[2.887367] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake\n'}
+[2.887590] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/export_extender_arduinoExport.cmake\n'}
+[2.887701] (extender_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/export_extender_arduinoExport-noconfig.cmake\n'}
+[2.891476] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[2.908148] (-) TimerEvent: {}
+[2.911193] (serial_motor_demo_msgs) StdoutLine: {'line': b"reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[2.916241] (serial_motor_demo_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[2.998231] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[3.006696] (listener_package) JobStarted: {'identifier': 'listener_package'}
+[3.009740] (-) TimerEvent: {}
+[3.015004] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg\n'}
+[3.020890] (extender_arduino) CommandEnded: {'returncode': 0}
+[3.055456] (extender_arduino) JobEnded: {'identifier': 'extender_arduino', 'rc': 0}
+[3.057308] (minibot) JobStarted: {'identifier': 'minibot'}
+[3.109909] (-) TimerEvent: {}
+[3.210432] (-) TimerEvent: {}
+[3.310858] (-) TimerEvent: {}
+[3.411286] (-) TimerEvent: {}
+[3.511772] (-) TimerEvent: {}
+[3.612281] (-) TimerEvent: {}
+[3.712745] (-) TimerEvent: {}
+[3.813156] (-) TimerEvent: {}
+[3.913577] (-) TimerEvent: {}
+[4.013970] (-) TimerEvent: {}
+[4.117064] (-) TimerEvent: {}
+[4.217455] (-) TimerEvent: {}
+[4.317887] (-) TimerEvent: {}
+[4.418360] (-) TimerEvent: {}
+[4.518788] (-) TimerEvent: {}
+[4.619203] (-) TimerEvent: {}
+[4.719608] (-) TimerEvent: {}
+[4.820008] (-) TimerEvent: {}
+[4.920409] (-) TimerEvent: {}
+[5.020815] (-) TimerEvent: {}
+[5.121237] (-) TimerEvent: {}
+[5.221671] (-) TimerEvent: {}
+[5.322074] (-) TimerEvent: {}
+[5.422480] (-) TimerEvent: {}
+[5.522876] (-) TimerEvent: {}
+[5.623292] (-) TimerEvent: {}
+[5.723707] (-) TimerEvent: {}
+[5.824130] (-) TimerEvent: {}
+[5.924612] (-) TimerEvent: {}
+[6.025190] (-) TimerEvent: {}
+[6.125707] (-) TimerEvent: {}
+[6.226131] (-) TimerEvent: {}
+[6.326572] (-) TimerEvent: {}
+[6.426971] (-) TimerEvent: {}
+[6.527387] (-) TimerEvent: {}
+[6.627781] (-) TimerEvent: {}
+[6.728281] (-) TimerEvent: {}
+[6.828735] (-) TimerEvent: {}
+[6.929225] (-) TimerEvent: {}
+[7.029708] (-) TimerEvent: {}
+[7.130437] (-) TimerEvent: {}
+[7.230891] (-) TimerEvent: {}
+[7.331366] (-) TimerEvent: {}
+[7.431807] (-) TimerEvent: {}
+[7.532264] (-) TimerEvent: {}
+[7.632656] (-) TimerEvent: {}
+[7.733048] (-) TimerEvent: {}
+[7.833496] (-) TimerEvent: {}
+[7.933969] (-) TimerEvent: {}
+[8.034414] (-) TimerEvent: {}
+[8.134834] (-) TimerEvent: {}
+[8.235262] (-) TimerEvent: {}
+[8.335654] (-) TimerEvent: {}
+[8.436051] (-) TimerEvent: {}
+[8.536495] (-) TimerEvent: {}
+[8.636924] (-) TimerEvent: {}
+[8.737365] (-) TimerEvent: {}
+[8.837774] (-) TimerEvent: {}
+[8.938200] (-) TimerEvent: {}
+[10.189370] (-) TimerEvent: {}
+[10.938624] (-) TimerEvent: {}
+[11.039070] (-) TimerEvent: {}
+[11.139525] (-) TimerEvent: {}
+[11.239944] (-) TimerEvent: {}
+[11.340356] (-) TimerEvent: {}
+[11.440705] (-) TimerEvent: {}
+[11.658714] (-) TimerEvent: {}
+[11.759066] (-) TimerEvent: {}
+[11.859425] (-) TimerEvent: {}
+[11.959856] (-) TimerEvent: {}
+[12.060285] (-) TimerEvent: {}
+[12.160752] (-) TimerEvent: {}
+[12.261238] (-) TimerEvent: {}
+[12.361631] (-) TimerEvent: {}
+[12.462037] (-) TimerEvent: {}
+[12.562405] (-) TimerEvent: {}
+[12.662748] (-) TimerEvent: {}
+[12.763011] (-) TimerEvent: {}
+[12.863291] (-) TimerEvent: {}
+[12.963623] (-) TimerEvent: {}
+[13.064048] (-) TimerEvent: {}
+[13.164449] (-) TimerEvent: {}
+[13.264848] (-) TimerEvent: {}
+[13.365288] (-) TimerEvent: {}
+[13.465720] (-) TimerEvent: {}
+[13.566131] (-) TimerEvent: {}
+[13.666506] (-) TimerEvent: {}
+[13.766887] (-) TimerEvent: {}
+[13.867326] (-) TimerEvent: {}
+[13.967730] (-) TimerEvent: {}
+[14.068148] (-) TimerEvent: {}
+[14.168506] (-) TimerEvent: {}
+[14.268900] (-) TimerEvent: {}
+[14.369301] (-) TimerEvent: {}
+[14.469720] (-) TimerEvent: {}
+[14.570193] (-) TimerEvent: {}
+[14.670651] (-) TimerEvent: {}
+[14.771104] (-) TimerEvent: {}
+[14.871551] (-) TimerEvent: {}
+[14.972036] (-) TimerEvent: {}
+[15.072503] (-) TimerEvent: {}
+[15.172923] (-) TimerEvent: {}
+[15.273275] (-) TimerEvent: {}
+[15.373680] (-) TimerEvent: {}
+[15.474137] (-) TimerEvent: {}
+[15.574555] (-) TimerEvent: {}
+[15.674998] (-) TimerEvent: {}
+[15.775422] (-) TimerEvent: {}
+[15.875863] (-) TimerEvent: {}
+[15.976517] (-) TimerEvent: {}
+[16.076954] (-) TimerEvent: {}
+[16.177389] (-) TimerEvent: {}
+[16.277812] (-) TimerEvent: {}
+[16.378269] (-) TimerEvent: {}
+[16.478710] (-) TimerEvent: {}
+[16.590001] (-) TimerEvent: {}
+[16.690412] (-) TimerEvent: {}
+[16.790825] (-) TimerEvent: {}
+[16.891264] (-) TimerEvent: {}
+[16.991681] (-) TimerEvent: {}
+[17.092125] (-) TimerEvent: {}
+[17.192561] (-) TimerEvent: {}
+[17.293004] (-) TimerEvent: {}
+[17.393440] (-) TimerEvent: {}
+[17.493852] (-) TimerEvent: {}
+[17.594266] (-) TimerEvent: {}
+[17.694640] (-) TimerEvent: {}
+[17.795090] (-) TimerEvent: {}
+[17.895491] (-) TimerEvent: {}
+[17.995868] (-) TimerEvent: {}
+[18.096276] (-) TimerEvent: {}
+[18.196706] (-) TimerEvent: {}
+[18.297163] (-) TimerEvent: {}
+[18.397535] (-) TimerEvent: {}
+[18.497968] (-) TimerEvent: {}
+[18.598433] (-) TimerEvent: {}
+[18.698830] (-) TimerEvent: {}
+[18.799253] (-) TimerEvent: {}
+[18.899664] (-) TimerEvent: {}
+[19.000075] (-) TimerEvent: {}
+[19.100532] (-) TimerEvent: {}
+[19.200994] (-) TimerEvent: {}
+[19.301432] (-) TimerEvent: {}
+[19.401882] (-) TimerEvent: {}
+[19.502317] (-) TimerEvent: {}
+[19.602736] (-) TimerEvent: {}
+[19.703177] (-) TimerEvent: {}
+[19.803600] (-) TimerEvent: {}
+[19.904042] (-) TimerEvent: {}
+[20.004483] (-) TimerEvent: {}
+[20.104925] (-) TimerEvent: {}
+[20.205362] (-) TimerEvent: {}
+[20.305771] (-) TimerEvent: {}
+[20.406235] (-) TimerEvent: {}
+[20.506646] (-) TimerEvent: {}
+[20.607045] (-) TimerEvent: {}
+[20.707464] (-) TimerEvent: {}
+[20.807895] (-) TimerEvent: {}
+[20.908365] (-) TimerEvent: {}
+[21.008805] (-) TimerEvent: {}
+[21.109251] (-) TimerEvent: {}
+[21.209599] (-) TimerEvent: {}
+[21.310000] (-) TimerEvent: {}
+[21.410405] (-) TimerEvent: {}
+[21.510814] (-) TimerEvent: {}
+[21.611258] (-) TimerEvent: {}
+[21.711692] (-) TimerEvent: {}
+[21.812193] (-) TimerEvent: {}
+[21.912610] (-) TimerEvent: {}
+[22.013024] (-) TimerEvent: {}
+[22.113425] (-) TimerEvent: {}
+[22.213798] (-) TimerEvent: {}
+[22.314229] (-) TimerEvent: {}
+[22.431502] (-) TimerEvent: {}
+[22.531928] (-) TimerEvent: {}
+[22.632317] (-) TimerEvent: {}
+[22.732711] (-) TimerEvent: {}
+[22.833156] (-) TimerEvent: {}
+[22.933587] (-) TimerEvent: {}
+[23.033966] (-) TimerEvent: {}
+[23.134378] (-) TimerEvent: {}
+[23.234778] (-) TimerEvent: {}
+[23.335230] (-) TimerEvent: {}
+[23.435652] (-) TimerEvent: {}
+[23.536043] (-) TimerEvent: {}
+[23.636454] (-) TimerEvent: {}
+[23.736874] (-) TimerEvent: {}
+[23.837319] (-) TimerEvent: {}
+[23.937687] (-) TimerEvent: {}
+[24.038039] (-) TimerEvent: {}
+[24.138461] (-) TimerEvent: {}
+[24.238867] (-) TimerEvent: {}
+[24.349073] (-) TimerEvent: {}
+[24.539138] (-) TimerEvent: {}
+[24.639548] (-) TimerEvent: {}
+[24.739952] (-) TimerEvent: {}
+[24.840348] (-) TimerEvent: {}
+[24.940767] (-) TimerEvent: {}
+[25.041184] (-) TimerEvent: {}
+[25.175308] (-) TimerEvent: {}
+[25.367544] (-) TimerEvent: {}
+[25.467940] (-) TimerEvent: {}
+[25.568381] (-) TimerEvent: {}
+[25.668788] (-) TimerEvent: {}
+[25.769202] (-) TimerEvent: {}
+[25.869613] (-) TimerEvent: {}
+[25.970034] (-) TimerEvent: {}
+[26.070427] (-) TimerEvent: {}
+[26.170849] (-) TimerEvent: {}
+[26.271312] (-) TimerEvent: {}
+[26.371716] (-) TimerEvent: {}
+[26.472148] (-) TimerEvent: {}
+[26.572567] (-) TimerEvent: {}
+[26.672942] (-) TimerEvent: {}
+[26.773404] (-) TimerEvent: {}
+[26.873826] (-) TimerEvent: {}
+[26.974272] (-) TimerEvent: {}
+[27.074685] (-) TimerEvent: {}
+[27.175134] (-) TimerEvent: {}
+[27.275532] (-) TimerEvent: {}
+[27.375930] (-) TimerEvent: {}
+[27.476366] (-) TimerEvent: {}
+[27.576776] (-) TimerEvent: {}
+[27.677220] (-) TimerEvent: {}
+[27.777643] (-) TimerEvent: {}
+[27.878040] (-) TimerEvent: {}
+[27.978451] (-) TimerEvent: {}
+[28.078920] (-) TimerEvent: {}
+[28.179356] (-) TimerEvent: {}
+[28.279795] (-) TimerEvent: {}
+[28.380235] (-) TimerEvent: {}
+[28.480659] (-) TimerEvent: {}
+[28.581059] (-) TimerEvent: {}
+[28.681472] (-) TimerEvent: {}
+[28.781875] (-) TimerEvent: {}
+[28.882342] (-) TimerEvent: {}
+[28.982777] (-) TimerEvent: {}
+[29.083200] (-) TimerEvent: {}
+[29.183671] (-) TimerEvent: {}
+[29.284089] (-) TimerEvent: {}
+[29.384493] (-) TimerEvent: {}
+[29.484905] (-) TimerEvent: {}
+[29.686960] (-) TimerEvent: {}
+[29.854028] (-) TimerEvent: {}
+[29.954420] (-) TimerEvent: {}
+[30.054836] (-) TimerEvent: {}
+[30.155282] (-) TimerEvent: {}
+[30.293652] (-) TimerEvent: {}
+[30.429157] (-) TimerEvent: {}
+[30.535881] (-) TimerEvent: {}
+[30.636308] (-) TimerEvent: {}
+[30.736722] (-) TimerEvent: {}
+[30.862239] (-) TimerEvent: {}
+[30.962636] (-) TimerEvent: {}
+[31.081411] (-) TimerEvent: {}
+[31.191911] (-) TimerEvent: {}
+[31.292280] (-) TimerEvent: {}
+[31.399740] (-) TimerEvent: {}
+[31.619219] (-) TimerEvent: {}
+[31.783543] (-) TimerEvent: {}
+[31.883932] (-) TimerEvent: {}
+[32.024345] (-) TimerEvent: {}
+[32.180298] (-) TimerEvent: {}
+[32.521640] (-) TimerEvent: {}
+[32.622048] (-) TimerEvent: {}
+[32.722448] (-) TimerEvent: {}
+[32.822818] (-) TimerEvent: {}
+[32.923258] (-) TimerEvent: {}
+[33.023671] (-) TimerEvent: {}
+[33.124058] (-) TimerEvent: {}
+[33.233001] (-) TimerEvent: {}
+[33.353036] (-) TimerEvent: {}
+[33.453444] (-) TimerEvent: {}
+[33.553857] (-) TimerEvent: {}
+[33.654270] (-) TimerEvent: {}
+[33.754668] (-) TimerEvent: {}
+[34.089844] (-) TimerEvent: {}
+[35.697251] (-) TimerEvent: {}
+[36.028134] (-) TimerEvent: {}
+[36.556723] (-) TimerEvent: {}
+[36.672615] (-) TimerEvent: {}
+[36.773050] (-) TimerEvent: {}
+[36.873459] (-) TimerEvent: {}
+[36.973913] (-) TimerEvent: {}
+[37.192603] (-) TimerEvent: {}
+[37.293029] (-) TimerEvent: {}
+[37.393433] (-) TimerEvent: {}
+[37.493801] (-) TimerEvent: {}
+[37.594228] (-) TimerEvent: {}
+[37.694617] (-) TimerEvent: {}
+[37.795036] (-) TimerEvent: {}
+[37.895433] (-) TimerEvent: {}
+[37.995864] (-) TimerEvent: {}
+[38.096301] (-) TimerEvent: {}
+[38.196693] (-) TimerEvent: {}
+[38.297117] (-) TimerEvent: {}
+[38.659773] (-) TimerEvent: {}
+[40.252595] (-) TimerEvent: {}
+[40.681869] (-) TimerEvent: {}
+[40.915787] (-) TimerEvent: {}
+[41.257128] (-) TimerEvent: {}
+[41.488464] (-) TimerEvent: {}
+[41.616265] (-) TimerEvent: {}
+[41.716682] (-) TimerEvent: {}
+[41.817080] (-) TimerEvent: {}
+[41.917437] (-) TimerEvent: {}
+[42.017872] (-) TimerEvent: {}
+[42.136516] (-) TimerEvent: {}
+[42.269410] (-) TimerEvent: {}
+[42.390071] (-) TimerEvent: {}
+[43.150408] (-) TimerEvent: {}
+[46.323186] (-) TimerEvent: {}
+[46.636162] (-) TimerEvent: {}
+[46.782916] (-) TimerEvent: {}
+[46.883373] (-) TimerEvent: {}
+[46.983807] (-) TimerEvent: {}
+[47.084213] (-) TimerEvent: {}
+[47.208900] (-) TimerEvent: {}
+[47.309371] (-) TimerEvent: {}
+[47.435572] (-) TimerEvent: {}
+[47.536017] (-) TimerEvent: {}
+[47.636430] (-) TimerEvent: {}
+[47.736849] (-) TimerEvent: {}
+[47.888839] (-) TimerEvent: {}
+[47.989272] (-) TimerEvent: {}
+[48.089687] (-) TimerEvent: {}
+[48.211929] (-) TimerEvent: {}
+[48.312339] (-) TimerEvent: {}
+[48.436319] (-) TimerEvent: {}
+[48.536743] (-) TimerEvent: {}
+[48.637164] (-) TimerEvent: {}
+[48.737607] (-) TimerEvent: {}
+[48.838051] (-) TimerEvent: {}
+[48.938484] (-) TimerEvent: {}
+[49.038904] (-) TimerEvent: {}
+[49.139359] (-) TimerEvent: {}
+[49.239786] (-) TimerEvent: {}
+[49.340220] (-) TimerEvent: {}
+[49.440642] (-) TimerEvent: {}
+[49.541066] (-) TimerEvent: {}
+[49.641441] (-) TimerEvent: {}
+[49.741817] (-) TimerEvent: {}
+[49.842205] (-) TimerEvent: {}
+[49.942611] (-) TimerEvent: {}
+[50.043026] (-) TimerEvent: {}
+[50.143456] (-) TimerEvent: {}
+[50.243890] (-) TimerEvent: {}
+[50.344325] (-) TimerEvent: {}
+[50.444750] (-) TimerEvent: {}
+[50.545157] (-) TimerEvent: {}
+[50.645532] (-) TimerEvent: {}
+[50.745944] (-) TimerEvent: {}
+[50.846331] (-) TimerEvent: {}
+[50.946675] (-) TimerEvent: {}
+[51.047039] (-) TimerEvent: {}
+[51.147441] (-) TimerEvent: {}
+[51.247817] (-) TimerEvent: {}
+[51.348228] (-) TimerEvent: {}
+[51.448644] (-) TimerEvent: {}
+[51.549060] (-) TimerEvent: {}
+[51.649516] (-) TimerEvent: {}
+[51.749922] (-) TimerEvent: {}
+[51.850329] (-) TimerEvent: {}
+[51.950727] (-) TimerEvent: {}
+[52.051151] (-) TimerEvent: {}
+[52.151535] (-) TimerEvent: {}
+[52.251934] (-) TimerEvent: {}
+[52.352393] (-) TimerEvent: {}
+[52.452767] (-) TimerEvent: {}
+[52.553209] (-) TimerEvent: {}
+[52.653595] (-) TimerEvent: {}
+[52.754024] (-) TimerEvent: {}
+[52.854440] (-) TimerEvent: {}
+[52.954827] (-) TimerEvent: {}
+[53.055225] (-) TimerEvent: {}
+[53.155603] (-) TimerEvent: {}
+[53.256065] (-) TimerEvent: {}
+[53.356497] (-) TimerEvent: {}
+[53.456865] (-) TimerEvent: {}
+[53.557286] (-) TimerEvent: {}
+[53.657699] (-) TimerEvent: {}
+[53.758062] (-) TimerEvent: {}
+[53.858465] (-) TimerEvent: {}
+[53.958825] (-) TimerEvent: {}
+[54.059197] (-) TimerEvent: {}
+[54.159593] (-) TimerEvent: {}
+[54.260016] (-) TimerEvent: {}
+[54.360395] (-) TimerEvent: {}
+[54.460787] (-) TimerEvent: {}
+[54.561189] (-) TimerEvent: {}
+[54.661600] (-) TimerEvent: {}
+[54.762027] (-) TimerEvent: {}
+[54.862452] (-) TimerEvent: {}
+[54.962857] (-) TimerEvent: {}
+[55.063233] (-) TimerEvent: {}
+[55.163615] (-) TimerEvent: {}
+[55.264023] (-) TimerEvent: {}
+[55.364415] (-) TimerEvent: {}
+[55.464827] (-) TimerEvent: {}
+[55.565269] (-) TimerEvent: {}
+[55.665679] (-) TimerEvent: {}
+[55.766078] (-) TimerEvent: {}
+[55.866492] (-) TimerEvent: {}
+[56.017898] (-) TimerEvent: {}
+[56.151517] (-) TimerEvent: {}
+[56.461741] (-) TimerEvent: {}
+[56.609076] (-) TimerEvent: {}
+[56.709478] (-) TimerEvent: {}
+[56.809812] (-) TimerEvent: {}
+[56.910234] (-) TimerEvent: {}
+[57.019908] (-) TimerEvent: {}
+[57.142654] (-) TimerEvent: {}
+[57.243040] (-) TimerEvent: {}
+[57.343407] (-) TimerEvent: {}
+[57.443807] (-) TimerEvent: {}
+[57.544232] (-) TimerEvent: {}
+[57.644631] (-) TimerEvent: {}
+[57.774237] (-) TimerEvent: {}
+[57.899609] (-) TimerEvent: {}
+[58.033676] (-) TimerEvent: {}
+[58.134195] (-) TimerEvent: {}
+[58.234587] (-) TimerEvent: {}
+[58.341796] (-) TimerEvent: {}
+[58.538507] (serial_motor_demo_msgs) CommandEnded: {'returncode': 0}
+[58.654251] (-) TimerEvent: {}
+[58.712660] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'install'}
+[58.751163] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs'], 'cwd': '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[58.814896] (-) TimerEvent: {}
+[58.947933] (-) TimerEvent: {}
+[59.062051] (-) TimerEvent: {}
+[59.229770] (-) TimerEvent: {}
+[59.330168] (-) TimerEvent: {}
+[59.344129] (minibot) JobProgress: {'identifier': 'minibot', 'progress': 'cmake'}
+[59.436074] (-) TimerEvent: {}
+[59.442366] (minibot) JobProgress: {'identifier': 'minibot', 'progress': 'build'}
+[59.539766] (minibot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olympusolutions/senior_ws/build/minibot', '--', '-j4', '-l4'], 'cwd': '/home/olympusolutions/senior_ws/build/minibot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olympusolutions', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:/home/olympusolutions/senior_ws/install/serial/lib:/home/olympusolutions/senior_ws/install/extender_arduino/lib:/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/olympusolutions', 'OLDPWD': '/home/olympusolutions', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2463', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/olympusolutions/senior_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'olympusolutions', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olympusolutions', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/olympusolutions/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/olympusolutions-desktop:@/tmp/.ICE-unix/2432,unix/olympusolutions-desktop:/tmp/.ICE-unix/2432', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b000c2d_8015_47cb_877c_95ca95cec752', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.ZTHK32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olympusolutions/senior_ws/build/minibot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy'}), 'shell': False}
+[59.650574] (-) TimerEvent: {}
+[59.750879] (-) TimerEvent: {}
+[59.851281] (-) TimerEvent: {}
+[59.951659] (-) TimerEvent: {}
+[60.052068] (-) TimerEvent: {}
+[60.152483] (-) TimerEvent: {}
+[60.315446] (-) TimerEvent: {}
+[60.423933] (-) TimerEvent: {}
+[60.536018] (-) TimerEvent: {}
+[60.636370] (-) TimerEvent: {}
+[60.736758] (-) TimerEvent: {}
+[60.837147] (-) TimerEvent: {}
+[60.937565] (-) TimerEvent: {}
+[61.037998] (-) TimerEvent: {}
+[61.138435] (-) TimerEvent: {}
+[61.238810] (-) TimerEvent: {}
+[61.339242] (-) TimerEvent: {}
+[61.439631] (-) TimerEvent: {}
+[61.540073] (-) TimerEvent: {}
+[61.640458] (-) TimerEvent: {}
+[61.789842] (-) TimerEvent: {}
+[61.890295] (-) TimerEvent: {}
+[61.990713] (-) TimerEvent: {}
+[62.091160] (-) TimerEvent: {}
+[62.191569] (-) TimerEvent: {}
+[62.292011] (-) TimerEvent: {}
+[62.392459] (-) TimerEvent: {}
+[62.492879] (-) TimerEvent: {}
+[62.593320] (-) TimerEvent: {}
+[62.693710] (-) TimerEvent: {}
+[62.794144] (-) TimerEvent: {}
+[62.894505] (-) TimerEvent: {}
+[62.994884] (-) TimerEvent: {}
+[63.095271] (-) TimerEvent: {}
+[63.195656] (-) TimerEvent: {}
+[63.296044] (-) TimerEvent: {}
+[63.396461] (-) TimerEvent: {}
+[63.555707] (-) TimerEvent: {}
+[63.656164] (-) TimerEvent: {}
+[63.756624] (-) TimerEvent: {}
+[63.857080] (-) TimerEvent: {}
+[63.957510] (-) TimerEvent: {}
+[64.057920] (-) TimerEvent: {}
+[64.158331] (-) TimerEvent: {}
+[64.258754] (-) TimerEvent: {}
+[64.359163] (-) TimerEvent: {}
+[64.459569] (-) TimerEvent: {}
+[64.559954] (-) TimerEvent: {}
+[64.660408] (-) TimerEvent: {}
+[64.760835] (-) TimerEvent: {}
+[64.861252] (-) TimerEvent: {}
+[64.961675] (-) TimerEvent: {}
+[65.062042] (-) TimerEvent: {}
+[65.162437] (-) TimerEvent: {}
+[65.262840] (-) TimerEvent: {}
+[65.363306] (-) TimerEvent: {}
+[65.463723] (-) TimerEvent: {}
+[65.564185] (-) TimerEvent: {}
+[65.664598] (-) TimerEvent: {}
+[65.764985] (-) TimerEvent: {}
+[65.865360] (-) TimerEvent: {}
+[65.965750] (-) TimerEvent: {}
+[66.066126] (-) TimerEvent: {}
+[66.166529] (-) TimerEvent: {}
+[66.290661] (-) TimerEvent: {}
+[66.425400] (-) TimerEvent: {}
+[66.624998] (-) TimerEvent: {}
+[66.956942] (-) TimerEvent: {}
+[67.223695] (-) TimerEvent: {}
+[67.324146] (-) TimerEvent: {}
+[67.424566] (-) TimerEvent: {}
+[67.524906] (-) TimerEvent: {}
+[67.625356] (-) TimerEvent: {}
+[67.725778] (-) TimerEvent: {}
+[67.826205] (-) TimerEvent: {}
+[67.926594] (-) TimerEvent: {}
+[68.027013] (-) TimerEvent: {}
+[68.146644] (-) TimerEvent: {}
+[68.247041] (-) TimerEvent: {}
+[68.347403] (-) TimerEvent: {}
+[68.447784] (-) TimerEvent: {}
+[68.568319] (-) TimerEvent: {}
+[68.668751] (-) TimerEvent: {}
+[68.769173] (-) TimerEvent: {}
+[68.869546] (-) TimerEvent: {}
+[68.969928] (-) TimerEvent: {}
+[69.070374] (-) TimerEvent: {}
+[69.170775] (-) TimerEvent: {}
+[69.343680] (-) TimerEvent: {}
+[69.501320] (-) TimerEvent: {}
+[69.601739] (-) TimerEvent: {}
+[69.702124] (-) TimerEvent: {}
+[69.802481] (-) TimerEvent: {}
+[69.902867] (-) TimerEvent: {}
+[70.003308] (-) TimerEvent: {}
+[70.103698] (-) TimerEvent: {}
+[70.204123] (-) TimerEvent: {}
+[70.304538] (-) TimerEvent: {}
+[70.457523] (-) TimerEvent: {}
+[70.686205] (-) TimerEvent: {}
+[70.786636] (-) TimerEvent: {}
+[70.887057] (-) TimerEvent: {}
+[70.987488] (-) TimerEvent: {}
+[71.087931] (-) TimerEvent: {}
+[71.188399] (-) TimerEvent: {}
+[71.288833] (-) TimerEvent: {}
+[71.389300] (-) TimerEvent: {}
+[71.489762] (-) TimerEvent: {}
+[71.590199] (-) TimerEvent: {}
+[71.690631] (-) TimerEvent: {}
+[71.791060] (-) TimerEvent: {}
+[71.891508] (-) TimerEvent: {}
+[71.991929] (-) TimerEvent: {}
+[72.092325] (-) TimerEvent: {}
+[72.192754] (-) TimerEvent: {}
+[72.293230] (-) TimerEvent: {}
+[72.393643] (-) TimerEvent: {}
+[72.494050] (-) TimerEvent: {}
+[72.594476] (-) TimerEvent: {}
+[72.694913] (-) TimerEvent: {}
+[72.795347] (-) TimerEvent: {}
+[72.895773] (-) TimerEvent: {}
+[72.996224] (-) TimerEvent: {}
+[73.096644] (-) TimerEvent: {}
+[73.197114] (-) TimerEvent: {}
+[73.297523] (-) TimerEvent: {}
+[73.397893] (-) TimerEvent: {}
+[73.498294] (-) TimerEvent: {}
+[73.598733] (-) TimerEvent: {}
+[73.699165] (-) TimerEvent: {}
+[73.799568] (-) TimerEvent: {}
+[73.900008] (-) TimerEvent: {}
+[74.000427] (-) TimerEvent: {}
+[74.100833] (-) TimerEvent: {}
+[74.201284] (-) TimerEvent: {}
+[74.301726] (-) TimerEvent: {}
+[74.402174] (-) TimerEvent: {}
+[74.502598] (-) TimerEvent: {}
+[74.602992] (-) TimerEvent: {}
+[74.703377] (-) TimerEvent: {}
+[74.803807] (-) TimerEvent: {}
+[74.904225] (-) TimerEvent: {}
+[75.004603] (-) TimerEvent: {}
+[75.105050] (-) TimerEvent: {}
+[75.205484] (-) TimerEvent: {}
+[75.305914] (-) TimerEvent: {}
+[75.406361] (-) TimerEvent: {}
+[75.506781] (-) TimerEvent: {}
+[75.607217] (-) TimerEvent: {}
+[75.707622] (-) TimerEvent: {}
+[75.808021] (-) TimerEvent: {}
+[75.908429] (-) TimerEvent: {}
+[76.008852] (-) TimerEvent: {}
+[76.109259] (-) TimerEvent: {}
+[76.209686] (-) TimerEvent: {}
+[76.310114] (-) TimerEvent: {}
+[76.410572] (-) TimerEvent: {}
+[76.511008] (-) TimerEvent: {}
+[76.611393] (-) TimerEvent: {}
+[76.711771] (-) TimerEvent: {}
+[76.812191] (-) TimerEvent: {}
+[76.912552] (-) TimerEvent: {}
+[77.012939] (-) TimerEvent: {}
+[77.113349] (-) TimerEvent: {}
+[77.213719] (-) TimerEvent: {}
+[77.314174] (-) TimerEvent: {}
+[77.414578] (-) TimerEvent: {}
+[77.514958] (-) TimerEvent: {}
+[77.632552] (-) TimerEvent: {}
+[77.783938] (-) TimerEvent: {}
+[77.884382] (-) TimerEvent: {}
+[77.984797] (-) TimerEvent: {}
+[78.085181] (-) TimerEvent: {}
+[78.185518] (-) TimerEvent: {}
+[78.285909] (-) TimerEvent: {}
+[78.386420] (-) TimerEvent: {}
+[78.486860] (-) TimerEvent: {}
+[78.587296] (-) TimerEvent: {}
+[78.687705] (-) TimerEvent: {}
+[78.788118] (-) TimerEvent: {}
+[78.888533] (-) TimerEvent: {}
+[78.988947] (-) TimerEvent: {}
+[79.089337] (-) TimerEvent: {}
+[79.189731] (-) TimerEvent: {}
+[79.290115] (-) TimerEvent: {}
+[79.390539] (-) TimerEvent: {}
+[79.490927] (-) TimerEvent: {}
+[79.591327] (-) TimerEvent: {}
+[79.691724] (-) TimerEvent: {}
+[79.792127] (-) TimerEvent: {}
+[79.892493] (-) TimerEvent: {}
+[79.992887] (-) TimerEvent: {}
+[80.093371] (-) TimerEvent: {}
+[80.193820] (-) TimerEvent: {}
+[80.294281] (-) TimerEvent: {}
+[80.394676] (-) TimerEvent: {}
+[80.495096] (-) TimerEvent: {}
+[80.595517] (-) TimerEvent: {}
+[80.695993] (-) TimerEvent: {}
+[80.796408] (-) TimerEvent: {}
+[80.896822] (-) TimerEvent: {}
+[80.997254] (-) TimerEvent: {}
+[81.097657] (-) TimerEvent: {}
+[81.198051] (-) TimerEvent: {}
+[81.298500] (-) TimerEvent: {}
+[81.398948] (-) TimerEvent: {}
+[81.874663] (-) TimerEvent: {}
+[84.437468] (-) TimerEvent: {}
+[96.794253] (-) TimerEvent: {}
+[98.404709] (-) TimerEvent: {}
+[109.153630] (-) TimerEvent: {}
+[118.966141] (-) TimerEvent: {}
+[122.948459] (-) TimerEvent: {}
+[135.481600] (-) TimerEvent: {}
+[139.052826] (-) TimerEvent: {}
+[140.383362] (-) TimerEvent: {}
+[143.665921] (-) TimerEvent: {}
+[149.269225] (-) TimerEvent: {}
+[156.742729] (-) TimerEvent: {}
+[172.200700] (-) TimerEvent: {}

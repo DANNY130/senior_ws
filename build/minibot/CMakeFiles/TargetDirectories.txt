@@ -1,0 +1,10 @@
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/uninstall.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/minibot_uninstall.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/velocity_publisher.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/test.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/edit_cache.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/rebuild_cache.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/list_install_components.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/install.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/install/local.dir
+/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/install/strip.dir

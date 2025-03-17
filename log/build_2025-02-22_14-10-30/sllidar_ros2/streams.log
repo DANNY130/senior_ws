@@ -1,0 +1,69 @@
+[0.023s] Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/sllidar_ros2
+[0.069s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.648s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.664s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.731s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.757s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.787s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.821s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.965s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.972s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.148s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.287s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.413s] -- Found std_srvs: 5.3.5 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.691s] -- Configuring done (1.6s)
+[1.797s] -- Generating done (0.1s)
+[1.817s] -- Build files have been written to: /home/olympusolutions/senior_ws/build/sllidar_ros2
+[1.846s] Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/sllidar_ros2
+[1.850s] Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/sllidar_ros2 -- -j4 -l4
+[2.061s] [ 10%] Built target sllidar_client
+[2.095s] [100%] Built target sllidar_node
+[2.132s] Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/sllidar_ros2 -- -j4 -l4
+[2.140s] Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/sllidar_ros2
+[2.179s] -- Install configuration: ""
+[2.179s] -- Execute custom install script
+[2.181s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[2.182s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py
+[2.182s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py
+[2.183s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py
+[2.184s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[2.185s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py
+[2.185s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[2.186s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[2.187s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[2.188s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[2.189s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py
+[2.190s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[2.191s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py
+[2.191s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py
+[2.192s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py
+[2.193s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py
+[2.193s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[2.193s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py
+[2.194s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[2.195s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[2.196s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[2.196s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[2.197s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py
+[2.197s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[2.199s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[2.200s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[2.202s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[2.202s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[2.203s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[2.203s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[2.205s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[2.205s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[2.206s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[2.206s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[2.207s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[2.208s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[2.209s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[2.209s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[2.238s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[2.238s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.239s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.245s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[2.245s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[2.245s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[2.288s] Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/sllidar_ros2

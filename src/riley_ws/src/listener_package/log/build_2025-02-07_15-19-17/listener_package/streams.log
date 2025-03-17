@@ -1,0 +1,46 @@
+[1.798s] Invoking command in '/home/olympusolutions/riley_ws/src/listener_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/riley_ws/src/listener_package/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/listener_package build --build-base /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build install --record /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/install.log --single-version-externally-managed install_data
+[2.185s] running egg_info
+[2.185s] creating build/listener_package/listener_package.egg-info
+[2.215s] writing build/listener_package/listener_package.egg-info/PKG-INFO
+[2.215s] writing dependency_links to build/listener_package/listener_package.egg-info/dependency_links.txt
+[2.216s] writing entry points to build/listener_package/listener_package.egg-info/entry_points.txt
+[2.216s] writing requirements to build/listener_package/listener_package.egg-info/requires.txt
+[2.216s] writing top-level names to build/listener_package/listener_package.egg-info/top_level.txt
+[2.216s] writing manifest file 'build/listener_package/listener_package.egg-info/SOURCES.txt'
+[2.272s] reading manifest file 'build/listener_package/listener_package.egg-info/SOURCES.txt'
+[2.272s] adding license file 'LICENSE'
+[2.273s] writing manifest file 'build/listener_package/listener_package.egg-info/SOURCES.txt'
+[2.273s] running build
+[2.274s] running build_py
+[2.274s] creating /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build
+[2.274s] creating /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib
+[2.274s] creating /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package
+[2.274s] copying listener_package/__init__.py -> /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package
+[2.274s] copying listener_package/publisher_member_function.py -> /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package
+[2.274s] copying listener_package/phone_listener.py -> /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package
+[2.275s] copying listener_package/subscriber_member_function.py -> /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package
+[2.276s] running install
+[2.285s] running install_lib
+[2.315s] creating /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package
+[2.316s] copying /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package/__init__.py -> /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package
+[2.316s] copying /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package/publisher_member_function.py -> /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package
+[2.316s] copying /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package/phone_listener.py -> /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package
+[2.316s] copying /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build/lib/listener_package/subscriber_member_function.py -> /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package
+[2.317s] byte-compiling /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package/__init__.py to __init__.cpython-312.pyc
+[2.317s] byte-compiling /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+[2.318s] byte-compiling /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package/phone_listener.py to phone_listener.cpython-312.pyc
+[2.319s] byte-compiling /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package/subscriber_member_function.py to subscriber_member_function.cpython-312.pyc
+[2.320s] running install_data
+[2.320s] creating /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/share/ament_index
+[2.320s] creating /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/share/ament_index/resource_index
+[2.320s] creating /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/share/ament_index/resource_index/packages
+[2.320s] copying resource/listener_package -> /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/share/ament_index/resource_index/packages
+[2.320s] copying package.xml -> /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/share/listener_package
+[2.320s] running install_egg_info
+[2.353s] Copying build/listener_package/listener_package.egg-info to /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages/listener_package-0.0.0-py3.12.egg-info
+[2.355s] running install_scripts
+[2.554s] Installing listener script to /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/listener_package
+[2.554s] Installing phone_listener script to /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/listener_package
+[2.554s] Installing talker script to /home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/listener_package
+[2.554s] writing list of installed files to '/home/olympusolutions/riley_ws/src/listener_package/build/listener_package/install.log'
+[2.644s] Invoked command in '/home/olympusolutions/riley_ws/src/listener_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/riley_ws/src/listener_package/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/riley_ws/src/listener_package/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/listener_package build --build-base /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/build install --record /home/olympusolutions/riley_ws/src/listener_package/build/listener_package/install.log --single-version-externally-managed install_data

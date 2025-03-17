@@ -73,6 +73,11 @@ def generate_launch_description():
         'controller.yaml'
     )
 
+    ekf_params_file = os.path.join(
+        package_dir,
+        'config',
+        'controller.yaml'
+    )
     
     twist_mux_params_file = os.path.join(
         package_dir, 
@@ -134,6 +139,41 @@ def generate_launch_description():
         ],
     )
 
+    extender_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["extender_controller", 
+                   "--param-file", 
+                   robot_controllers_file_dir
+        ],
+    )
+
+    gripper_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["gripper_controller", 
+                   "--param-file", 
+                   robot_controllers_file_dir
+        ],
+    )
+
+    platform_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["platform_controller",
+                   "--param-file",
+                   robot_controllers_file_dir
+        ],
+    )
+
+    ekf_filter_node_spawner = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[ekf_params_file],
+    )
+
     node_twist_mux = Node(
         package="twist_mux",
         executable="twist_mux",
@@ -181,17 +221,59 @@ def generate_launch_description():
         )
     )
 
+    register_extender_controller_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action= joint_state_broadcaster_spawner,
+            on_start=[extender_controller_spawner],
+        )
+    )
+
+    register_gripper_controller_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action= joint_state_broadcaster_spawner,
+            on_start=[gripper_controller_spawner],
+        )
+    )
+
+    register_platform_controller_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action= joint_state_broadcaster_spawner,
+            on_start=[platform_controller_spawner],
+        )
+    )
+
+    register_ekf_filter_node_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action= joint_state_broadcaster_spawner,
+            on_start=[ekf_filter_node_spawner],
+        )
+    )
+
+    
+
     node_rplidar_drive = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('sllidar_ros2'),
                     'launch',
-                    'sllidar_c1_launch.py'
+                    'sllidar_a1_launch.py'
                 )]), 
                 launch_arguments={
                     'serial_port': lidar_serial_port, 
                     'frame_id': 'lidar_frame'
                     }.items()
     )
+
+    # node_rplidar_start = Node(
+    #     package='rplidar_ros',
+    #     executable='rplidar_composition',
+    #     output='screen',
+    #     parameters=[
+    #         {'serial_port': '/dev/ttyUSB1', 
+    #          'frame_id': 'lidar_frame',
+    #          'angle_compensate': True,
+    #          'scan_mode': 'Standard'}
+    #     ]
+    # )
 
     # Create the launch description and populate
     ld = LaunchDescription()
@@ -204,12 +286,17 @@ def generate_launch_description():
     ld.add_action(register_node_ros2_control)
     ld.add_action(register_joint_state_broadcaster_spawner)
     ld.add_action(register_diff_drive_controller_spawner)
+    ld.add_action(register_extender_controller_spawner)
+    ld.add_action(register_gripper_controller_spawner)
+    ld.add_action(register_platform_controller_spawner)
+    ld.add_action(register_ekf_filter_node_spawner)
 
     ld.add_action(node_robot_state_publisher)
     ld.add_action(node_twist_mux)
     ld.add_action(node_twist_stamper)
     for node_republisher in node_image_republishers:
         ld.add_action(node_republisher)
+    # ld.add_action(node_rplidar_start)
     ld.add_action(node_rplidar_drive)
 
     # Generate the launch description  

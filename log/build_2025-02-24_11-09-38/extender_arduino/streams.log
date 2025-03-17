@@ -1,0 +1,115 @@
+[0.081s] Invoking command in '/home/olympusolutions/senior_ws/build/extender_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/extender_arduino -- -j4 -l4
+[0.517s] [ 50%] [32mBuilding CXX object CMakeFiles/extender_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[20.086s] [01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::StateInterface> extender_arduino::ExtenderArduinoHardware::[01;32m[Kexport_state_interfaces[m[K()[m[K’:
+[20.086s] [01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:147:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::StateInterface::StateInterface(std::string&, const char [9], int*)[m[K’
+[20.086s]   147 |   gripper_l_.name, hardware_interface::HW_IF_POSITION, &gripper_l_.degrees[01;31m[K)[m[K);
+[20.093s]       |                                                                           [01;31m[K^[m[K
+[20.094s] 
+[20.094s] In file included from [01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/include/extender_arduino/diffbot_system.hpp:22[m[K,
+[20.094s]                  from [01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:15[m[K:
+[20.095s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:40:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const std::string&, const std::string&, double*)[m[K’
+[20.095s]    40 |   [01;36m[KHandle[m[K(
+[20.095s]       |   [01;36m[K^~~~~~[m[K
+[20.095s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.096s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.096s]       |                 [01;36m[K^~~~~~[m[K
+[20.107s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:42:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kint*[m[K’ to ‘[01m[Kdouble*[m[K’
+[20.108s]    42 |     [01;36m[Kdouble * value_ptr = nullptr[m[K)
+[20.108s]       |     [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[20.108s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:63:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const std::string&)[m[K’
+[20.108s]    63 |   explicit [01;36m[KHandle[m[K(const std::string & interface_name)
+[20.108s]       |            [01;36m[K^~~~~~[m[K
+[20.108s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.109s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.109s]       |                 [01;36m[K^~~~~~[m[K
+[20.109s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.111s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:70:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const char*)[m[K’
+[20.112s]    70 |   explicit [01;36m[KHandle[m[K(const char * interface_name)
+[20.113s]       |            [01;36m[K^~~~~~[m[K
+[20.113s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.113s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.114s]       |                 [01;36m[K^~~~~~[m[K
+[20.114s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.116s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:75:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const hardware_interface::Handle&)[m[K’
+[20.116s]    75 |   [01;36m[KHandle[m[K(const Handle & other) noexcept
+[20.116s]       |   [01;36m[K^~~~~~[m[K
+[20.116s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.117s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.117s]       |                 [01;36m[K^~~~~~[m[K
+[20.117s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.117s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:86:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(hardware_interface::Handle&&)[m[K’
+[20.117s]    86 |   [01;36m[KHandle[m[K(Handle && other) noexcept
+[20.118s]       |   [01;36m[K^~~~~~[m[K
+[20.118s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.118s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.119s]       |                 [01;36m[K^~~~~~[m[K
+[20.119s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.119s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:212:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::[01;32m[KStateInterface[m[K(hardware_interface::StateInterface&&)[m[K’
+[20.119s]   212 |   [01;36m[KStateInterface[m[K(StateInterface && other) = default;
+[20.119s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[20.119s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:212:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.120s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:210:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::[01;32m[KStateInterface[m[K(const hardware_interface::StateInterface&)[m[K’
+[20.120s]   210 |   [01;36m[KStateInterface[m[K(const StateInterface & other) = default;
+[20.120s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[20.120s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:210:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.120s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:205:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::[01;32m[KStateInterface[m[K(const hardware_interface::InterfaceDescription&)[m[K’
+[20.121s]   205 |   explicit [01;36m[KStateInterface[m[K(const InterfaceDescription & interface_description)
+[20.121s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[20.122s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:205:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.122s] [01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:152:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::StateInterface::StateInterface(std::string&, const char [9], int*)[m[K’
+[20.122s]   152 |   gripper_r_.name, hardware_interface::HW_IF_POSITION, &gripper_r_.degrees[01;31m[K)[m[K);
+[20.122s]       |                                                                           [01;31m[K^[m[K
+[20.124s] 
+[20.124s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:40:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const std::string&, const std::string&, double*)[m[K’
+[20.126s]    40 |   [01;36m[KHandle[m[K(
+[20.126s]       |   [01;36m[K^~~~~~[m[K
+[20.126s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.126s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.126s]       |                 [01;36m[K^~~~~~[m[K
+[20.127s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:42:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kint*[m[K’ to ‘[01m[Kdouble*[m[K’
+[20.127s]    42 |     [01;36m[Kdouble * value_ptr = nullptr[m[K)
+[20.127s]       |     [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[20.127s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:63:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const std::string&)[m[K’
+[20.127s]    63 |   explicit [01;36m[KHandle[m[K(const std::string & interface_name)
+[20.127s]       |            [01;36m[K^~~~~~[m[K
+[20.129s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.131s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.132s]       |                 [01;36m[K^~~~~~[m[K
+[20.133s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.135s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:70:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const char*)[m[K’
+[20.136s]    70 |   explicit [01;36m[KHandle[m[K(const char * interface_name)
+[20.137s]       |            [01;36m[K^~~~~~[m[K
+[20.137s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.137s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.138s]       |                 [01;36m[K^~~~~~[m[K
+[20.138s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.138s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:75:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(const hardware_interface::Handle&)[m[K’
+[20.141s]    75 |   [01;36m[KHandle[m[K(const Handle & other) noexcept
+[20.141s]       |   [01;36m[K^~~~~~[m[K
+[20.141s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.142s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.142s]       |                 [01;36m[K^~~~~~[m[K
+[20.142s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.142s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:86:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::Handle::[01;32m[KHandle[m[K(hardware_interface::Handle&&)[m[K’
+[20.142s]    86 |   [01;36m[KHandle[m[K(Handle && other) noexcept
+[20.143s]       |   [01;36m[K^~~~~~[m[K
+[20.143s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  inherited here
+[20.143s]   214 |   using Handle::[01;36m[KHandle[m[K;
+[20.143s]       |                 [01;36m[K^~~~~~[m[K
+[20.143s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:214:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.144s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:212:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::[01;32m[KStateInterface[m[K(hardware_interface::StateInterface&&)[m[K’
+[20.144s]   212 |   [01;36m[KStateInterface[m[K(StateInterface && other) = default;
+[20.144s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[20.144s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:212:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.144s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:210:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::[01;32m[KStateInterface[m[K(const hardware_interface::StateInterface&)[m[K’
+[20.145s]   210 |   [01;36m[KStateInterface[m[K(const StateInterface & other) = default;
+[20.145s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[20.145s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:210:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[20.145s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:205:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::[01;32m[KStateInterface[m[K(const hardware_interface::InterfaceDescription&)[m[K’
+[20.145s]   205 |   explicit [01;36m[KStateInterface[m[K(const InterfaceDescription & interface_description)
+[20.146s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[20.146s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/handle.hpp:205:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[26.459s] gmake[2]: *** [CMakeFiles/extender_arduino.dir/build.make:76: CMakeFiles/extender_arduino.dir/hardware/diffbot_system.cpp.o] Error 1
+[26.460s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/extender_arduino.dir/all] Error 2
+[26.460s] gmake: *** [Makefile:146: all] Error 2
+[26.465s] Invoked command in '/home/olympusolutions/senior_ws/build/extender_arduino' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/extender_arduino -- -j4 -l4

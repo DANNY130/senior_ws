@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "serial_motor_demo_msgs__py",
+		"source" : "/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py"
+	}
+}

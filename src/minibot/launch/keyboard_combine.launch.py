@@ -9,12 +9,12 @@ def generate_launch_description():
     joystick_teleop_launch = os.path.join(
         get_package_share_directory('minibot'),  # Replace 'minibot' with the correct package name
         'launch',
-        'joystick_teleop.launch.py'
+        'joystick_teleop.launch.py'     #publish a topic called /joy which is the medium
     )
     keyboard_launch = os.path.join(
         get_package_share_directory('minibot'),  # Replace 'minibot' with the correct package name
         'launch',
-        'keyboard.launch.py'
+        'keyboard.launch.py'            #main code to send instructions and commands
     )
 
     # Include both launch files

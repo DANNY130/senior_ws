@@ -19,6 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(rclpy REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -48,6 +49,21 @@ install(TARGETS
 install(
   DIRECTORY config description launch worlds demo_publisher_node maps visual_demos
   DESTINATION share/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(
+  PROGRAMS
+    demo_publisher_node/extender_teleop_node.py
+    demo_publisher_node/gripper_teleop_node.py
+    demo_publisher_node/platform_teleop_node.py
+    demo_publisher_node/linear_data_collector_node.py
+    demo_publisher_node/imu_publisher_node.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()

@@ -1,0 +1,4 @@
+source;share/minibot/local_setup.bash
+source;share/minibot/local_setup.dsv
+source;share/minibot/local_setup.sh
+source;share/minibot/local_setup.zsh

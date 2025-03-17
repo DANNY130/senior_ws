@@ -1,0 +1,30 @@
+running develop
+running egg_info
+writing ../../build/twist_stamper/twist_stamper.egg-info/PKG-INFO
+writing dependency_links to ../../build/twist_stamper/twist_stamper.egg-info/dependency_links.txt
+writing entry points to ../../build/twist_stamper/twist_stamper.egg-info/entry_points.txt
+writing requirements to ../../build/twist_stamper/twist_stamper.egg-info/requires.txt
+writing top-level names to ../../build/twist_stamper/twist_stamper.egg-info/top_level.txt
+reading manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+copying /home/olympusolutions/senior_ws/build/twist_stamper/build/lib/twist_stamper/__init__.py -> /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+copying /home/olympusolutions/senior_ws/build/twist_stamper/build/lib/twist_stamper/twist_stamper.py -> /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+copying /home/olympusolutions/senior_ws/build/twist_stamper/build/lib/twist_stamper/twist_unstamper.py -> /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+byte-compiling /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper/twist_stamper.py to twist_stamper.cpython-312.pyc
+byte-compiling /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper/twist_unstamper.py to twist_unstamper.cpython-312.pyc
+running install_data
+copying resource/twist_stamper -> /home/olympusolutions/senior_ws/install/twist_stamper/share/ament_index/resource_index/packages
+copying package.xml -> /home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper
+running install_egg_info
+Copying ../../build/twist_stamper/twist_stamper.egg-info to /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist_stamper-0.0.5-py3.12.egg-info
+running install_scripts
+Installing twist_stamper script to /home/olympusolutions/senior_ws/install/twist_stamper/lib/twist_stamper
+Installing twist_unstamper script to /home/olympusolutions/senior_ws/install/twist_stamper/lib/twist_stamper
+writing list of installed files to '/home/olympusolutions/senior_ws/build/twist_stamper/install.log'

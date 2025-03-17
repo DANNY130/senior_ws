@@ -11,7 +11,7 @@
                     <param name="device">/dev/ttyACM0</param>
                     <param name="baud_rate">57600</param>
                     <param name="timeout_ms">1000</param>
-                    <param name="enc_counts_per_rev">616</param> 
+                    <param name="enc_counts_per_rev">3200</param> 
             </hardware>
             <joint name="left_wheel_joint">
                 <command_interface name="velocity">
@@ -30,6 +30,58 @@
                 <state_interface name="velocity"/>
             </joint>
         </ros2_control>
+
+        <ros2_control name="GrabberSystem" type="system">
+            <hardware>
+                <plugin>extender_arduino/ExtenderArduinoHardware</plugin>
+                    <param name="joints">slider_left_joint</param>
+                    <param name="platform">platform_joint</param>
+                    <param name="gripper_l">gripper_left_joint</param>
+                    <param name="gripper_r">gripper_right_joint</param>
+                    <param name="loop_rate">30</param>
+                    <param name="device">/dev/ttyACM1</param>
+                    <param name="baud_rate">57600</param>
+                    <param name="timeout_ms">1000</param>
+                    <param name="enc_counts_per_rev">3200</param>
+            </hardware>
+            <joint name="slider_left_joint">
+                <command_interface name="velocity">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+
+            <!-- <joint name="platform_joint">
+                <command_interface name="velocity">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint> -->
+
+            <joint name="gripper_left_joint">
+                <command_interface name="position">
+                    <param name="min">0</param>
+                    <param name="max">1.57</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+
+            <joint name="gripper_right_joint">
+                <command_interface name="position">
+                    <param name="min">-1.57</param>
+                    <param name="max">0</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+            </joint>
+
+        </ros2_control>
+
     </xacro:unless>
 
     <xacro:if value="$(arg use_ros2_control_gz_sim)">

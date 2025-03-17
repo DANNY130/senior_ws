@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/imu_publisher/imu_publisher.egg-info
+writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt
+writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt
+writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/olympusolutions/senior_ws/build/imu_publisher/build
+creating /home/olympusolutions/senior_ws/build/imu_publisher/build/lib
+creating /home/olympusolutions/senior_ws/build/imu_publisher/build/lib/imu_publisher
+copying imu_publisher/__init__.py -> /home/olympusolutions/senior_ws/build/imu_publisher/build/lib/imu_publisher
+copying imu_publisher/imu_publisher.py -> /home/olympusolutions/senior_ws/build/imu_publisher/build/lib/imu_publisher
+running install
+running install_lib
+creating /home/olympusolutions/senior_ws/install/imu_publisher/lib/python3.12/site-packages/imu_publisher
+copying /home/olympusolutions/senior_ws/build/imu_publisher/build/lib/imu_publisher/__init__.py -> /home/olympusolutions/senior_ws/install/imu_publisher/lib/python3.12/site-packages/imu_publisher
+copying /home/olympusolutions/senior_ws/build/imu_publisher/build/lib/imu_publisher/imu_publisher.py -> /home/olympusolutions/senior_ws/install/imu_publisher/lib/python3.12/site-packages/imu_publisher
+byte-compiling /home/olympusolutions/senior_ws/install/imu_publisher/lib/python3.12/site-packages/imu_publisher/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/olympusolutions/senior_ws/install/imu_publisher/lib/python3.12/site-packages/imu_publisher/imu_publisher.py to imu_publisher.cpython-312.pyc
+running install_data
+creating /home/olympusolutions/senior_ws/install/imu_publisher/share/ament_index
+creating /home/olympusolutions/senior_ws/install/imu_publisher/share/ament_index/resource_index
+creating /home/olympusolutions/senior_ws/install/imu_publisher/share/ament_index/resource_index/packages
+copying resource/imu_publisher -> /home/olympusolutions/senior_ws/install/imu_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/olympusolutions/senior_ws/install/imu_publisher/share/imu_publisher
+running install_egg_info
+Copying ../../build/imu_publisher/imu_publisher.egg-info to /home/olympusolutions/senior_ws/install/imu_publisher/lib/python3.12/site-packages/imu_publisher-0.0.0-py3.12.egg-info
+running install_scripts
+Installing imu_publisher script to /home/olympusolutions/senior_ws/install/imu_publisher/lib/imu_publisher
+writing list of installed files to '/home/olympusolutions/senior_ws/build/imu_publisher/install.log'

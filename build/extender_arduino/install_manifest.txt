@@ -1,0 +1,3 @@
+/home/olympusolutions/senior_ws/install/extender_arduino/lib/libextender_arduino.so
+/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/export_extender_arduinoExport.cmake
+/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/export_extender_arduinoExport-noconfig.cmake

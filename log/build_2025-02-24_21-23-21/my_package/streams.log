@@ -1,0 +1,19 @@
+[4.676s] Invoking command in '/home/olympusolutions/senior_ws/build/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data --force
+[6.269s] running develop
+[7.311s] running egg_info
+[7.369s] writing my_package.egg-info/PKG-INFO
+[7.372s] writing dependency_links to my_package.egg-info/dependency_links.txt
+[7.374s] writing entry points to my_package.egg-info/entry_points.txt
+[7.376s] writing requirements to my_package.egg-info/requires.txt
+[7.380s] writing top-level names to my_package.egg-info/top_level.txt
+[7.531s] reading manifest file 'my_package.egg-info/SOURCES.txt'
+[7.531s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[7.609s] running build_ext
+[7.610s] Creating /home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages/my-package.egg-link (link to .)
+[7.610s] Installing my_node script to /home/olympusolutions/senior_ws/install/my_package/lib/my_package
+[7.610s] 
+[7.610s] Installed /home/olympusolutions/senior_ws/build/my_package
+[7.610s] running symlink_data
+[7.614s] symbolically linking /home/olympusolutions/senior_ws/build/my_package/resource/my_package -> /home/olympusolutions/senior_ws/install/my_package/share/ament_index/resource_index/packages
+[7.614s] symbolically linking /home/olympusolutions/senior_ws/build/my_package/package.xml -> /home/olympusolutions/senior_ws/install/my_package/share/my_package
+[7.821s] Invoked command in '/home/olympusolutions/senior_ws/build/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data --force

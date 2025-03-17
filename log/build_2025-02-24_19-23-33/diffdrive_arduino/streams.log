@@ -1,0 +1,44 @@
+[0.210s] Invoking command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/diffdrive_arduino -- -j4 -l4
+[0.994s] [100%] Built target diffdrive_arduino
+[2.553s] Invoked command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/diffdrive_arduino -- -j4 -l4
+[2.554s] Invoking command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/diffdrive_arduino
+[2.717s] -- Install configuration: ""
+[2.727s] -- Execute custom install script
+[2.733s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino//diffdrive_arduino.xml
+[2.742s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp
+[2.758s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp
+[2.763s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h
+[2.769s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp
+[2.773s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py
+[2.779s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro
+[2.785s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro
+[2.792s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro
+[2.793s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro
+[2.798s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz
+[2.817s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz
+[2.823s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py
+[2.834s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml
+[2.835s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[2.838s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[2.845s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[2.852s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[2.861s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[2.861s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[2.861s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[2.861s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[2.861s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[2.861s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[2.862s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[2.862s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[2.873s] -- Symlinking: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[2.910s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[2.912s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[2.916s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake
+[2.921s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.926s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[2.928s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[2.931s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[2.934s] -- Up-to-date: /home/olympusolutions/senior_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[2.935s] -- Up-to-date: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake
+[2.936s] -- Up-to-date: /home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake
+[2.966s] Invoked command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/src/riley_ws/install/my_package:/home/olympusolutions/senior_ws/src/riley_ws/install/listener_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/diffdrive_arduino

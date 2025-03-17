@@ -1,0 +1,9 @@
+{
+  "package_name": "serial_motor_demo_msgs",
+  "output_dir": "/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs/rosidl_generator_type_description/serial_motor_demo_msgs",
+  "idl_tuples": [
+    "/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorCommand.idl",
+    "/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorVels.idl",
+    "/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/EncoderVals.idl"
+  ]
+}
