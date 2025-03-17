@@ -1,0 +1,10 @@
+setup.py
+serial_motor_demo_msgs/__init__.py
+serial_motor_demo_msgs.egg-info/PKG-INFO
+serial_motor_demo_msgs.egg-info/SOURCES.txt
+serial_motor_demo_msgs.egg-info/dependency_links.txt
+serial_motor_demo_msgs.egg-info/top_level.txt
+serial_motor_demo_msgs/msg/__init__.py
+serial_motor_demo_msgs/msg/_encoder_vals.py
+serial_motor_demo_msgs/msg/_motor_command.py
+serial_motor_demo_msgs/msg/_motor_vels.py

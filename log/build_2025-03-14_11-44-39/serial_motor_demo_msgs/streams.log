@@ -1,0 +1,26 @@
+[0.271s] Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[1.369s] [  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description
+[1.382s] [  1%] Built target ament_cmake_python_symlink_serial_motor_demo_msgs
+[1.441s] [  3%] Built target serial_motor_demo_msgs__cpp
+[1.529s] [ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[2.172s] [ 33%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[2.190s] [ 42%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[2.191s] [ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[2.282s] [ 61%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[2.302s] [ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[2.302s] [ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[2.355s] [ 79%] Built target serial_motor_demo_msgs
+[2.419s] [ 81%] Built target serial_motor_demo_msgs__py
+[2.534s] [ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py
+[2.626s] [ 92%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c
+[2.628s] [ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c
+[2.646s] [100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c
+[2.733s] running egg_info
+[2.773s] writing serial_motor_demo_msgs.egg-info/PKG-INFO
+[2.774s] writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt
+[2.777s] writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt
+[2.910s] reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[2.914s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[3.013s] [100%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg
+[58.560s] Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[58.804s] Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs

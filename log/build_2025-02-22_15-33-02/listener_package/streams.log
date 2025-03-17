@@ -1,0 +1,19 @@
+[1.801s] Invoking command in '/home/olympusolutions/senior_ws/build/listener_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/listener_package/build --no-deps symlink_data
+[2.492s] running develop
+[2.973s] running egg_info
+[3.013s] writing listener_package.egg-info/PKG-INFO
+[3.014s] writing dependency_links to listener_package.egg-info/dependency_links.txt
+[3.016s] writing entry points to listener_package.egg-info/entry_points.txt
+[3.017s] writing requirements to listener_package.egg-info/requires.txt
+[3.019s] writing top-level names to listener_package.egg-info/top_level.txt
+[3.084s] reading manifest file 'listener_package.egg-info/SOURCES.txt'
+[3.086s] writing manifest file 'listener_package.egg-info/SOURCES.txt'
+[3.126s] running build_ext
+[3.127s] Creating /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener-package.egg-link (link to .)
+[3.128s] Installing listener script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[3.129s] Installing phone_listener script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[3.130s] Installing talker script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[3.130s] 
+[3.130s] Installed /home/olympusolutions/senior_ws/build/listener_package
+[3.131s] running symlink_data
+[3.390s] Invoked command in '/home/olympusolutions/senior_ws/build/listener_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/listener_package/build --no-deps symlink_data

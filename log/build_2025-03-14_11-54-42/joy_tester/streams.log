@@ -1,0 +1,22 @@
+[6.812s] Invoking command in '/home/olympusolutions/senior_ws/src/joy_tester': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/olympusolutions/senior_ws/build/joy_tester/build install --record /home/olympusolutions/senior_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[8.852s] running egg_info
+[9.021s] writing ../../build/joy_tester/joy_tester.egg-info/PKG-INFO
+[9.021s] writing dependency_links to ../../build/joy_tester/joy_tester.egg-info/dependency_links.txt
+[9.021s] writing entry points to ../../build/joy_tester/joy_tester.egg-info/entry_points.txt
+[9.022s] writing requirements to ../../build/joy_tester/joy_tester.egg-info/requires.txt
+[9.022s] writing top-level names to ../../build/joy_tester/joy_tester.egg-info/top_level.txt
+[9.598s] reading manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[9.598s] adding license file 'LICENSE'
+[9.608s] writing manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[9.608s] running build
+[9.609s] running build_py
+[9.609s] running install
+[9.688s] running install_lib
+[9.948s] running install_data
+[9.957s] running install_egg_info
+[10.102s] removing '/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages/joy_tester-0.0.2-py3.12.egg-info' (and everything under it)
+[10.103s] Copying ../../build/joy_tester/joy_tester.egg-info to /home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages/joy_tester-0.0.2-py3.12.egg-info
+[10.109s] running install_scripts
+[10.774s] Installing test_joy script to /home/olympusolutions/senior_ws/install/joy_tester/lib/joy_tester
+[10.775s] writing list of installed files to '/home/olympusolutions/senior_ws/build/joy_tester/install.log'
+[11.278s] Invoked command in '/home/olympusolutions/senior_ws/src/joy_tester' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/olympusolutions/senior_ws/build/joy_tester/build install --record /home/olympusolutions/senior_ws/build/joy_tester/install.log --single-version-externally-managed install_data

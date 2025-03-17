@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+resource/serial_motor_demo
+serial_motor_demo/__init__.py
+serial_motor_demo/driver.py
+serial_motor_demo/gui.py
+serial_motor_demo.egg-info/PKG-INFO
+serial_motor_demo.egg-info/SOURCES.txt
+serial_motor_demo.egg-info/dependency_links.txt
+serial_motor_demo.egg-info/entry_points.txt
+serial_motor_demo.egg-info/requires.txt
+serial_motor_demo.egg-info/top_level.txt
+serial_motor_demo.egg-info/zip-safe

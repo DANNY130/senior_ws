@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "serial_motor_demo_msgs/msg/EncoderVals",
+      "fields": [
+        {
+          "name": "mot_1_enc_val",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "mot_2_enc_val",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "serial_motor_demo_msgs/msg/EncoderVals",
+      "hash_string": "RIHS01_543536f291d887d72a2218214f21617481db8fa1bde79c80d6ab6411442531f8"
+    }
+  ]
+}

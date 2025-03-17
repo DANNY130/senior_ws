@@ -4,7 +4,8 @@
     <xacro:property name="lidar_radius"             value="0.025"/>
     <xacro:property name="lidar_thickness"          value="0.040"/>
     <xacro:property name="lidar_offset_x"           value="0.230"/>
-    <xacro:property name="lidar_offset_z"           value="0.098"/>
+    <!-- <xacro:property name="lidar_offset_z"           value="0.098"/> -->
+    <xacro:property name="lidar_offset_z"           value="0.34"/> 
 
     <!-- Lidar -->
     <joint name="lidar_joint" type="fixed">

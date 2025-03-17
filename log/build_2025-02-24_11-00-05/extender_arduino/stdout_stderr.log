@@ -1,0 +1,16 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/extender_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::StateInterface> extender_arduino::ExtenderArduinoHardware::[01;32m[Kexport_state_interfaces[m[K()[m[K’:
+[01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:149:22:[m[K [01;31m[Kerror: [m[K‘[01m[Khhardware_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Khardware_interface[m[K’?
+  149 |     gripper_l_.name, [01;31m[Khhardware_interface[m[K::HW_IF_VELOCITY, &gripper_l_.vel));
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                      [32m[Khardware_interface[m[K
+[01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type extender_arduino::ExtenderArduinoHardware::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:247:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Gripper[m[K’ has no member named ‘[01m[Kenc[m[K’
+  247 |   comms_.read_servo_values(gripper_l_.[01;31m[Kenc[m[K, gripper_r_.enc);
+      |                                       [01;31m[K^~~[m[K
+[01m[K/home/olympusolutions/senior_ws/src/extender_arduino/hardware/diffbot_system.cpp:247:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Gripper[m[K’ has no member named ‘[01m[Kenc[m[K’
+  247 |   comms_.read_servo_values(gripper_l_.enc, gripper_r_.[01;31m[Kenc[m[K);
+      |                                                       [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/extender_arduino.dir/build.make:76: CMakeFiles/extender_arduino.dir/hardware/diffbot_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/extender_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

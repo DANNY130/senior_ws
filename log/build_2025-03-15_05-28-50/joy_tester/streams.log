@@ -1,0 +1,17 @@
+[12.673s] Invoking command in '/home/olympusolutions/senior_ws/build/joy_tester': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/joy_tester/build --no-deps symlink_data
+[15.811s] running develop
+[17.052s] running egg_info
+[17.135s] writing joy_tester.egg-info/PKG-INFO
+[17.143s] writing dependency_links to joy_tester.egg-info/dependency_links.txt
+[17.145s] writing entry points to joy_tester.egg-info/entry_points.txt
+[17.146s] writing requirements to joy_tester.egg-info/requires.txt
+[17.149s] writing top-level names to joy_tester.egg-info/top_level.txt
+[17.284s] reading manifest file 'joy_tester.egg-info/SOURCES.txt'
+[17.296s] writing manifest file 'joy_tester.egg-info/SOURCES.txt'
+[17.360s] running build_ext
+[17.368s] Creating /home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages/joy-tester.egg-link (link to .)
+[17.368s] Installing test_joy script to /home/olympusolutions/senior_ws/install/joy_tester/lib/joy_tester
+[17.368s] 
+[17.369s] Installed /home/olympusolutions/senior_ws/build/joy_tester
+[17.369s] running symlink_data
+[18.108s] Invoked command in '/home/olympusolutions/senior_ws/build/joy_tester' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/joy_tester/build --no-deps symlink_data

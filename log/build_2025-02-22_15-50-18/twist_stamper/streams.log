@@ -1,0 +1,18 @@
+[1.911s] Invoking command in '/home/olympusolutions/senior_ws/build/twist_stamper': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/twist_stamper/build --no-deps symlink_data
+[2.496s] running develop
+[2.812s] running egg_info
+[2.841s] writing twist_stamper.egg-info/PKG-INFO
+[2.842s] writing dependency_links to twist_stamper.egg-info/dependency_links.txt
+[2.843s] writing entry points to twist_stamper.egg-info/entry_points.txt
+[2.844s] writing requirements to twist_stamper.egg-info/requires.txt
+[2.845s] writing top-level names to twist_stamper.egg-info/top_level.txt
+[2.911s] reading manifest file 'twist_stamper.egg-info/SOURCES.txt'
+[2.912s] writing manifest file 'twist_stamper.egg-info/SOURCES.txt'
+[2.943s] running build_ext
+[2.944s] Creating /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist-stamper.egg-link (link to .)
+[2.945s] Installing twist_stamper script to /home/olympusolutions/senior_ws/install/twist_stamper/lib/twist_stamper
+[2.945s] Installing twist_unstamper script to /home/olympusolutions/senior_ws/install/twist_stamper/lib/twist_stamper
+[2.946s] 
+[2.946s] Installed /home/olympusolutions/senior_ws/build/twist_stamper
+[2.946s] running symlink_data
+[3.054s] Invoked command in '/home/olympusolutions/senior_ws/build/twist_stamper' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/twist_stamper/build --no-deps symlink_data

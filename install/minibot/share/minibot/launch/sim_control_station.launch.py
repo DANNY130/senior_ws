@@ -1,0 +1,1 @@
+/home/olympusolutions/senior_ws/src/minibot/launch/sim_control_station.launch.py

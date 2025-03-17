@@ -1,0 +1,22 @@
+[4.625s] Invoking command in '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/my_package build --build-base /home/olympusolutions/senior_ws/build/my_package/build install --record /home/olympusolutions/senior_ws/build/my_package/install.log --single-version-externally-managed install_data
+[6.124s] running egg_info
+[6.231s] writing ../../../../build/my_package/my_package.egg-info/PKG-INFO
+[6.232s] writing dependency_links to ../../../../build/my_package/my_package.egg-info/dependency_links.txt
+[6.235s] writing entry points to ../../../../build/my_package/my_package.egg-info/entry_points.txt
+[6.236s] writing requirements to ../../../../build/my_package/my_package.egg-info/requires.txt
+[6.236s] writing top-level names to ../../../../build/my_package/my_package.egg-info/top_level.txt
+[6.490s] reading manifest file '../../../../build/my_package/my_package.egg-info/SOURCES.txt'
+[6.497s] adding license file 'LICENSE'
+[6.498s] writing manifest file '../../../../build/my_package/my_package.egg-info/SOURCES.txt'
+[6.506s] running build
+[6.506s] running build_py
+[6.509s] running install
+[6.543s] running install_lib
+[6.639s] running install_data
+[6.639s] running install_egg_info
+[6.744s] removing '/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info' (and everything under it)
+[6.766s] Copying ../../../../build/my_package/my_package.egg-info to /home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info
+[6.771s] running install_scripts
+[7.154s] Installing my_node script to /home/olympusolutions/senior_ws/install/my_package/lib/my_package
+[7.155s] writing list of installed files to '/home/olympusolutions/senior_ws/build/my_package/install.log'
+[7.278s] Invoked command in '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/my_package build --build-base /home/olympusolutions/senior_ws/build/my_package/build install --record /home/olympusolutions/senior_ws/build/my_package/install.log --single-version-externally-managed install_data

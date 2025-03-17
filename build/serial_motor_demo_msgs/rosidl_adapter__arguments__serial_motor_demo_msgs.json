@@ -1,0 +1,8 @@
+{
+  "package_name": "serial_motor_demo_msgs",
+  "non_idl_tuples": [
+    "/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs:msg/MotorCommand.msg",
+    "/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs:msg/MotorVels.msg",
+    "/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs:msg/EncoderVals.msg"
+  ]
+}

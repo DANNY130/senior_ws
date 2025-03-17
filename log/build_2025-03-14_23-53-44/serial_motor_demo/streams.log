@@ -1,0 +1,33 @@
+[4.063s] Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo': AMENT_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olympusolutions/senior_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/serial_motor_demo/build --no-deps symlink_data
+[4.481s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[4.482s] !!
+[4.482s] 
+[4.482s]         ********************************************************************************
+[4.482s]         Usage of dash-separated 'script-dir' will not be supported in future
+[4.482s]         versions. Please use the underscore name 'script_dir' instead.
+[4.483s] 
+[4.488s]         This deprecation is overdue, please update your project and remove deprecated
+[4.488s]         calls to avoid build errors in the future.
+[4.489s] 
+[4.489s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[4.489s]         ********************************************************************************
+[4.490s] 
+[4.490s] !!
+[4.490s]   opt = self.warn_dash_deprecation(opt, section)
+[5.269s] running develop
+[5.787s] running egg_info
+[5.817s] writing serial_motor_demo.egg-info/PKG-INFO
+[5.817s] writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt
+[5.819s] writing entry points to serial_motor_demo.egg-info/entry_points.txt
+[5.820s] writing requirements to serial_motor_demo.egg-info/requires.txt
+[5.822s] writing top-level names to serial_motor_demo.egg-info/top_level.txt
+[5.891s] reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[5.892s] writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[5.921s] running build_ext
+[5.922s] Creating /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial-motor-demo.egg-link (link to .)
+[5.923s] Installing driver script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+[5.923s] Installing gui script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+[5.923s] 
+[5.923s] Installed /home/olympusolutions/senior_ws/build/serial_motor_demo
+[5.923s] running symlink_data
+[6.029s] Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo' returned '0': AMENT_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olympusolutions/senior_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/serial_motor_demo/build --no-deps symlink_data

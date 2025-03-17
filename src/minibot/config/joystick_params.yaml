@@ -9,9 +9,9 @@ teleop_node:
     axis_linear:
       x: 1
     scale_linear:
-      x: -0.5
+      x: 0.5
     scale_linear_turbo:
-      x: -1.0
+      x: 1.0
 
     axis_angular:
       yaw: 0
@@ -20,8 +20,8 @@ teleop_node:
     scale_angular_turbo:
       yaw: 1.0
   
-    enable_button: 0
-    enable_turbo_button: 1
+    enable_button: 4
+    enable_turbo_button: 5
     require_enable_button: true
 
     use_sim_time: true
@@ -29,4 +29,11 @@ teleop_node:
     
     publish_stamped_twist: true
     frame: teleop_twist_joy
-    
+
+extender_teleop_node:
+  ros__parameters:
+    topic: "/extender_controller/commands"
+    axis: 2  # Assuming axis 2 controls the extender
+    scale: 5.0  # Scale factor for the extender command
+    enable_button: 2  # Assuming button 5 enables the extender
+

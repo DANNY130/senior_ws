@@ -26,7 +26,7 @@ diff_drive_controller:
     pose_covariance_diagonal : [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
 
-    open_loop: true
+    open_loop: false
     enable_odom_tf: true
 
     cmd_vel_timeout: 0.5
@@ -54,3 +54,153 @@ diff_drive_controller:
     angular.z.min_acceleration: -1.0
     angular.z.max_jerk: 0.0
     angular.z.min_jerk: 0.0
+#####################################################
+# Sensor fusion
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0
+    sensor_timeout: 0.1
+    two_d_mode: true
+    transform_time_offset: 0.0
+    transform_timeout: 0.0
+    print_diagnostics: true
+    debug: false
+    publish_tf: true
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+
+    odom0: odom
+    odom0_config: [false, false, false,
+                   false,  false,  false,
+                   true, true, false,
+                   false, false, false,
+                   false, false, false]
+    odom0_queue_size: 10
+    odom0_nodelay: false
+    odom0_differential: false
+    odom0_relative: false
+
+    imu0: /imu/data
+    imu0_config: [false, false, false,  # x, y, z positions
+                  false, false, true,  # x, y, z velocities
+                  false,  false, false,   # x, y, z accelerations
+                  false,  false, false,   # roll, pitch, yaw (orientations)
+                  false,  false, false,]   # x, y, z angular velocities
+    imu0_queue_size: 10
+    imu0_nodelay: false
+    imu0_differential: false
+    imu0_relative: false
+    imu0_remove_gravitational_acceleration: true
+##################################################
+extender_controller:
+  ros__parameters:
+    type: velocity_controllers/JointGroupVelocityController
+    joints: 
+    - "slider_left_joint"
+
+    publish_rate: 30.0
+
+    # Velocity and acceleration limits
+    has_velocity_limits: true
+    has_acceleration_limits: true
+    has_jerk_limits: false
+    max_velocity: 5.0
+    min_velocity: -5.0
+    max_acceleration: 0.5
+    max_jerk: 0.0
+    min_jerk: 0.0
+
+    # Topic for receiving velocity setpoints
+    command_topic: "cmd_vel_extender"
+    command_interface: 
+    - "velocity"
+    state_interfaces:
+    - "position"
+    - "velocity"
+
+    # Encoder feedback
+    encoder:
+      type: "incremental"
+      resolution: 3200  # Number of pulses per revolution
+      joint: "slider_left_joint"
+      topic: "encoder_feedback"
+
+    # PID controller
+    pid:
+      p: 49.0
+      i: 1.0
+      d: 1.0
+      i_clamp: 0.0
+      antiwindup: false
+
+gripper_controller:
+  ros__parameters:
+    type: position_controllers/JointGroupPositionController
+    joints:
+    - "gripper_left_joint"
+    - "gripper_right_joint"
+
+    publish_rate: 30.0
+
+    # Position limits for the gripper_left_joint
+    gripper_left_joint:
+      has_position_limits: true
+      min_position: -1.57
+      max_position: 0.0
+
+    # Position limits for the gripper_right_joint
+    gripper_right_joint:
+      has_position_limits: true
+      min_position: 0.0
+      max_position: 1.57
+    
+    # Topic for receiving position setpoints
+    command_topic: "cmd_pos_gripper"
+    command_interface:
+    - "position"
+    state_interfaces:
+    - "position"
+    - "velocity"
+
+platform_controller:
+  ros__parameters:
+    type: velocity_controllers/JointGroupVelocityController
+    joints: 
+    - "platform_joint"
+
+    publish_rate: 30.0
+
+    # Velocity and acceleration limits
+    has_velocity_limits: true
+    has_acceleration_limits: true
+    has_jerk_limits: false
+    max_velocity: 5.0
+    min_velocity: -5.0
+    max_acceleration: 0.5
+    max_jerk: 0.0
+    min_jerk: 0.0
+
+    # Topic for receiving velocity setpoints
+    command_topic: "cmd_vel_platform"
+    command_interface: 
+    - "velocity"
+    state_interfaces:
+    - "position"
+    - "velocity"
+
+    # Encoder feedback
+    encoder:
+      type: "incremental"
+      resolution: 3200  # Number of pulses per revolution
+      joint: "platform_joint"
+      topic: "encoder_feedback"
+
+    # PID controller
+    pid:
+      p: 49.0
+      i: 1.0
+      d: 1.0
+      i_clamp: 0.0
+      antiwindup: false
