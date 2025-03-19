@@ -159,16 +159,16 @@ def generate_launch_description():
                           for transport in image_transports]
 
     # gz launch world
-    gazebo = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory('ros_gz_sim'),
-                    'launch',
-                    'gz_sim.launch.py'
-                )]), 
-                launch_arguments=
-                {'gz_args': f'-r -v 4 {world_file_path}',
-                 'extra_gazebo_args': '--ros-args --params-file' + gazebo_params_file}.items()
-    )
+    # gazebo = IncludeLaunchDescription(
+    #             PythonLaunchDescriptionSource([os.path.join(
+    #                 get_package_share_directory('ros_gz_sim'),
+    #                 'launch',
+    #                 'gz_sim.launch.py'
+    #             )]), 
+    #             launch_arguments=
+    #             {'gz_args': f'-r -v 4 {world_file_path}',
+    #              'extra_gazebo_args': '--ros-args --params-file' + gazebo_params_file}.items()
+    # )
 
     # gz spawn robot entity 
     node_gz_spawn_entity = Node(
@@ -247,11 +247,11 @@ def generate_launch_description():
         )
     )
 
-    group_spawn_gz= GroupAction(
-        [gazebo, 
-         node_gz_spawn_entity,
-        ]
-    )
+    # group_spawn_gz= GroupAction(
+    #     [gazebo, 
+    #      node_gz_spawn_entity,
+    #     ]
+    # )
 
 
     # Create the launch description and populate
@@ -271,7 +271,7 @@ def generate_launch_description():
     ld.add_action(node_gz_bridge)
     for node_republisher in node_image_republishers:
         ld.add_action(node_republisher)
-    ld.add_action(group_spawn_gz)
+    # ld.add_action(group_spawn_gz)
     ld.add_action(node_rviz2)
 
     # Generate the launch description  

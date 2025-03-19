@@ -43,7 +43,115 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/olympusolutions/senior_ws/build/minibot/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minibot" TYPE EXECUTABLE FILES "/home/olympusolutions/senior_ws/build/minibot/velocity_publisher")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher"
+         OLD_RPATH "/opt/ros/jazzy/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minibot/velocity_publisher")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/olympusolutions/senior_ws/build/minibot/CMakeFiles/velocity_publisher.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE DIRECTORY FILES
+    "/home/olympusolutions/senior_ws/src/minibot/config"
+    "/home/olympusolutions/senior_ws/src/minibot/description"
+    "/home/olympusolutions/senior_ws/src/minibot/launch"
+    "/home/olympusolutions/senior_ws/src/minibot/worlds"
+    "/home/olympusolutions/senior_ws/src/minibot/demo_publisher_node"
+    "/home/olympusolutions/senior_ws/src/minibot/maps"
+    "/home/olympusolutions/senior_ws/src/minibot/visual_demos"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE DIRECTORY FILES
+    "/home/olympusolutions/senior_ws/src/minibot/launch"
+    "/home/olympusolutions/senior_ws/src/minibot/config"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minibot" TYPE PROGRAM FILES
+    "/home/olympusolutions/senior_ws/src/minibot/demo_publisher_node/extender_teleop_node.py"
+    "/home/olympusolutions/senior_ws/src/minibot/demo_publisher_node/gripper_teleop_node.py"
+    "/home/olympusolutions/senior_ws/src/minibot/demo_publisher_node/platform_teleop_node.py"
+    "/home/olympusolutions/senior_ws/src/minibot/demo_publisher_node/linear_data_collector_node.py"
+    "/home/olympusolutions/senior_ws/src/minibot/demo_publisher_node/imu_publisher_node.py"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/minibot")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/minibot")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot/environment" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot/environment" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_index/share/ament_index/resource_index/packages/minibot")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot/cmake" TYPE FILE FILES
+    "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_core/minibotConfig.cmake"
+    "/home/olympusolutions/senior_ws/build/minibot/ament_cmake_core/minibotConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/minibot" TYPE FILE FILES "/home/olympusolutions/senior_ws/src/minibot/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

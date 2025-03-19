@@ -100,7 +100,7 @@ Visualization Manager:
               {}
             right_wheel:
               {}
-      Update Interval: 0
+      Update Interval: 0.1
       Value: true
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
@@ -167,7 +167,7 @@ Visualization Manager:
         Mass: false
       Name: RobotModel
       TF Prefix: ""
-      Update Interval: 0
+      Update Interval: 0.1
       Value: true
       Visual Enabled: true
     - Alpha: 1
@@ -201,6 +201,7 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /scan
+      Update Interval: 0.2
       Use Fixed Frame: true
       Use rainbow: true
       Value: true

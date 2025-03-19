@@ -1,1 +1,2 @@
-/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs/msg/MotorVels.msg
+float32 mot_1_rad_sec
+float32 mot_2_rad_sec

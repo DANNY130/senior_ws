@@ -1,0 +1,56 @@
+[2.215s] Invoking command in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo': AMENT_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olympusolutions/senior_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/olympusolutions/senior_ws/build/serial_motor_demo/build install --record /home/olympusolutions/senior_ws/build/serial_motor_demo/install.log --install-scripts $base/lib/serial_motor_demo --single-version-externally-managed install_data
+[2.486s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[2.486s] !!
+[2.486s] 
+[2.486s]         ********************************************************************************
+[2.486s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.487s]         versions. Please use the underscore name 'script_dir' instead.
+[2.487s] 
+[2.487s]         This deprecation is overdue, please update your project and remove deprecated
+[2.487s]         calls to avoid build errors in the future.
+[2.487s] 
+[2.487s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.487s]         ********************************************************************************
+[2.487s] 
+[2.488s] !!
+[2.488s]   opt = self.warn_dash_deprecation(opt, section)
+[2.749s] running egg_info
+[2.750s] creating ../../../build/serial_motor_demo/serial_motor_demo.egg-info
+[2.779s] writing ../../../build/serial_motor_demo/serial_motor_demo.egg-info/PKG-INFO
+[2.785s] writing dependency_links to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/dependency_links.txt
+[2.785s] writing entry points to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/entry_points.txt
+[2.785s] writing requirements to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/requires.txt
+[2.785s] writing top-level names to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/top_level.txt
+[2.785s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[2.865s] reading manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[2.866s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[2.867s] running build
+[2.867s] running build_py
+[2.867s] creating /home/olympusolutions/senior_ws/build/serial_motor_demo/build
+[2.868s] creating /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib
+[2.868s] creating /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[2.868s] copying serial_motor_demo/__init__.py -> /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[2.868s] copying serial_motor_demo/driver.py -> /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[2.868s] copying serial_motor_demo/gui.py -> /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[2.869s] running install
+[2.880s] running install_lib
+[2.924s] creating /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[2.925s] copying /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo/__init__.py -> /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[2.925s] copying /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo/driver.py -> /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[2.925s] copying /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo/gui.py -> /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[2.926s] byte-compiling /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/__init__.py to __init__.cpython-312.pyc
+[2.927s] byte-compiling /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/driver.py to driver.cpython-312.pyc
+[2.931s] byte-compiling /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/gui.py to gui.cpython-312.pyc
+[2.935s] running install_data
+[2.936s] creating /home/olympusolutions/senior_ws/install/serial_motor_demo/share/ament_index
+[2.937s] creating /home/olympusolutions/senior_ws/install/serial_motor_demo/share/ament_index/resource_index
+[2.937s] creating /home/olympusolutions/senior_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+[2.937s] copying resource/serial_motor_demo -> /home/olympusolutions/senior_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+[2.937s] copying package.xml -> /home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo
+[2.937s] running install_egg_info
+[2.975s] Copying ../../../build/serial_motor_demo/serial_motor_demo.egg-info to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo-0.0.0-py3.12.egg-info
+[2.979s] running install_scripts
+[3.262s] Installing driver script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+[3.263s] Installing gui script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+[3.264s] writing list of installed files to '/home/olympusolutions/senior_ws/build/serial_motor_demo/install.log'
+[3.420s] Invoked command in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo' returned '0': AMENT_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olympusolutions/senior_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/olympusolutions/senior_ws/build/serial_motor_demo/build install --record /home/olympusolutions/senior_ws/build/serial_motor_demo/install.log --install-scripts $base/lib/serial_motor_demo --single-version-externally-managed install_data

@@ -1,0 +1,79 @@
+[0.747s] Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/serial
+[0.914s] -- The C compiler identification is GNU 13.3.0
+[1.080s] -- The CXX compiler identification is GNU 13.3.0
+[1.129s] -- Detecting C compiler ABI info
+[1.415s] -- Detecting C compiler ABI info - done
+[1.434s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.436s] -- Detecting C compile features
+[1.436s] -- Detecting C compile features - done
+[1.458s] -- Detecting CXX compiler ABI info
+[1.830s] -- Detecting CXX compiler ABI info - done
+[1.850s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.851s] -- Detecting CXX compile features
+[1.853s] -- Detecting CXX compile features - done
+[1.864s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.257s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.624s] -- Found ament_cmake_gtest: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[2.647s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  
+[2.658s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.663s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.941s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.947s] -- Found Threads: TRUE  
+[3.258s] -- Configuring done (2.5s)
+[3.298s] -- Generating done (0.0s)
+[3.308s] -- Build files have been written to: /home/olympusolutions/senior_ws/build/serial
+[3.326s] Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/serial
+[3.327s] Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial -- -j4 -l4
+[3.452s] [  7%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[6.082s] [ 14%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[8.258s] [ 21%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[10.555s] [ 28%] [32m[1mLinking CXX static library libserial.a[0m
+[10.841s] [ 28%] Built target serial
+[11.015s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[20.724s] [ 42%] [32m[1mLinking CXX static library libgtest.a[0m
+[20.986s] [ 42%] Built target gtest
+[21.050s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o[0m
+[22.049s] [ 57%] [32m[1mLinking CXX executable serial_example[0m
+[22.276s] [ 57%] Built target serial_example
+[22.326s] [ 64%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[24.141s] [ 71%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[24.227s] [ 71%] Built target gtest_main
+[24.279s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o[0m
+[26.304s] In file included from [01m[K/usr/include/boost/bind/detail/requires_cxx11.hpp:9[m[K,
+[26.304s]                  from [01m[K/usr/include/boost/bind/bind.hpp:24[m[K,
+[26.304s]                  from [01m[K/usr/include/boost/bind.hpp:29[m[K,
+[26.305s]                  from [01m[K/home/olympusolutions/senior_ws/src/serial/tests/unix_serial_tests.cc:23[m[K:
+[26.305s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[26.305s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[26.305s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[26.956s] [ 85%] [32m[1mLinking CXX executable serial-test[0m
+[27.249s] [ 85%] Built target serial-test
+[27.294s] [ 92%] [32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o[0m
+[28.846s] [100%] [32m[1mLinking CXX executable serial-test-timer[0m
+[29.129s] [100%] Built target serial-test-timer
+[29.154s] Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial -- -j4 -l4
+[29.156s] Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial
+[29.172s] -- Install configuration: ""
+[29.172s] -- Installing: /home/olympusolutions/senior_ws/install/serial/lib/libserial.a
+[29.173s] -- Installing: /home/olympusolutions/senior_ws/install/serial/include/serial/serial.h
+[29.173s] -- Installing: /home/olympusolutions/senior_ws/install/serial/include/serial/v8stdint.h
+[29.174s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/library_path.sh
+[29.174s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/library_path.dsv
+[29.174s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[29.175s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[29.175s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[29.175s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[29.175s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/path.sh
+[29.176s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/path.dsv
+[29.176s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.bash
+[29.176s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.sh
+[29.176s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.zsh
+[29.176s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.dsv
+[29.177s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/package.dsv
+[29.177s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/ament_index/resource_index/packages/serial
+[29.177s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.177s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[29.178s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[29.178s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[29.178s] -- Installing: /home/olympusolutions/senior_ws/install/serial/share/serial/package.xml
+[29.186s] Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial
