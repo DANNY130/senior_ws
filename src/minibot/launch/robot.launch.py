@@ -64,7 +64,7 @@ def generate_launch_description():
     rviz_config_file_dir = os.path.join(
         package_dir, 
         'config', 
-        'minibot_config.rviz'
+        'sim_config.rviz'
     )
 
     robot_controllers_file_dir = os.path.join(
@@ -112,7 +112,7 @@ def generate_launch_description():
     camera = 'image_raw'
     depth_camera = 'depth/image_raw'
     image_transports = ['compressed','compressedDepth', 'theora', 'zstd' ]  
-    node_image_republishers = [image_transport_republisher(transport, depth_camera) 
+    node_image_republishers = [image_transport_republisher(transport, camera) 
                           for transport in image_transports]
  
     # controller spawn
@@ -198,6 +198,15 @@ def generate_launch_description():
             ('cmd_vel_in', 'cmd_vel_smoothed'),
             ('cmd_vel_out', 'nav_vel'),
         ],
+    )
+
+    node_rviz2 = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_file_dir],
+        parameters=[{'use_sim_time': False}],
+        output='both'
     )
 
     register_node_ros2_control = RegisterEventHandler(
@@ -298,6 +307,7 @@ def generate_launch_description():
         ld.add_action(node_republisher)
     # ld.add_action(node_rplidar_start)
     ld.add_action(node_rplidar_drive)
+    ld.add_action(node_rviz2)
 
     # Generate the launch description  
     return ld

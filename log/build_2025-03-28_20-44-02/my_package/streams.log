@@ -1,0 +1,17 @@
+[6.152s] Invoking command in '/home/olympusolutions/senior_ws/build/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data
+[8.696s] running develop
+[10.393s] running egg_info
+[10.479s] writing my_package.egg-info/PKG-INFO
+[10.484s] writing dependency_links to my_package.egg-info/dependency_links.txt
+[10.485s] writing entry points to my_package.egg-info/entry_points.txt
+[10.485s] writing requirements to my_package.egg-info/requires.txt
+[10.485s] writing top-level names to my_package.egg-info/top_level.txt
+[10.761s] reading manifest file 'my_package.egg-info/SOURCES.txt'
+[10.763s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[10.859s] running build_ext
+[10.860s] Creating /home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages/my-package.egg-link (link to .)
+[10.864s] Installing my_node script to /home/olympusolutions/senior_ws/install/my_package/lib/my_package
+[10.864s] 
+[10.865s] Installed /home/olympusolutions/senior_ws/build/my_package
+[10.865s] running symlink_data
+[11.213s] Invoked command in '/home/olympusolutions/senior_ws/build/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data

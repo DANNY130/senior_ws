@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/FollowWaypoints.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "nav2_msgs/msg/MissedWaypoint.idl"
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct FollowWaypoints_Goal {
+      uint32 number_of_loops;
+
+      @default (value=0)
+      uint32 goal_index;
+
+      sequence<geometry_msgs::msg::PoseStamped> poses;
+    };
+    module FollowWaypoints_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the errors should match the message order")
+      const uint16 NONE = 0;
+      const uint16 UNKNOWN = 600;
+      const uint16 TASK_EXECUTOR_FAILED = 601;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct FollowWaypoints_Result {
+      sequence<nav2_msgs::msg::MissedWaypoint> missed_waypoints;
+
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback definition")
+    struct FollowWaypoints_Feedback {
+      uint32 current_waypoint;
+    };
+  };
+};

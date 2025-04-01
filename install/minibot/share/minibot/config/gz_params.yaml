@@ -1,3 +1,1 @@
-gazebo:
-  ros__parameters:
-    publish_rate: 500.0
+/home/olympusolutions/senior_ws/src/minibot/config/gz_params.yaml

@@ -1,0 +1,52 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/UndockRobot.action
+// generated code does not contain a copyright notice
+
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct UndockRobot_Goal {
+      @verbatim (language="comment", text=
+        "If initialized on a dock so the server doesn't know what type of dock its on," "\n"
+        "you must specify what dock it is to know where to stage for undocking." "\n"
+        "If only one type of dock plugin is present, it is not necessary to set." "\n"
+        "If not set & server instance was used to dock, server will use current dock information from last docking request.")
+      string dock_type;
+
+      @verbatim (language="comment", text=
+        "Maximum time to undock")
+      @default (value=30.0)
+      float max_undocking_time;
+    };
+    module UndockRobot_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the errors should match the message order")
+      const uint16 NONE = 0;
+      const uint16 DOCK_NOT_VALID = 902;
+      const uint16 FAILED_TO_CONTROL = 905;
+      const uint16 UNKNOWN = 999;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct UndockRobot_Result {
+      @verbatim (language="comment", text=
+        "docking success status")
+      @default (value=TRUE)
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "Contextual error code, if any")
+      @default (value=0)
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback definition")
+    struct UndockRobot_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

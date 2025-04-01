@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/FollowGPSWaypoints.action
+// generated code does not contain a copyright notice
+
+#include "geographic_msgs/msg/GeoPose.idl"
+#include "nav2_msgs/msg/MissedWaypoint.idl"
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct FollowGPSWaypoints_Goal {
+      uint32 number_of_loops;
+
+      @default (value=0)
+      uint32 goal_index;
+
+      sequence<geographic_msgs::msg::GeoPose> gps_poses;
+    };
+    module FollowGPSWaypoints_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the errors should match the message order")
+      const uint16 NONE = 0;
+      const uint16 UNKNOWN = 600;
+      const uint16 TASK_EXECUTOR_FAILED = 601;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct FollowGPSWaypoints_Result {
+      sequence<nav2_msgs::msg::MissedWaypoint> missed_waypoints;
+
+      int16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback")
+    struct FollowGPSWaypoints_Feedback {
+      uint32 current_waypoint;
+    };
+  };
+};

@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/AssistedTeleop.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct AssistedTeleop_Goal {
+      builtin_interfaces::msg::Duration time_allowance;
+    };
+    module AssistedTeleop_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the error should match the message order")
+      const uint16 NONE = 0;
+      const uint16 UNKNOWN = 730;
+      const uint16 TIMEOUT = 731;
+      const uint16 TF_ERROR = 732;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct AssistedTeleop_Result {
+      builtin_interfaces::msg::Duration total_elapsed_time;
+
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback")
+    struct AssistedTeleop_Feedback {
+      builtin_interfaces::msg::Duration current_teleop_duration;
+    };
+  };
+};

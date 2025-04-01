@@ -4,14 +4,14 @@
     <xacro:property name="camera_length"             value="0.01"/>
     <xacro:property name="camera_width"              value="0.03"/>
     <xacro:property name="camera_height"             value="0.03"/>
-    <xacro:property name="camera_offset_x"           value="0.318"/>
-    <xacro:property name="camera_offset_z"           value="0.063"/>
+    <xacro:property name="camera_offset_x"           value="0.5"/>
+    <xacro:property name="camera_offset_z"           value="1.0"/>
 
     <!-- Camera -->
     <joint name="camera_joint" type="fixed">
         <parent link="chasis"/>
         <child link="camera_link"/>
-        <origin xyz="${camera_offset_x} 0.0 ${camera_offset_z}" rpy="0 0 0"/>    
+        <origin xyz="${camera_offset_x} 0.0 ${camera_offset_z}" rpy="0 ${pi/4} 0"/>    
     </joint>
 
     <link name="camera_link">
@@ -30,7 +30,6 @@
     </joint>
 
     <link name="camera_link_optical"></link>
-    
 
     <!-- Camera in gazebo-->  
     <gazebo reference="camera_link">
@@ -49,7 +48,6 @@
                     <format>R8G8B8</format>
                     <width>640</width>
                     <height>480</height>
-                </image>
                 <clip>
                     <near>0.05</near>
                     <far>8.0</far>

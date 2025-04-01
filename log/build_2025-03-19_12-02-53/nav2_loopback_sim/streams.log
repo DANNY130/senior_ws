@@ -1,0 +1,38 @@
+[4.840s] Invoking command in '/home/olympusolutions/senior_ws/navigation2/nav2_loopback_sim': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/nav2_loopback_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nav2_loopback_sim build --build-base /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build install --record /home/olympusolutions/senior_ws/build/nav2_loopback_sim/install.log --single-version-externally-managed install_data
+[6.604s] running egg_info
+[6.611s] creating ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info
+[6.750s] writing ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/PKG-INFO
+[6.752s] writing dependency_links to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/dependency_links.txt
+[6.752s] writing entry points to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/entry_points.txt
+[6.755s] writing requirements to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/requires.txt
+[6.756s] writing top-level names to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/top_level.txt
+[6.761s] writing manifest file '../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/SOURCES.txt'
+[7.035s] reading manifest file '../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/SOURCES.txt'
+[7.035s] writing manifest file '../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/SOURCES.txt'
+[7.038s] running build
+[7.049s] running build_py
+[7.049s] creating /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build
+[7.049s] creating /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib
+[7.050s] creating /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim
+[7.050s] copying nav2_loopback_sim/loopback_simulator.py -> /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim
+[7.050s] copying nav2_loopback_sim/utils.py -> /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim
+[7.056s] running install
+[7.085s] running install_lib
+[7.235s] creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim
+[7.235s] copying /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim/loopback_simulator.py -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim
+[7.235s] copying /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim/utils.py -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim
+[7.236s] byte-compiling /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim/loopback_simulator.py to loopback_simulator.cpython-312.pyc
+[7.258s] byte-compiling /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim/utils.py to utils.cpython-312.pyc
+[7.258s] running install_data
+[7.258s] creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index
+[7.258s] creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index/resource_index
+[7.258s] creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index/resource_index/packages
+[7.262s] copying resource/nav2_loopback_sim -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index/resource_index/packages
+[7.262s] copying package.xml -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/nav2_loopback_sim
+[7.262s] copying launch/loopback_simulation.launch.py -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/nav2_loopback_sim
+[7.262s] running install_egg_info
+[7.345s] Copying ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info to /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim-1.0.0-py3.12.egg-info
+[7.345s] running install_scripts
+[8.053s] Installing loopback_simulator script to /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/nav2_loopback_sim
+[8.056s] writing list of installed files to '/home/olympusolutions/senior_ws/build/nav2_loopback_sim/install.log'
+[8.370s] Invoked command in '/home/olympusolutions/senior_ws/navigation2/nav2_loopback_sim' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/nav2_loopback_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nav2_loopback_sim build --build-base /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build install --record /home/olympusolutions/senior_ws/build/nav2_loopback_sim/install.log --single-version-externally-managed install_data

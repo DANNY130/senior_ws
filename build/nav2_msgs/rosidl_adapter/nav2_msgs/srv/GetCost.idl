@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav2_msgs/srv/GetCost.srv
+// generated code does not contain a copyright notice
+
+
+module nav2_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Get costmap cost at given point")
+    struct GetCost_Request {
+      boolean use_footprint;
+
+      float x;
+
+      float y;
+
+      float theta;
+    };
+    struct GetCost_Response {
+      float cost;
+    };
+  };
+};

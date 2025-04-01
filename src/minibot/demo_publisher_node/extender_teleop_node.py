@@ -22,10 +22,14 @@ class ExtenderTeleopNode(Node):
         self.subscription = self.create_subscription(Joy, 'joy', self.joy_callback, 10)
 
     def joy_callback(self, msg):
+        command = Float64MultiArray()
         if msg.buttons[self.enable_button]:
-            command = Float64MultiArray()
+            # self.get_logger().info("Enable button pressed")
             command.data = [msg.axes[self.axis] * self.scale]
-            self.publisher_.publish(command)
+        else:
+            # self.get_logger().info("Enable button not pressed")
+            command.data = [0.0]
+        self.publisher_.publish(command)
 
 def main(args=None):
     rclpy.init(args=args)

@@ -1,0 +1,58 @@
+-- Found ament_cmake_core: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_core/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_cmake_python: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_python/cmake)
+-- Configuring done (2.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/olympusolutions/senior_ws/build/nav2_common
+Built target ament_cmake_python_copy_nav2_common
+running egg_info
+creating nav2_common.egg-info
+writing nav2_common.egg-info/PKG-INFO
+writing dependency_links to nav2_common.egg-info/dependency_links.txt
+writing top-level names to nav2_common.egg-info/top_level.txt
+writing manifest file 'nav2_common.egg-info/SOURCES.txt'
+reading manifest file 'nav2_common.egg-info/SOURCES.txt'
+writing manifest file 'nav2_common.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_nav2_common_egg
+-- Install configuration: ""
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/environment/pythonpath.sh
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/environment/pythonpath.dsv
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.5-py3.12.egg-info
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.5-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.5-py3.12.egg-info/top_level.txt
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.5-py3.12.egg-info/PKG-INFO
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common-1.3.5-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/__init__.py
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/rewritten_yaml.py
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/__init__.py
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/replace_string.py
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/has_node_params.py
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/parse_multirobot_pose.py
+Listing '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common'...
+Compiling '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/__init__.py'...
+Listing '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch'...
+Compiling '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/__init__.py'...
+Compiling '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/has_node_params.py'...
+Compiling '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/parse_multirobot_pose.py'...
+Compiling '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/replace_string.py'...
+Compiling '/home/olympusolutions/senior_ws/install/nav2_common/lib/python3.12/site-packages/nav2_common/launch/rewritten_yaml.py'...
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/ament_index/resource_index/package_run_dependencies/nav2_common
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/ament_index/resource_index/parent_prefix_path/nav2_common
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/environment/ament_prefix_path.sh
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/environment/ament_prefix_path.dsv
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/environment/path.sh
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/environment/path.dsv
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/local_setup.bash
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/local_setup.sh
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/local_setup.zsh
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/local_setup.dsv
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/package.dsv
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/ament_index/resource_index/packages/nav2_common
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/cmake/nav2_common-extras.cmake
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig.cmake
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig-version.cmake
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/package.xml
+-- Up-to-date: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/cmake
+-- Installing: /home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/cmake/nav2_package.cmake

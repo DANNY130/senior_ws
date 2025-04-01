@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "nav2_msgs__py",
+		"source" : "/home/olympusolutions/senior_ws/build/nav2_msgs/nav2_msgs__py"
+	}
+}

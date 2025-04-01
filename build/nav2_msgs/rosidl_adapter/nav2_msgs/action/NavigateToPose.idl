@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/NavigateToPose.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "geometry_msgs/msg/PoseStamped.idl"
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct NavigateToPose_Goal {
+      geometry_msgs::msg::PoseStamped pose;
+
+      string behavior_tree;
+    };
+    module NavigateToPose_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the errors should match the message order")
+      const uint16 NONE = 0;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct NavigateToPose_Result {
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback definition")
+    struct NavigateToPose_Feedback {
+      geometry_msgs::msg::PoseStamped current_pose;
+
+      builtin_interfaces::msg::Duration navigation_time;
+
+      builtin_interfaces::msg::Duration estimated_time_remaining;
+
+      int16 number_of_recoveries;
+
+      float distance_remaining;
+    };
+  };
+};

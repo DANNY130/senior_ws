@@ -1,0 +1,127 @@
+[0.457s] Invoking command in '/home/olympusolutions/senior_ws/build/minibot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/minibot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/minibot
+[0.488s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.757s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.791s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.850s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.874s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.894s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.922s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.054s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.058s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.304s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.530s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.593s] -- Found rclpy: 7.1.3 (/opt/ros/jazzy/share/rclpy/cmake)
+[2.594s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.004s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.010s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.010s] -- Configured cppcheck include dirs: 
+[3.010s] -- Configured cppcheck exclude dirs and/or files: 
+[3.015s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.015s] -- Configured cpplint exclude dirs and/or files: 
+[3.017s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.018s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.018s] -- Added test 'lint_cmake' to check CMake code style
+[3.021s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.027s] -- Added test 'uncrustify' to check C / C++ code style
+[3.027s] -- Configured uncrustify additional arguments: 
+[3.028s] -- Added test 'xmllint' to check XML markup files
+[3.036s] -- Configuring done (2.6s)
+[3.092s] -- Generating done (0.0s)
+[3.118s] -- Build files have been written to: /home/olympusolutions/senior_ws/build/minibot
+[3.177s] Invoked command in '/home/olympusolutions/senior_ws/build/minibot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/minibot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/minibot
+[3.181s] Invoking command in '/home/olympusolutions/senior_ws/build/minibot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/minibot -- -j4 -l4
+[3.373s] [100%] Built target velocity_publisher
+[3.405s] Invoked command in '/home/olympusolutions/senior_ws/build/minibot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/minibot -- -j4 -l4
+[3.412s] Invoking command in '/home/olympusolutions/senior_ws/build/minibot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/minibot
+[3.476s] -- Install configuration: ""
+[3.477s] -- Execute custom install script
+[3.477s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/lib/minibot/velocity_publisher
+[3.478s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/controller.yaml
+[3.478s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/controller_gz_sim.yaml
+[3.478s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/empty.yaml
+[3.479s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/gz_params.yaml
+[3.480s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/joystick_params.yaml
+[3.480s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/mapper_params_localization.yaml
+[3.480s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/mapper_params_online_async.yaml
+[3.483s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/minibot_config.rviz
+[3.483s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/minibot_display.rviz
+[3.483s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/nav2_params.yaml
+[3.483s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/sim_config.rviz
+[3.484s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/twist_mux.yaml
+[3.493s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/camera.xacro
+[3.496s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/depth_camera.xacro
+[3.496s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/gz_diff_drive_control.xacro
+[3.496s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/inertial_macros.xacro
+[3.497s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/lidar.xacro
+[3.497s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/robot.urdf.xacro
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/robot_main.xacro
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/description/ros2_control.xacro
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/joystick_teleop.launch.py
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard.launch.py
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard_combine.launch.py
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/navigation_launch.py
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot.launch.py
+[3.498s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot_remote_station.launch.py
+[3.504s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim.launch.py
+[3.511s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim_control_station.launch.py
+[3.513s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/worlds/empty.sdf
+[3.513s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/worlds/playground.sdf
+[3.513s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/extender_teleop_node.py
+[3.513s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/gripper_teleop_node.py
+[3.513s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/imu_publisher_node.py
+[3.514s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/linear_data_collector_node.py
+[3.514s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/platform_teleop_node.py
+[3.514s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/velocity_publisher.cpp
+[3.514s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/map_01.pgm
+[3.514s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/map_01.yaml
+[3.516s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/map_01_serial.data
+[3.517s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/map_01_serial.posegraph
+[3.517s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/sample_map.pgm
+[3.517s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/sample_map.yaml
+[3.519s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/sample_map_serial.data
+[3.519s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/sample_map_serial.posegraph
+[3.519s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/visual_demos/Nav2_demostration-ezgif.com-video-to-gif-converter.gif
+[3.519s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/visual_demos/SLAM_demostration-ezgif.com-video-to-gif-converter.gif
+[3.519s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/visual_demos/robot_hardware.jpg
+[3.519s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/visual_demos/robot_visual.jpg
+[3.525s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/joystick_teleop.launch.py
+[3.525s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard.launch.py
+[3.525s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/keyboard_combine.launch.py
+[3.526s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/navigation_launch.py
+[3.526s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot.launch.py
+[3.530s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/robot_remote_station.launch.py
+[3.535s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim.launch.py
+[3.536s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim_control_station.launch.py
+[3.536s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/controller.yaml
+[3.536s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/controller_gz_sim.yaml
+[3.536s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/empty.yaml
+[3.536s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/gz_params.yaml
+[3.537s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/joystick_params.yaml
+[3.537s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/mapper_params_localization.yaml
+[3.537s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/mapper_params_online_async.yaml
+[3.546s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/minibot_config.rviz
+[3.547s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/minibot_display.rviz
+[3.547s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/nav2_params.yaml
+[3.547s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/sim_config.rviz
+[3.547s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/config/twist_mux.yaml
+[3.548s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/lib/minibot/extender_teleop_node.py
+[3.548s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/lib/minibot/gripper_teleop_node.py
+[3.548s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/lib/minibot/platform_teleop_node.py
+[3.548s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/lib/minibot/linear_data_collector_node.py
+[3.548s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/lib/minibot/imu_publisher_node.py
+[3.548s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/ament_index/resource_index/package_run_dependencies/minibot
+[3.554s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/ament_index/resource_index/parent_prefix_path/minibot
+[3.554s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/environment/ament_prefix_path.sh
+[3.554s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/environment/ament_prefix_path.dsv
+[3.554s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/environment/path.sh
+[3.554s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/environment/path.dsv
+[3.560s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/local_setup.bash
+[3.562s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/local_setup.sh
+[3.562s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/local_setup.zsh
+[3.563s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/local_setup.dsv
+[3.569s] -- Symlinking: /home/olympusolutions/senior_ws/install/minibot/share/minibot/package.dsv
+[3.631s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/ament_index/resource_index/packages/minibot
+[3.633s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/cmake/minibotConfig.cmake
+[3.633s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/cmake/minibotConfig-version.cmake
+[3.633s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/minibot/share/minibot/package.xml
+[3.658s] Invoked command in '/home/olympusolutions/senior_ws/build/minibot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/minibot

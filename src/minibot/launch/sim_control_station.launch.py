@@ -35,10 +35,15 @@ def generate_launch_description():
     )  
 
     # Declare the path to files
-    joy_params_file = os.path.join(
-        get_package_share_directory(package_name), 
-        'config', 
-        'joystick_params.yaml' 
+    # joy_params_file = os.path.join(
+    #     get_package_share_directory(package_name), 
+    #     'config', 
+    #     'joystick_params.yaml' 
+    # )
+    joystick_teleop_launch = os.path.join(
+        get_package_share_directory('minibot'),  # Replace 'minibot' with the correct package name
+        'launch',
+        'joystick_teleop.launch.py'     #publish a topic called /joy which is the medium
     )
 
     mapper_params_online_async_file = os.path.join(
@@ -59,21 +64,21 @@ def generate_launch_description():
         'nav2_params.yaml'
     )
 
-    # joy node
-    joy_node = Node(
-        package='joy',
-        executable='joy_node',
-        parameters=[joy_params_file]
-    )    
+    # # joy node
+    # joy_node = Node(
+    #     package='joy',
+    #     executable='joy_node',
+    #     parameters=[joy_params_file]
+    # )    
 
-    # teleop node
-    teleop_node = Node(
-        package='teleop_twist_joy',
-        executable='teleop_node',
-        name= 'teleop_node',
-        parameters=[joy_params_file],
-        remappings=[('/cmd_vel','joy_vel')]
-    )   
+    # # teleop node
+    # teleop_node = Node(
+    #     package='teleop_twist_joy',
+    #     executable='teleop_node',
+    #     name= 'teleop_node',
+    #     parameters=[joy_params_file],
+    #     remappings=[('/cmd_vel','joy_vel')]
+    # )   
         
     # online_async_slam launch 
     online_async_slam = IncludeLaunchDescription(
@@ -130,7 +135,9 @@ def generate_launch_description():
                 }.items()            
     )
 
-    
+    joystick_teleop = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(joystick_teleop_launch)
+    )
 
      # Create the launch description and populate
     ld = LaunchDescription()
@@ -141,8 +148,9 @@ def generate_launch_description():
     ld.add_action(declare_use_slam_option)
 
     # Add the nodes to the launch description
-    ld.add_action(joy_node)
-    ld.add_action(teleop_node)
+    # ld.add_action(joy_node)
+    # ld.add_action(teleop_node)
+    ld.add_action(joystick_teleop)
 
     # Add SLAM options
     ld.add_action(online_async_slam)

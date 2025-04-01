@@ -1,2 +1,1 @@
-source;share/sllidar_ros2/environment/ament_prefix_path.sh
-source;share/sllidar_ros2/environment/path.sh
+/home/olympusolutions/senior_ws/build/sllidar_ros2/ament_cmake_environment_hooks/local_setup.dsv

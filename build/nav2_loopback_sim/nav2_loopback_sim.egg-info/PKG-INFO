@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: nav2-loopback-sim
+Version: 1.0.0
+Summary: A loopback simulator to replace physics simulation
+Maintainer: stevemacenski
+Maintainer-email: steve@opennav.org
+License: Apache-2.0

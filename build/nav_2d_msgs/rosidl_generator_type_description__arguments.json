@@ -1,0 +1,17 @@
+{
+  "package_name": "nav_2d_msgs",
+  "output_dir": "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_generator_type_description/nav_2d_msgs",
+  "idl_tuples": [
+    "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs:msg/Path2D.idl",
+    "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs:msg/Pose2D32.idl",
+    "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs:msg/Pose2DStamped.idl",
+    "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs:msg/Twist2D.idl",
+    "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs:msg/Twist2D32.idl",
+    "/home/olympusolutions/senior_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs:msg/Twist2DStamped.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

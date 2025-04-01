@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from nav2_msgs/msg/CostmapUpdate.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module nav2_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Update msg for Costmap containing the modified part of Costmap")
+    struct CostmapUpdate {
+      std_msgs::msg::Header header;
+
+      uint32 x;
+
+      uint32 y;
+
+      uint32 size_x;
+
+      uint32 size_y;
+
+      @verbatim (language="comment", text=
+        "The cost data, in row-major order, starting with (x,y) from 0-255 in Costmap format rather than OccupancyGrid 0-100.")
+      sequence<uint8> data;
+    };
+  };
+};

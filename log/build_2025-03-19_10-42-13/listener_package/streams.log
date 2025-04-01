@@ -1,0 +1,24 @@
+[3.964s] Invoking command in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/listener_package build --build-base /home/olympusolutions/senior_ws/build/listener_package/build install --record /home/olympusolutions/senior_ws/build/listener_package/install.log --single-version-externally-managed install_data
+[5.713s] running egg_info
+[5.790s] writing ../../../../build/listener_package/listener_package.egg-info/PKG-INFO
+[5.794s] writing dependency_links to ../../../../build/listener_package/listener_package.egg-info/dependency_links.txt
+[5.797s] writing entry points to ../../../../build/listener_package/listener_package.egg-info/entry_points.txt
+[5.802s] writing requirements to ../../../../build/listener_package/listener_package.egg-info/requires.txt
+[5.802s] writing top-level names to ../../../../build/listener_package/listener_package.egg-info/top_level.txt
+[6.069s] reading manifest file '../../../../build/listener_package/listener_package.egg-info/SOURCES.txt'
+[6.069s] adding license file 'LICENSE'
+[6.069s] writing manifest file '../../../../build/listener_package/listener_package.egg-info/SOURCES.txt'
+[6.081s] running build
+[6.082s] running build_py
+[6.087s] running install
+[6.126s] running install_lib
+[6.210s] running install_data
+[6.221s] running install_egg_info
+[6.371s] removing '/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package-0.0.0-py3.12.egg-info' (and everything under it)
+[6.372s] Copying ../../../../build/listener_package/listener_package.egg-info to /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package-0.0.0-py3.12.egg-info
+[6.376s] running install_scripts
+[7.043s] Installing listener script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[7.047s] Installing phone_listener script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[7.048s] Installing talker script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[7.054s] writing list of installed files to '/home/olympusolutions/senior_ws/build/listener_package/install.log'
+[7.418s] Invoked command in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/listener_package build --build-base /home/olympusolutions/senior_ws/build/listener_package/build install --record /home/olympusolutions/senior_ws/build/listener_package/install.log --single-version-externally-managed install_data

@@ -1,0 +1,67 @@
+[0.072s] Invoking command in '/home/olympusolutions/senior_ws/build/extender_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/extender_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/extender_arduino
+[0.108s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.093s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.120s] -- Found hardware_interface: 4.24.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[1.208s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.224s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.256s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.282s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.900s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[1.983s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.996s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.049s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[2.079s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[2.117s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[2.134s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[2.161s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.482s] -- Found ament_cmake_gtest: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[2.803s] -- Configuring done (2.7s)
+[2.885s] -- Generating done (0.0s)
+[2.904s] -- Build files have been written to: /home/olympusolutions/senior_ws/build/extender_arduino
+[2.987s] Invoked command in '/home/olympusolutions/senior_ws/build/extender_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/extender_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/extender_arduino
+[2.987s] Invoking command in '/home/olympusolutions/senior_ws/build/extender_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/extender_arduino -- -j4 -l4
+[3.217s] [100%] Built target extender_arduino
+[3.316s] Invoked command in '/home/olympusolutions/senior_ws/build/extender_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/extender_arduino -- -j4 -l4
+[3.322s] Invoking command in '/home/olympusolutions/senior_ws/build/extender_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/extender_arduino
+[3.351s] -- Install configuration: ""
+[3.351s] -- Execute custom install script
+[3.354s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino//extender_arduino.xml
+[3.355s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/arduino_comms.hpp
+[3.355s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/diffbot_system.hpp
+[3.355s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/gripper.hpp
+[3.356s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/visibility_control.h
+[3.356s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/include/extender_arduino/extender_arduino/wheel.hpp
+[3.357s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/launch/view_robot.launch.py
+[3.358s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/ros2_control/diffbot.ros2_control.xacro
+[3.358s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/urdf/diffbot.materials.xacro
+[3.359s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/urdf/diffbot.urdf.xacro
+[3.359s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/urdf/diffbot_description.urdf.xacro
+[3.360s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/rviz/diffbot.rviz
+[3.362s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/rviz/diffbot_view.rviz
+[3.363s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/launch/diffbot.launch.py
+[3.365s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/config/diffbot_controllers.yaml
+[3.365s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/config/extender_controllers.yaml
+[3.366s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/library_path.sh
+[3.366s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/library_path.dsv
+[3.367s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/package_run_dependencies/extender_arduino
+[3.367s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/parent_prefix_path/extender_arduino
+[3.369s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/ament_prefix_path.sh
+[3.369s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/ament_prefix_path.dsv
+[3.369s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/path.sh
+[3.369s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/environment/path.dsv
+[3.369s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.bash
+[3.369s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.sh
+[3.371s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.zsh
+[3.372s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/local_setup.dsv
+[3.372s] -- Symlinking: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.dsv
+[3.420s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/packages/extender_arduino
+[3.420s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/extender_arduino
+[3.420s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/ament_cmake_export_targets-extras.cmake
+[3.420s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.420s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/extender_arduinoConfig.cmake
+[3.420s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/extender_arduinoConfig-version.cmake
+[3.421s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.xml
+[3.421s] -- Up-to-date: /home/olympusolutions/senior_ws/install/extender_arduino/lib/libextender_arduino.so
+[3.421s] -- Up-to-date: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/export_extender_arduinoExport.cmake
+[3.421s] -- Up-to-date: /home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/cmake/export_extender_arduinoExport-noconfig.cmake
+[3.495s] Invoked command in '/home/olympusolutions/senior_ws/build/extender_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/nav2_loopback_sim:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/extender_arduino

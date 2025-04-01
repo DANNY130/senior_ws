@@ -1,0 +1,23 @@
+[5.976s] Invoking command in '/home/olympusolutions/senior_ws/src/twist_stamper': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_stamper build --build-base /home/olympusolutions/senior_ws/build/twist_stamper/build install --record /home/olympusolutions/senior_ws/build/twist_stamper/install.log --single-version-externally-managed install_data
+[6.769s] Traceback (most recent call last):
+[6.787s]   File "/home/olympusolutions/senior_ws/src/twist_stamper/setup.py", line 1, in <module>
+[6.789s]     from setuptools import setup
+[6.789s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 270, in <module>
+[6.806s]     monkey.patch_all()
+[6.806s]   File "/usr/lib/python3/dist-packages/setuptools/monkey.py", line 96, in patch_all
+[6.818s]     patch_for_msvc_specialized_compiler()
+[6.818s]   File "/usr/lib/python3/dist-packages/setuptools/monkey.py", line 133, in patch_for_msvc_specialized_compiler
+[6.818s]     msvc = import_module('setuptools.msvc')
+[6.824s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[6.824s]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[6.824s]     return _bootstrap._gcd_import(name[level:], package, level)
+[6.825s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[6.825s]   File "/usr/lib/python3/dist-packages/setuptools/msvc.py", line 14, in <module>
+[6.825s]     import json
+[6.825s]   File "/usr/lib/python3.12/json/__init__.py", line 106, in <module>
+[6.841s]     from .decoder import JSONDecoder, JSONDecodeError
+[6.842s]   File "/usr/lib/python3.12/json/decoder.py", line 5, in <module>
+[6.860s]     from json import scanner
+[6.860s]   File "/usr/lib/python3.12/json/scanner.py", line 5, in <module>
+[6.860s]     from _json import make_scanner as c_make_scanner
+[6.861s] KeyboardInterrupt

@@ -1,0 +1,20 @@
+[4.742s] Invoking command in '/home/olympusolutions/senior_ws/build/twist_stamper': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/twist_stamper/build --no-deps symlink_data --force
+[5.910s] running develop
+[6.311s] running egg_info
+[6.350s] writing twist_stamper.egg-info/PKG-INFO
+[6.351s] writing dependency_links to twist_stamper.egg-info/dependency_links.txt
+[6.351s] writing entry points to twist_stamper.egg-info/entry_points.txt
+[6.352s] writing requirements to twist_stamper.egg-info/requires.txt
+[6.353s] writing top-level names to twist_stamper.egg-info/top_level.txt
+[6.433s] reading manifest file 'twist_stamper.egg-info/SOURCES.txt'
+[6.433s] writing manifest file 'twist_stamper.egg-info/SOURCES.txt'
+[6.477s] running build_ext
+[6.477s] Creating /home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages/twist-stamper.egg-link (link to .)
+[6.481s] Installing twist_stamper script to /home/olympusolutions/senior_ws/install/twist_stamper/lib/twist_stamper
+[6.484s] Installing twist_unstamper script to /home/olympusolutions/senior_ws/install/twist_stamper/lib/twist_stamper
+[6.484s] 
+[6.484s] Installed /home/olympusolutions/senior_ws/build/twist_stamper
+[6.484s] running symlink_data
+[6.485s] symbolically linking /home/olympusolutions/senior_ws/build/twist_stamper/resource/twist_stamper -> /home/olympusolutions/senior_ws/install/twist_stamper/share/ament_index/resource_index/packages
+[6.485s] symbolically linking /home/olympusolutions/senior_ws/build/twist_stamper/package.xml -> /home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper
+[6.606s] Invoked command in '/home/olympusolutions/senior_ws/build/twist_stamper' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/twist_stamper/build --no-deps symlink_data --force

@@ -1,0 +1,51 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/SmoothPath.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct SmoothPath_Goal {
+      nav_msgs::msg::Path path;
+
+      string smoother_id;
+
+      builtin_interfaces::msg::Duration max_smoothing_duration;
+
+      boolean check_for_collisions;
+    };
+    module SmoothPath_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the errors should match the message order")
+      const uint16 NONE = 0;
+      const uint16 UNKNOWN = 500;
+      const uint16 INVALID_SMOOTHER = 501;
+      const uint16 TIMEOUT = 502;
+      const uint16 SMOOTHED_PATH_IN_COLLISION = 503;
+      const uint16 FAILED_TO_SMOOTH_PATH = 504;
+      const uint16 INVALID_PATH = 505;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct SmoothPath_Result {
+      nav_msgs::msg::Path path;
+
+      builtin_interfaces::msg::Duration smoothing_duration;
+
+      boolean was_completed;
+
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback definition")
+    struct SmoothPath_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

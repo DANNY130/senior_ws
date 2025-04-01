@@ -1,6 +1,1 @@
-msg/EncoderVals.idl
-msg/EncoderVals.msg
-msg/MotorCommand.idl
-msg/MotorCommand.msg
-msg/MotorVels.idl
-msg/MotorVels.msg
+/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs

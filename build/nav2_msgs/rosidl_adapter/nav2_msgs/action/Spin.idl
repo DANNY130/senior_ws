@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/Spin.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+
+module nav2_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal definition")
+    struct Spin_Goal {
+      float target_yaw;
+
+      builtin_interfaces::msg::Duration time_allowance;
+    };
+    module Spin_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the error should match the message order")
+      const uint16 NONE = 0;
+      const uint16 UNKNOWN = 700;
+      const uint16 TIMEOUT = 701;
+      const uint16 TF_ERROR = 702;
+      const uint16 COLLISION_AHEAD = 703;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct Spin_Result {
+      builtin_interfaces::msg::Duration total_elapsed_time;
+
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback definition")
+    struct Spin_Feedback {
+      float angular_distance_traveled;
+    };
+  };
+};

@@ -1,0 +1,44 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from nav2_msgs/action/BackUp.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "geometry_msgs/msg/Point.idl"
+
+module nav2_msgs {
+  module action {
+    struct BackUp_Goal {
+      @verbatim (language="comment", text=
+        "goal definition")
+      geometry_msgs::msg::Point target;
+
+      float speed;
+
+      builtin_interfaces::msg::Duration time_allowance;
+    };
+    module BackUp_Result_Constants {
+      @verbatim (language="comment", text=
+        "Error codes" "\n"        "Note: The expected priority order of the error should match the message order")
+      const uint16 NONE = 0;
+      const uint16 UNKNOWN = 710;
+      const uint16 TIMEOUT = 711;
+      const uint16 TF_ERROR = 712;
+      const uint16 INVALID_INPUT = 713;
+      const uint16 COLLISION_AHEAD = 714;
+    };
+    @verbatim (language="comment", text=
+      "result definition")
+    struct BackUp_Result {
+      builtin_interfaces::msg::Duration total_elapsed_time;
+
+      uint16 error_code;
+
+      string error_msg;
+    };
+    @verbatim (language="comment", text=
+      "feedback definition")
+    struct BackUp_Feedback {
+      float distance_traveled;
+    };
+  };
+};

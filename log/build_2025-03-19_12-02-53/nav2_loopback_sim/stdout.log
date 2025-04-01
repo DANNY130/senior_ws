@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info
+writing ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/entry_points.txt
+writing requirements to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/requires.txt
+writing top-level names to ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/top_level.txt
+writing manifest file '../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/SOURCES.txt'
+reading manifest file '../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build
+creating /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib
+creating /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim
+copying nav2_loopback_sim/loopback_simulator.py -> /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim
+copying nav2_loopback_sim/utils.py -> /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim
+running install
+running install_lib
+creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim
+copying /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim/loopback_simulator.py -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim
+copying /home/olympusolutions/senior_ws/build/nav2_loopback_sim/build/lib/nav2_loopback_sim/utils.py -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim
+byte-compiling /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim/loopback_simulator.py to loopback_simulator.cpython-312.pyc
+byte-compiling /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim/utils.py to utils.cpython-312.pyc
+running install_data
+creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index
+creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index/resource_index
+creating /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index/resource_index/packages
+copying resource/nav2_loopback_sim -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/nav2_loopback_sim
+copying launch/loopback_simulation.launch.py -> /home/olympusolutions/senior_ws/install/nav2_loopback_sim/share/nav2_loopback_sim
+running install_egg_info
+Copying ../../build/nav2_loopback_sim/nav2_loopback_sim.egg-info to /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/python3.12/site-packages/nav2_loopback_sim-1.0.0-py3.12.egg-info
+running install_scripts
+Installing loopback_simulator script to /home/olympusolutions/senior_ws/install/nav2_loopback_sim/lib/nav2_loopback_sim
+writing list of installed files to '/home/olympusolutions/senior_ws/build/nav2_loopback_sim/install.log'

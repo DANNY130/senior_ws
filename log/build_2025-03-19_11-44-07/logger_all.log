@@ -1,0 +1,794 @@
+[0.925s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.926s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffad8ed130>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffada9daf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffada9daf0>>, mixin_verb=('build',))
+[1.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.204s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/olympusolutions/senior_ws'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.412s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.413s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.414s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.415s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.415s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.415s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.416s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[1.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[1.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[1.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[1.460s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[1.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extension 'ignore'
+[1.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extension 'ignore_ament_install'
+[1.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extensions ['colcon_pkg']
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extension 'colcon_pkg'
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extensions ['colcon_meta']
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extension 'colcon_meta'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extensions ['ros']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/extender_arduino) by extension 'ros'
+[1.474s] DEBUG:colcon.colcon_core.package_identification:Package 'src/extender_arduino' with type 'ros.ament_cmake' and name 'extender_arduino'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['ignore', 'ignore_ament_install']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ignore'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ignore_ament_install'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['colcon_pkg']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'colcon_pkg'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['colcon_meta']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'colcon_meta'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['ros']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ros'
+[1.486s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joy_tester' with type 'ros.ament_python' and name 'joy_tester'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extensions ['ignore', 'ignore_ament_install']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extension 'ignore'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extension 'ignore_ament_install'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extensions ['colcon_pkg']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extension 'colcon_pkg'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extensions ['colcon_meta']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extension 'colcon_meta'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extensions ['ros']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/minibot) by extension 'ros'
+[1.491s] DEBUG:colcon.colcon_core.package_identification:Package 'src/minibot' with type 'ros.ament_cmake' and name 'minibot'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'ignore'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'ignore_ament_install'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extensions ['colcon_pkg']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'colcon_pkg'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extensions ['colcon_meta']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'colcon_meta'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extensions ['ros']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'ros'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extensions ['cmake', 'python']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'cmake'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'python'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extensions ['python_setup_py']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws) by extension 'python_setup_py'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/build) by extension 'ignore'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/build) ignored
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/install) by extension 'ignore'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/install) ignored
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/log) by extension 'ignore'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/log) ignored
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'ignore'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'ignore_ament_install'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extensions ['colcon_pkg']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'colcon_pkg'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extensions ['colcon_meta']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'colcon_meta'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extensions ['ros']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'ros'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extensions ['cmake', 'python']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'cmake'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'python'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extensions ['python_setup_py']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src) by extension 'python_setup_py'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extensions ['ignore', 'ignore_ament_install']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extension 'ignore'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extension 'ignore_ament_install'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extensions ['colcon_pkg']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extension 'colcon_pkg'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extensions ['colcon_meta']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extension 'colcon_meta'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extensions ['ros']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/listener_package) by extension 'ros'
+[1.508s] DEBUG:colcon.colcon_core.package_identification:Package 'src/riley_ws/src/listener_package' with type 'ros.ament_python' and name 'listener_package'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extensions ['ignore', 'ignore_ament_install']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extension 'ignore'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extension 'ignore_ament_install'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extensions ['colcon_pkg']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extension 'colcon_pkg'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extensions ['colcon_meta']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extension 'colcon_meta'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extensions ['ros']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/riley_ws/src/my_package) by extension 'ros'
+[1.512s] DEBUG:colcon.colcon_core.package_identification:Package 'src/riley_ws/src/my_package' with type 'ros.ament_python' and name 'my_package'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[1.516s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ignore'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ignore_ament_install'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['colcon_pkg']
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'colcon_pkg'
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['colcon_meta']
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'colcon_meta'
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['ros']
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ros'
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['cmake', 'python']
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'cmake'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'python'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['python_setup_py']
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'python_setup_py'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ignore'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ignore_ament_install'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['colcon_pkg']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'colcon_pkg'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['colcon_meta']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'colcon_meta'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['ros']
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ros'
+[1.523s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_demo/serial_motor_demo' with type 'ros.ament_python' and name 'serial_motor_demo'
+[1.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore_ament_install'
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_pkg']
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_pkg'
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_meta']
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_meta'
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['ros']
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ros'
+[1.527s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_demo/serial_motor_demo_msgs' with type 'ros.ament_cmake' and name 'serial_motor_demo_msgs'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[1.533s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ignore', 'ignore_ament_install']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore_ament_install'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_pkg']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_pkg'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_meta']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_meta'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ros']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ros'
+[1.542s] DEBUG:colcon.colcon_core.package_identification:Package 'src/twist_stamper' with type 'ros.ament_python' and name 'twist_stamper'
+[1.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.542s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.773s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.773s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.818s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/olympusolutions/senior_ws/install
+[1.826s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 423 installed packages in /opt/ros/jazzy
+[1.834s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.291s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[2.292s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[2.296s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.296s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/diffdrive_arduino', 'symlink_install': False, 'test_result_base': None}
+[2.297s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'cmake_args' from command line to 'None'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'cmake_target' from command line to 'None'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[2.298s] Level 5:colcon.colcon_core.verb:set package 'extender_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.298s] DEBUG:colcon.colcon_core.verb:Building package 'extender_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/extender_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/extender_arduino', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/extender_arduino', 'symlink_install': False, 'test_result_base': None}
+[2.324s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_args' from command line to 'None'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_target' from command line to 'None'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_clean_cache' from command line to 'False'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_clean_first' from command line to 'False'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_force_configure' from command line to 'False'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'ament_cmake_args' from command line to 'None'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'catkin_cmake_args' from command line to 'None'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.325s] DEBUG:colcon.colcon_core.verb:Building package 'joy_tester' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/joy_tester', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/joy_tester', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/joy_tester', 'symlink_install': False, 'test_result_base': None}
+[2.365s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'cmake_args' from command line to 'None'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'cmake_target' from command line to 'None'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.366s] Level 5:colcon.colcon_core.verb:set package 'listener_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.366s] DEBUG:colcon.colcon_core.verb:Building package 'listener_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/listener_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/listener_package', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package', 'symlink_install': False, 'test_result_base': None}
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'cmake_args' from command line to 'None'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'cmake_target' from command line to 'None'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'cmake_clean_cache' from command line to 'False'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'cmake_clean_first' from command line to 'False'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'cmake_force_configure' from command line to 'False'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'ament_cmake_args' from command line to 'None'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'catkin_cmake_args' from command line to 'None'
+[2.367s] Level 5:colcon.colcon_core.verb:set package 'minibot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.367s] DEBUG:colcon.colcon_core.verb:Building package 'minibot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/minibot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/minibot', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/minibot', 'symlink_install': False, 'test_result_base': None}
+[2.409s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_args' from command line to 'None'
+[2.409s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target' from command line to 'None'
+[2.410s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.411s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.411s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.412s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.412s] DEBUG:colcon.colcon_core.verb:Building package 'my_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/my_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/my_package', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package', 'symlink_install': False, 'test_result_base': None}
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[2.422s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.422s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/serial', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/serial', 'symlink_install': False, 'test_result_base': None}
+[2.424s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_args' from command line to 'None'
+[2.424s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target' from command line to 'None'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.425s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.425s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.426s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.427s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.427s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_args' from command line to 'None'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target' from command line to 'None'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_cache' from command line to 'False'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_first' from command line to 'False'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_force_configure' from command line to 'False'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'ament_cmake_args' from command line to 'None'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_cmake_args' from command line to 'None'
+[2.428s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.428s] DEBUG:colcon.colcon_core.verb:Building package 'twist_stamper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/twist_stamper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/twist_stamper', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/twist_stamper', 'symlink_install': False, 'test_result_base': None}
+[2.429s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_args' from command line to 'None'
+[2.430s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target' from command line to 'None'
+[2.430s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.430s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[2.430s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_first' from command line to 'False'
+[2.430s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_force_configure' from command line to 'False'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'ament_cmake_args' from command line to 'None'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[2.431s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.431s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olympusolutions/senior_ws/build/serial_motor_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olympusolutions/senior_ws/install/serial_motor_demo', 'merge_install': False, 'path': '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo', 'symlink_install': False, 'test_result_base': None}
+[2.431s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.438s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.439s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs' with build type 'ament_cmake'
+[2.439s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs'
+[2.447s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.477s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olympusolutions/senior_ws/src/diffdrive_arduino' with build type 'ament_cmake'
+[2.478s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olympusolutions/senior_ws/src/diffdrive_arduino'
+[2.479s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.479s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.528s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olympusolutions/senior_ws/src/extender_arduino' with build type 'ament_cmake'
+[2.529s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olympusolutions/senior_ws/src/extender_arduino'
+[2.531s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.562s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/olympusolutions/senior_ws/src/joy_tester' with build type 'ament_python'
+[2.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_tester', 'ament_prefix_path')
+[2.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.ps1'
+[2.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.dsv'
+[2.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.sh'
+[2.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[2.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/diffdrive_arduino -- -j4 -l4
+[2.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/extender_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/extender_arduino -- -j4 -l4
+[7.765s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/olympusolutions/senior_ws/src/joy_tester'
+[7.772s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.772s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/diffdrive_arduino -- -j4 -l4
+[8.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/diffdrive_arduino
+[8.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/extender_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/extender_arduino -- -j4 -l4
+[8.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/extender_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/extender_arduino
+[8.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(extender_arduino)
+[8.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/extender_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/extender_arduino
+[8.696s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino' for CMake module files
+[8.726s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino' for CMake config files
+[8.748s] Level 1:colcon.colcon_core.shell:create_environment_hook('extender_arduino', 'cmake_prefix_path')
+[8.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/cmake_prefix_path.ps1'
+[8.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/cmake_prefix_path.dsv'
+[8.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/cmake_prefix_path.sh'
+[8.858s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/lib'
+[8.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('extender_arduino', 'ld_library_path_lib')
+[8.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/ld_library_path_lib.ps1'
+[8.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/ld_library_path_lib.dsv'
+[8.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/ld_library_path_lib.sh'
+[8.916s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/bin'
+[8.916s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/lib/pkgconfig/extender_arduino.pc'
+[8.917s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/lib/python3.12/site-packages'
+[8.922s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/bin'
+[8.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.ps1'
+[8.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.dsv'
+[9.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.sh'
+[9.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.bash'
+[9.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.zsh'
+[9.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/extender_arduino/share/colcon-core/packages/extender_arduino)
+[9.333s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(extender_arduino)
+[9.361s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino' for CMake module files
+[9.500s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino' for CMake config files
+[9.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('extender_arduino', 'cmake_prefix_path')
+[9.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/cmake_prefix_path.ps1'
+[9.558s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/cmake_prefix_path.dsv'
+[9.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/cmake_prefix_path.sh'
+[9.577s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/lib'
+[9.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('extender_arduino', 'ld_library_path_lib')
+[9.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/ld_library_path_lib.ps1'
+[9.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/ld_library_path_lib.dsv'
+[9.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/hook/ld_library_path_lib.sh'
+[9.628s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/bin'
+[9.637s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/lib/pkgconfig/extender_arduino.pc'
+[9.640s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/lib/python3.12/site-packages'
+[9.654s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/extender_arduino/bin'
+[9.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.ps1'
+[9.676s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.dsv'
+[9.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.sh'
+[9.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.bash'
+[9.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/extender_arduino/share/extender_arduino/package.zsh'
+[9.714s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/extender_arduino/share/colcon-core/packages/extender_arduino)
+[9.726s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package' with build type 'ament_python'
+[9.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('listener_package', 'ament_prefix_path')
+[9.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/hook/ament_prefix_path.ps1'
+[9.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/hook/ament_prefix_path.dsv'
+[9.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/hook/ament_prefix_path.sh'
+[9.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[9.881s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino' for CMake module files
+[9.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/diffdrive_arduino
+[9.890s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino' for CMake config files
+[9.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[9.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[9.907s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[9.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[9.921s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib'
+[9.925s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[9.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[9.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[9.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[9.944s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/bin'
+[9.956s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[9.958s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib/python3.12/site-packages'
+[9.959s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/bin'
+[9.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[9.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[9.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[9.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[9.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[9.975s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[9.982s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[9.983s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino' for CMake module files
+[9.988s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino' for CMake config files
+[9.993s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[9.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[10.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[10.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[10.006s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib'
+[10.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[10.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[10.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[10.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[10.015s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/bin'
+[10.015s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[10.016s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/lib/python3.12/site-packages'
+[10.016s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/diffdrive_arduino/bin'
+[10.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[10.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[10.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[10.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[10.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[10.031s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[10.035s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olympusolutions/senior_ws/src/minibot' with build type 'ament_cmake'
+[10.036s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olympusolutions/senior_ws/src/minibot'
+[10.037s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.037s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.728s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package'
+[19.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.747s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/minibot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/minibot -- -j4 -l4
+[21.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/src/joy_tester': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/olympusolutions/senior_ws/build/joy_tester/build install --record /home/olympusolutions/senior_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[21.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/minibot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/minibot -- -j4 -l4
+[21.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/minibot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/minibot
+[22.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[22.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs
+[22.624s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(minibot)
+[22.644s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot' for CMake module files
+[22.678s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot' for CMake config files
+[22.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibot', 'cmake_prefix_path')
+[22.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/minibot/share/minibot/hook/cmake_prefix_path.ps1'
+[22.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/minibot/share/minibot/hook/cmake_prefix_path.dsv'
+[23.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/minibot/share/minibot/hook/cmake_prefix_path.sh'
+[23.199s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/lib'
+[23.199s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/bin'
+[23.255s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/lib/pkgconfig/minibot.pc'
+[23.290s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/lib/python3.12/site-packages'
+[23.300s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/bin'
+[23.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.ps1'
+[23.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.dsv'
+[23.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.sh'
+[23.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.bash'
+[23.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.zsh'
+[23.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/minibot/share/colcon-core/packages/minibot)
+[24.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(minibot)
+[24.076s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot' for CMake module files
+[24.366s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot' for CMake config files
+[24.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('minibot', 'cmake_prefix_path')
+[24.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/minibot/share/minibot/hook/cmake_prefix_path.ps1'
+[24.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/minibot/share/minibot/hook/cmake_prefix_path.dsv'
+[24.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/minibot/share/minibot/hook/cmake_prefix_path.sh'
+[24.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/minibot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/minibot
+[24.482s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/lib'
+[24.485s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/bin'
+[24.490s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/lib/pkgconfig/minibot.pc'
+[24.499s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/lib/python3.12/site-packages'
+[24.512s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/minibot/bin'
+[24.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.ps1'
+[24.542s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.dsv'
+[24.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.sh'
+[24.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.bash'
+[24.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/minibot/share/minibot/package.zsh'
+[24.627s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/minibot/share/colcon-core/packages/minibot)
+[24.637s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package' with build type 'ament_python'
+[24.637s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_package', 'ament_prefix_path')
+[24.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/my_package/share/my_package/hook/ament_prefix_path.ps1'
+[24.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/my_package/share/my_package/hook/ament_prefix_path.dsv'
+[24.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/my_package/share/my_package/hook/ament_prefix_path.sh'
+[24.690s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.696s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.812s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[24.822s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs' for CMake module files
+[24.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs
+[24.834s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs' for CMake config files
+[24.861s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'cmake_prefix_path')
+[24.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.ps1'
+[24.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.dsv'
+[24.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.sh'
+[24.893s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib'
+[24.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'ld_library_path_lib')
+[24.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.ps1'
+[24.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.dsv'
+[24.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.sh'
+[24.945s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/bin'
+[24.946s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[24.948s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages'
+[24.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'pythonpath')
+[24.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.ps1'
+[24.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.dsv'
+[24.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.sh'
+[24.980s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/bin'
+[24.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[25.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[25.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[25.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[25.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[25.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[25.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[25.086s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs' for CMake module files
+[25.088s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs' for CMake config files
+[25.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'cmake_prefix_path')
+[25.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.ps1'
+[25.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.dsv'
+[25.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.sh'
+[25.123s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib'
+[25.125s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'ld_library_path_lib')
+[25.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.ps1'
+[25.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.dsv'
+[25.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.sh'
+[25.144s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/bin'
+[25.151s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[25.160s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages'
+[25.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'pythonpath')
+[25.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.ps1'
+[25.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.dsv'
+[25.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.sh'
+[25.216s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/bin'
+[25.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[25.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[25.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[25.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[25.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[25.291s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[25.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olympusolutions/senior_ws/src/serial' with build type 'ament_cmake'
+[25.302s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olympusolutions/senior_ws/src/serial'
+[25.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.303s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.296s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package'
+[27.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial -- -j4 -l4
+[31.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/listener_package build --build-base /home/olympusolutions/senior_ws/build/listener_package/build install --record /home/olympusolutions/senior_ws/build/listener_package/install.log --single-version-externally-managed install_data
+[32.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial -- -j4 -l4
+[32.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial
+[32.449s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[32.449s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial' for CMake module files
+[32.450s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial' for CMake config files
+[32.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[32.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[32.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial
+[32.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[32.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[32.461s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/lib'
+[32.461s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/bin'
+[32.462s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/lib/pkgconfig/serial.pc'
+[32.463s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/lib/python3.12/site-packages'
+[32.464s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/bin'
+[32.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.ps1'
+[32.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/serial/share/serial/package.dsv'
+[32.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.sh'
+[32.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.bash'
+[32.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.zsh'
+[32.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/serial/share/colcon-core/packages/serial)
+[32.478s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[32.479s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial' for CMake module files
+[32.481s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial' for CMake config files
+[32.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[32.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[32.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[32.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[32.502s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/lib'
+[32.506s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/bin'
+[32.507s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/lib/pkgconfig/serial.pc'
+[32.508s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/lib/python3.12/site-packages'
+[32.508s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial/bin'
+[32.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.ps1'
+[32.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/serial/share/serial/package.dsv'
+[32.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.sh'
+[32.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.bash'
+[32.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial/share/serial/package.zsh'
+[32.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/serial/share/colcon-core/packages/serial)
+[32.551s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olympusolutions/senior_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[32.553s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olympusolutions/senior_ws/src/sllidar_ros2'
+[32.556s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.556s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/sllidar_ros2 -- -j4 -l4
+[34.473s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester' for CMake module files
+[34.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/src/joy_tester' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/olympusolutions/senior_ws/build/joy_tester/build install --record /home/olympusolutions/senior_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[34.479s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester' for CMake config files
+[34.493s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester/lib'
+[34.496s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester/bin'
+[34.496s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester/lib/pkgconfig/joy_tester.pc'
+[34.505s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages'
+[34.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_tester', 'pythonpath')
+[34.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/hook/pythonpath.ps1'
+[34.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/hook/pythonpath.dsv'
+[34.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/hook/pythonpath.sh'
+[34.517s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/joy_tester/bin'
+[34.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_tester)
+[34.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/package.ps1'
+[34.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/package.dsv'
+[34.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/package.sh'
+[34.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/package.bash'
+[34.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester/package.zsh'
+[34.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/joy_tester/share/colcon-core/packages/joy_tester)
+[34.571s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/olympusolutions/senior_ws/src/twist_stamper' with build type 'ament_python'
+[34.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'ament_prefix_path')
+[34.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.ps1'
+[34.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.dsv'
+[34.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.sh'
+[34.623s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[34.623s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.821s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/olympusolutions/senior_ws/src/twist_stamper'
+[37.823s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.823s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/my_package build --build-base /home/olympusolutions/senior_ws/build/my_package/build install --record /home/olympusolutions/senior_ws/build/my_package/install.log --single-version-externally-managed install_data
+[37.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/sllidar_ros2 -- -j4 -l4
+[37.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/sllidar_ros2
+[38.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[38.267s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2' for CMake module files
+[38.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/sllidar_ros2
+[38.302s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2' for CMake config files
+[38.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[38.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[38.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[38.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[38.364s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/lib'
+[38.373s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/bin'
+[38.377s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[38.391s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/lib/python3.12/site-packages'
+[38.402s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/bin'
+[38.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[38.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[38.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[38.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[38.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[38.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[38.441s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[38.441s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2' for CMake module files
+[38.447s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2' for CMake config files
+[38.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[38.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[38.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[38.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[38.469s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/lib'
+[38.472s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/bin'
+[38.473s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[38.474s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/lib/python3.12/site-packages'
+[38.479s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/sllidar_ros2/bin'
+[38.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[38.486s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[38.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[38.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[38.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[38.528s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[38.534s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo' with build type 'ament_python'
+[38.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'ament_prefix_path')
+[38.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.ps1'
+[38.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.dsv'
+[38.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.sh'
+[38.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[38.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[40.534s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo'
+[40.539s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[40.539s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[40.582s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package' for CMake module files
+[40.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/listener_package build --build-base /home/olympusolutions/senior_ws/build/listener_package/build install --record /home/olympusolutions/senior_ws/build/listener_package/install.log --single-version-externally-managed install_data
+[40.586s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package' for CMake config files
+[40.588s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package/lib'
+[40.589s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package/bin'
+[40.589s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package/lib/pkgconfig/listener_package.pc'
+[40.590s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages'
+[40.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('listener_package', 'pythonpath')
+[40.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/hook/pythonpath.ps1'
+[40.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/hook/pythonpath.dsv'
+[40.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/hook/pythonpath.sh'
+[40.599s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/listener_package/bin'
+[40.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(listener_package)
+[40.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/package.ps1'
+[40.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/package.dsv'
+[40.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/package.sh'
+[40.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/package.bash'
+[40.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/listener_package/share/listener_package/package.zsh'
+[40.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/listener_package/share/colcon-core/packages/listener_package)
+[42.270s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package' for CMake module files
+[42.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/src/riley_ws/src/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/my_package build --build-base /home/olympusolutions/senior_ws/build/my_package/build install --record /home/olympusolutions/senior_ws/build/my_package/install.log --single-version-externally-managed install_data
+[42.278s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package' for CMake config files
+[42.286s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package/lib'
+[42.288s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package/bin'
+[42.289s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package/lib/pkgconfig/my_package.pc'
+[42.292s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages'
+[42.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_package', 'pythonpath')
+[42.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/my_package/share/my_package/hook/pythonpath.ps1'
+[42.299s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/my_package/share/my_package/hook/pythonpath.dsv'
+[42.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/my_package/share/my_package/hook/pythonpath.sh'
+[42.311s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/my_package/bin'
+[42.312s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_package)
+[42.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/my_package/share/my_package/package.ps1'
+[42.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/my_package/share/my_package/package.dsv'
+[42.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/my_package/share/my_package/package.sh'
+[42.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/my_package/share/my_package/package.bash'
+[42.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/my_package/share/my_package/package.zsh'
+[42.340s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/my_package/share/colcon-core/packages/my_package)
+[42.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/src/twist_stamper': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_stamper build --build-base /home/olympusolutions/senior_ws/build/twist_stamper/build install --record /home/olympusolutions/senior_ws/build/twist_stamper/install.log --single-version-externally-managed install_data
+[43.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo': CMAKE_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/olympusolutions/senior_ws/build/serial_motor_demo/build install --record /home/olympusolutions/senior_ws/build/serial_motor_demo/install.log --install-scripts $base/lib/serial_motor_demo --single-version-externally-managed install_data
+[43.880s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper' for CMake module files
+[43.880s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper' for CMake config files
+[43.881s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper/lib'
+[43.881s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper/bin'
+[43.881s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper/lib/pkgconfig/twist_stamper.pc'
+[43.882s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages'
+[43.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'pythonpath')
+[43.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.ps1'
+[43.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/src/twist_stamper' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_stamper build --build-base /home/olympusolutions/senior_ws/build/twist_stamper/build install --record /home/olympusolutions/senior_ws/build/twist_stamper/install.log --single-version-externally-managed install_data
+[43.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.dsv'
+[43.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.sh'
+[43.889s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/twist_stamper/bin'
+[43.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_stamper)
+[43.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/package.ps1'
+[43.890s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/package.dsv'
+[43.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/package.sh'
+[43.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/package.bash'
+[43.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/twist_stamper/share/twist_stamper/package.zsh'
+[43.895s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/twist_stamper/share/colcon-core/packages/twist_stamper)
+[44.385s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo' for CMake module files
+[44.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo' returned '0': CMAKE_PREFIX_PATH=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs:/home/olympusolutions/senior_ws/install/sllidar_ros2:/home/olympusolutions/senior_ws/install/serial:/home/olympusolutions/senior_ws/install/minibot:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/twist_stamper/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/olympusolutions/senior_ws/build/serial_motor_demo/build install --record /home/olympusolutions/senior_ws/build/serial_motor_demo/install.log --install-scripts $base/lib/serial_motor_demo --single-version-externally-managed install_data
+[44.388s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo' for CMake config files
+[44.390s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo/lib'
+[44.390s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo/bin'
+[44.390s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/pkgconfig/serial_motor_demo.pc'
+[44.391s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages'
+[44.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'pythonpath')
+[44.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.ps1'
+[44.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.dsv'
+[44.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.sh'
+[44.398s] Level 1:colcon.colcon_core.environment:checking '/home/olympusolutions/senior_ws/install/serial_motor_demo/bin'
+[44.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo)
+[44.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/package.ps1'
+[44.400s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/package.dsv'
+[44.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/package.sh'
+[44.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/package.bash'
+[44.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo/package.zsh'
+[44.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olympusolutions/senior_ws/install/serial_motor_demo/share/colcon-core/packages/serial_motor_demo)
+[44.411s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[44.412s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[44.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[44.415s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[44.439s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[44.439s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[44.440s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[44.467s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[44.467s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olympusolutions/senior_ws/install/local_setup.ps1'
+[44.469s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olympusolutions/senior_ws/install/_local_setup_util_ps1.py'
+[44.470s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olympusolutions/senior_ws/install/setup.ps1'
+[44.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olympusolutions/senior_ws/install/local_setup.sh'
+[44.476s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olympusolutions/senior_ws/install/_local_setup_util_sh.py'
+[44.478s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olympusolutions/senior_ws/install/setup.sh'
+[44.482s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olympusolutions/senior_ws/install/local_setup.bash'
+[44.484s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olympusolutions/senior_ws/install/setup.bash'
+[44.487s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olympusolutions/senior_ws/install/local_setup.zsh'
+[44.489s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olympusolutions/senior_ws/install/setup.zsh'

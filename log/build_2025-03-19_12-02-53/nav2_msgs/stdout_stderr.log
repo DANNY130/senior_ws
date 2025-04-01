@@ -1,0 +1,88 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found nav2_common: 1.3.5 (/home/olympusolutions/senior_ws/install/nav2_common/share/nav2_common/cmake)
+-- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found geographic_msgs: 1.0.6 (/opt/ros/jazzy/share/geographic_msgs/cmake)
+-- Found action_msgs: 2.0.2 (/opt/ros/jazzy/share/action_msgs/cmake)
+-- Setting build type to Release as none was specified.
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Configuring done (19.5s)
+-- Generating done (0.7s)
+-- Build files have been written to: /home/olympusolutions/senior_ws/build/nav2_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_copy_nav2_msgs
+running egg_info
+creating nav2_msgs.egg-info
+writing nav2_msgs.egg-info/PKG-INFO
+writing dependency_links to nav2_msgs.egg-info/dependency_links.txt
+writing top-level names to nav2_msgs.egg-info/top_level.txt
+writing manifest file 'nav2_msgs.egg-info/SOURCES.txt'
+reading manifest file 'nav2_msgs.egg-info/SOURCES.txt'
+writing manifest file 'nav2_msgs.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_nav2_msgs_egg
+Traceback (most recent call last):
+  File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+    generate_type_hash(args.generator_arguments_file)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py", line 116, in generate_type_hash
+    idl_file = parse_idl_file(locator)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 658, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 104, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 279, in parse
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 150, in _parse
+    self.predict_and_complete(i, to_scan, columns, transitives)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 135, in predict_and_complete
+    originators = [originator for originator in columns[item.start] if originator.expect is not None and originator.expect == item.s]
+                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 20, in __eq__
+    return self.is_term == other.is_term and self.name == other.name
+                                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 265, in __eq__
+    def __eq__(self, other):
+
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/nav2_msgs__rosidl_generator_type_description.dir/build.make:153: rosidl_generator_type_description/nav2_msgs/msg/CollisionMonitorState.json] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/nav2_msgs__rosidl_generator_type_description.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
