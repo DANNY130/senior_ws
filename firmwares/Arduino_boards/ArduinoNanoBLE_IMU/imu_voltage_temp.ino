@@ -3,31 +3,33 @@
 
 // Initialize Madgwick filter
 Madgwick filter;
-const float sensorRate = 104.00;
+const float sensorRate = 104.00; // Sensor rate in Hz
 
 void setup() {
   Serial.begin(115200);  // Increase baud rate for faster communication
-  while (!Serial);
+  while (!Serial); // Wait for serial port to connect. Needed for native USB port only
 
-  if (!IMU.begin()) {
+  if (!IMU.begin()) { // Initialize IMU
     Serial.println("Failed to initialize IMU");
     while (true);
   }
   
-  filter.begin(sensorRate);
+  filter.begin(sensorRate); // Initialize filter with sensor rate
 }
 
 void loop() {
-  float xAcc, yAcc, zAcc;
-  float xGyro, yGyro, zGyro;
-  float roll, pitch, yaw;
+  // Initialize variables for sensor data
+  float xAcc, yAcc, zAcc; // Accelerometer data
+  float xGyro, yGyro, zGyro;  // Gyroscope data
+  float roll, pitch, yaw; // Euler angles
 
-  if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) {
+  if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) { // Check if data is available
+    // Read accelerometer and gyroscope data
     IMU.readAcceleration(xAcc, yAcc, zAcc);
     IMU.readGyroscope(xGyro, yGyro, zGyro);
 
-    filter.updateIMU(xGyro, yGyro, zGyro, xAcc, yAcc, zAcc);
-
+    filter.updateIMU(xGyro, yGyro, zGyro, xAcc, yAcc, zAcc); // Update filter with new data 
+    // Get Euler angles from filter
     roll = filter.getRoll();
     pitch = filter.getPitch();
     yaw = filter.getYaw();
