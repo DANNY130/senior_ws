@@ -30,11 +30,13 @@
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/launch/sim_control_station.launch.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/worlds/empty.sdf
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/worlds/playground.sdf
+/home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/emergent_shutdown_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/extender_teleop_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/gripper_teleop_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/imu_publisher_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/linear_data_collector_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/platform_teleop_node.py
+/home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/tcp_map_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/demo_publisher_node/velocity_publisher.cpp
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/map_01.pgm
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/maps/map_01.yaml
@@ -74,6 +76,7 @@
 /home/olympusolutions/senior_ws/install/minibot/lib/minibot/platform_teleop_node.py
 /home/olympusolutions/senior_ws/install/minibot/lib/minibot/linear_data_collector_node.py
 /home/olympusolutions/senior_ws/install/minibot/lib/minibot/imu_publisher_node.py
+/home/olympusolutions/senior_ws/install/minibot/lib/minibot/emergent_shutdown_node.py
 /home/olympusolutions/senior_ws/install/minibot/share/ament_index/resource_index/package_run_dependencies/minibot
 /home/olympusolutions/senior_ws/install/minibot/share/ament_index/resource_index/parent_prefix_path/minibot
 /home/olympusolutions/senior_ws/install/minibot/share/minibot/environment/ament_prefix_path.sh

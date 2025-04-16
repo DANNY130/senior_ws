@@ -63,6 +63,7 @@ install(
     demo_publisher_node/platform_teleop_node.py
     demo_publisher_node/linear_data_collector_node.py
     demo_publisher_node/imu_publisher_node.py
+    demo_publisher_node/emergent_shutdown_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -78,6 +78,15 @@ def generate_launch_description():
         output='screen'
     )
 
+    # emergency shutdown node
+    emergency_shutdown_node = Node(
+        package='minibot',
+        executable='emergent_shutdown_node.py',
+        name='emergent_shutdown_node',
+        parameters=[joy_params_file],
+        output='screen'
+    )
+
     # Create the launch description and populate
     ld = LaunchDescription()
 
@@ -89,6 +98,7 @@ def generate_launch_description():
     ld.add_action(platform_teleop_node)
     ld.add_action(imu_publisher_node)
     ld.add_action(imu_filter_node)
+    ld.add_action(emergency_shutdown_node)
    
     # Generate the launch description and 
     return ld

@@ -1,0 +1,33 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'script-dir' will not be supported in future
+        versions. Please use the underscore name 'script_dir' instead.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+running develop
+running egg_info
+writing serial_motor_demo.egg-info/PKG-INFO
+writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt
+writing entry points to serial_motor_demo.egg-info/entry_points.txt
+writing requirements to serial_motor_demo.egg-info/requires.txt
+writing top-level names to serial_motor_demo.egg-info/top_level.txt
+reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial-motor-demo.egg-link (link to .)
+Installing driver script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+Installing gui script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+
+Installed /home/olympusolutions/senior_ws/build/serial_motor_demo
+running symlink_data
+symbolically linking /home/olympusolutions/senior_ws/build/serial_motor_demo/resource/serial_motor_demo -> /home/olympusolutions/senior_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+symbolically linking /home/olympusolutions/senior_ws/build/serial_motor_demo/package.xml -> /home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo

@@ -1,0 +1,4 @@
+[console_scripts]
+listener = listener_package.subscriber_member_function:main
+phone_listener = listener_package.phone_listener:main
+talker = listener_package.publisher_member_function:main

@@ -1,0 +1,19 @@
+[2.816s] Invoking command in '/home/olympusolutions/senior_ws/build/joy_tester': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/joy_tester/build --no-deps symlink_data --force
+[3.781s] running develop
+[4.864s] running egg_info
+[4.942s] writing joy_tester.egg-info/PKG-INFO
+[4.955s] writing dependency_links to joy_tester.egg-info/dependency_links.txt
+[4.955s] writing entry points to joy_tester.egg-info/entry_points.txt
+[4.956s] writing requirements to joy_tester.egg-info/requires.txt
+[4.956s] writing top-level names to joy_tester.egg-info/top_level.txt
+[5.073s] reading manifest file 'joy_tester.egg-info/SOURCES.txt'
+[5.073s] writing manifest file 'joy_tester.egg-info/SOURCES.txt'
+[5.131s] running build_ext
+[5.132s] Creating /home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages/joy-tester.egg-link (link to .)
+[5.137s] Installing test_joy script to /home/olympusolutions/senior_ws/install/joy_tester/lib/joy_tester
+[5.138s] 
+[5.138s] Installed /home/olympusolutions/senior_ws/build/joy_tester
+[5.138s] running symlink_data
+[5.138s] symbolically linking /home/olympusolutions/senior_ws/build/joy_tester/resource/joy_tester -> /home/olympusolutions/senior_ws/install/joy_tester/share/ament_index/resource_index/packages
+[5.138s] symbolically linking /home/olympusolutions/senior_ws/build/joy_tester/package.xml -> /home/olympusolutions/senior_ws/install/joy_tester/share/joy_tester
+[5.349s] Invoked command in '/home/olympusolutions/senior_ws/build/joy_tester' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/joy_tester/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/joy_tester/build --no-deps symlink_data --force
