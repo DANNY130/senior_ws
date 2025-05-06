@@ -1,1 +1,2 @@
-/home/olympusolutions/senior_ws/build/minibot/ament_cmake_environment_hooks/local_setup.dsv
+source;share/minibot/environment/ament_prefix_path.sh
+source;share/minibot/environment/path.sh

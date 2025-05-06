@@ -3,6 +3,7 @@ import threading
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import TwistStamped
+from .tcp_map_node import start_map_server_with_socket
 
 # purpose of this script is to listen for a TCP connection and translate the commands into Twist messages
  
@@ -46,6 +47,19 @@ class TCPListenerNode(Node):
 
         """Handle incoming messages from a client."""
         try:
+            data = client_socket.recv(1024).decode('utf-8').strip().lower()
+            if not data:
+                client_socket.close()
+                return
+            
+            if data == 'get_map':
+                self.get_logger().info("\033[0;32mSending map data...")
+                start_map_server_with_socket(client_socket)
+                return
+            
+            self.get_logger().info(f"Received command: {data}")
+            self.process_command(data)
+
             while True:
                 data = client_socket.recv(1024).decode('utf-8').strip().lower()
                 if not data:

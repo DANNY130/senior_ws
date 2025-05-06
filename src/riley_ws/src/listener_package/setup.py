@@ -23,6 +23,7 @@ setup(
                 'talker = listener_package.publisher_member_function:main',
                 'listener = listener_package.subscriber_member_function:main',
                 'phone_listener = listener_package.phone_listener:main',
+                'tcp_map_node = listener_package.tcp_map_node:main',
         ],
     },
 )

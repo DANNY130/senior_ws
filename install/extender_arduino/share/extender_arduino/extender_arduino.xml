@@ -1,1 +1,9 @@
-/home/olympusolutions/senior_ws/src/extender_arduino/extender_arduino.xml
+<library path="extender_arduino">
+  <class name="extender_arduino/ExtenderArduinoHardware"
+         type="extender_arduino::ExtenderArduinoHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      The ros2_control DiffBot example using a system hardware interface-type. It uses velocity command and position state interface. The example is the starting point to implement a hardware interface for differential-drive mobile robots.
+    </description>
+  </class>
+</library>

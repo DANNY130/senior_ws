@@ -1,0 +1,298 @@
+[0.059s] Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs
+[0.735s] -- The C compiler identification is GNU 13.3.0
+[1.037s] -- The CXX compiler identification is GNU 13.3.0
+[1.112s] -- Detecting C compiler ABI info
+[1.444s] -- Detecting C compiler ABI info - done
+[1.459s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.460s] -- Detecting C compile features
+[1.460s] -- Detecting C compile features - done
+[1.484s] -- Detecting CXX compiler ABI info
+[1.897s] -- Detecting CXX compiler ABI info - done
+[1.931s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.934s] -- Detecting CXX compile features
+[1.938s] -- Detecting CXX compile features - done
+[1.958s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.380s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.637s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.922s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.948s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.071s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.188s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[4.377s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[5.624s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.868s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.878s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[7.234s] -- Found PythonExtra: /usr/bin/python3  
+[8.544s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.752s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.775s] -- Added test 'lint_cmake' to check CMake code style
+[8.783s] -- Added test 'xmllint' to check XML markup files
+[8.820s] -- Configuring done (8.7s)
+[8.920s] -- Generating done (0.1s)
+[8.944s] -- Build files have been written to: /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs
+[8.980s] Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs
+[8.981s] Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[9.166s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[9.923s] [  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description
+[10.006s] [  1%] Built target ament_cmake_python_copy_serial_motor_demo_msgs
+[10.067s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.131s] [  3%] Built target serial_motor_demo_msgs__cpp
+[11.717s] running egg_info
+[11.719s] creating serial_motor_demo_msgs.egg-info
+[11.790s] writing serial_motor_demo_msgs.egg-info/PKG-INFO
+[11.792s] writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt
+[11.792s] writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt
+[11.794s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[11.974s] reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[11.975s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[12.098s] [  3%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg
+[12.125s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[13.657s] [  7%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__description.c.o[0m
+[13.767s] [  9%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__description.c.o[0m
+[13.859s] [ 11%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o[0m
+[14.011s] [ 12%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o[0m
+[14.090s] [ 14%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__description.c.o[0m
+[14.181s] [ 16%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o[0m
+[14.295s] [ 18%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o[0m
+[14.373s] [ 20%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o[0m
+[14.453s] [ 22%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o[0m
+[14.571s] [ 24%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so[0m
+[14.683s] [ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[14.711s] [ 25%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[15.510s] [ 27%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o[0m
+[16.700s] [ 29%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_vels__type_support.cpp.o[0m
+[17.936s] [ 31%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/encoder_vals__type_support.cpp.o[0m
+[19.060s] [ 33%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.214s] [ 33%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[19.247s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[20.421s] [ 37%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o[0m
+[20.524s] [ 38%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o[0m
+[20.624s] [ 40%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o[0m
+[20.723s] [ 42%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so[0m
+[20.845s] [ 42%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[20.901s] [ 44%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[21.640s] [ 46%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[22.074s] [ 48%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o[0m
+[22.171s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[22.294s] [ 51%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_c.so[0m
+[22.443s] [ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[22.468s] [ 53%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[23.469s] [ 55%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support_c.cpp.o[0m
+[24.921s] [ 57%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support_c.cpp.o[0m
+[26.756s] [ 59%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support_c.cpp.o[0m
+[28.884s] [ 61%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[29.362s] [ 61%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[29.475s] [ 62%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[30.806s] [ 64%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[32.963s] [ 66%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[34.411s] [ 68%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o[0m
+[36.265s] [ 70%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_cpp.so[0m
+[36.447s] [ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[36.500s] [ 72%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[37.812s] [ 74%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp.o[0m
+[38.933s] [ 75%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp.o[0m
+[39.567s] [ 77%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp.o[0m
+[40.195s] [ 79%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[40.299s] [ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[40.347s] [ 79%] Built target serial_motor_demo_msgs
+[40.399s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[41.329s] [ 81%] Built target serial_motor_demo_msgs__py
+[41.387s] [ 83%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o[0m
+[41.682s] [ 85%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c.o[0m
+[41.913s] [ 87%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c.o[0m
+[42.147s] [ 88%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_py.so[0m
+[42.253s] [ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py
+[42.305s] [ 90%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[42.541s] [ 92%] [32m[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[42.616s] [ 92%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c
+[42.665s] [ 94%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[42.895s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so[0m
+[42.964s] [ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c
+[43.016s] [ 98%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[43.242s] [100%] [32m[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[43.326s] [100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c
+[43.362s] Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[43.362s] Invoking command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs
+[43.387s] -- Install configuration: ""
+[43.387s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs
+[43.389s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.json
+[43.389s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.json
+[43.389s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.json
+[43.389s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[43.390s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[43.391s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.h
+[43.391s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h
+[43.391s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[43.392s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c
+[43.392s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h
+[43.392s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__description.c
+[43.392s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c
+[43.394s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h
+[43.395s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
+[43.395s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h
+[43.396s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
+[43.396s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
+[43.396s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h
+[43.396s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
+[43.397s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
+[43.397s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h
+[43.397s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h
+[43.397s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__description.c
+[43.397s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c
+[43.397s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__description.c
+[43.400s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h
+[43.401s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+[43.401s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h
+[43.401s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh
+[43.402s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv
+[43.402s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so
+[43.403s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so" to ""
+[43.403s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[43.403s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[43.403s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[43.406s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[43.407s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h
+[43.407s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h
+[43.407s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h
+[43.407s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so
+[43.409s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[43.409s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[43.410s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[43.410s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[43.410s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[43.411s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c
+[43.411s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c
+[43.412s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h
+[43.412s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h
+[43.413s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h
+[43.414s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c
+[43.416s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so
+[43.416s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so" to ""
+[43.417s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so
+[43.417s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so" to ""
+[43.417s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[43.417s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[43.417s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp
+[43.417s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[43.417s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.hpp
+[43.418s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[43.418s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp
+[43.418s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp
+[43.418s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp
+[43.418s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
+[43.421s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
+[43.421s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
+[43.422s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp
+[43.422s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
+[43.422s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.hpp
+[43.422s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp
+[43.422s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
+[43.422s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
+[43.423s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp
+[43.423s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[43.423s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[43.423s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[43.423s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[43.423s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
+[43.423s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/dds_fastrtps
+[43.423s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp
+[43.424s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp
+[43.424s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[43.424s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[43.424s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[43.427s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[43.428s] -- Up-to-date: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp
+[43.428s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so
+[43.429s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[43.429s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so
+[43.429s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so" to ""
+[43.429s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh
+[43.429s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv
+[43.429s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg
+[43.430s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command_s.c
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels_s.c
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[43.431s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+[43.432s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[43.432s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so
+[43.432s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[43.432s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so
+[43.520s] Listing '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs'...
+[43.521s] Compiling '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py'...
+[43.521s] Listing '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg'...
+[43.521s] Compiling '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py'...
+[43.521s] Compiling '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py'...
+[43.522s] Compiling '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py'...
+[43.522s] Compiling '/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py'...
+[43.546s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[43.547s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[43.547s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so
+[43.547s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[43.547s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so
+[43.554s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so" to ""
+[43.555s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so
+[43.556s] -- Set non-toolchain portion of runtime path of "/home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so" to ""
+[43.556s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl
+[43.556s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.idl
+[43.556s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl
+[43.557s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg
+[43.557s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.msg
+[43.557s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg
+[43.563s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs
+[43.564s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs
+[43.565s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh
+[43.565s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv
+[43.565s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh
+[43.566s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv
+[43.566s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash
+[43.567s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh
+[43.567s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh
+[43.567s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv
+[43.568s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[43.573s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[43.574s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake
+[43.575s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[43.575s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[43.575s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[43.575s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[43.581s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[43.582s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[43.582s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake
+[43.582s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake
+[43.582s] -- Installing: /home/olympusolutions/senior_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml
+[43.583s] Invoked command in '/home/olympusolutions/senior_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial_motor_demo_msgs
