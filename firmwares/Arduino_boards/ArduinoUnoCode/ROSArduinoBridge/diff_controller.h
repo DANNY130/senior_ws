@@ -38,10 +38,10 @@ SetPointInfo leftPID, rightPID;
 // int Ki = 0;
 // int Ko = 245;
 /* PID Parameters with Gearbox*/
-int Kp = 21;
-int Kd = 2;
+int Kp = 12;
+int Kd = 5;
 int Ki = 0;
-int Ko = 1541;
+int Ko = 414;
 
 unsigned char moving = 0; // is the base in motion?
 
