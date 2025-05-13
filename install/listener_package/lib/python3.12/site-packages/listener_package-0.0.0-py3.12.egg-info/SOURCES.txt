@@ -10,6 +10,7 @@ setup.py
 ../../../../build/listener_package/listener_package.egg-info/top_level.txt
 ../../../../build/listener_package/listener_package.egg-info/zip-safe
 listener_package/__init__.py
+listener_package/map_publisher.py
 listener_package/phone_listener.py
 listener_package/publisher_member_function.py
 listener_package/subscriber_member_function.py
