@@ -14,6 +14,7 @@ class ImuPublisher(Node):
     def __init__(self):
         super().__init__('imu_publisher')
         self.publisher_ = self.create_publisher(Imu, 'imu/data_raw', 10)
+        self.publisher_ProxSens = self.create_publisher(Float64MultiArray, 'ProxSens', 10)
         self.serial_port = serial.Serial('/dev/ttyACM2', 115200, timeout=1)  # Change port if needed
     # Set the serial port to read data from the IMU
     # The baud rate is set to 115200, and a timeout of 1 second is specified for reading data
@@ -26,17 +27,25 @@ class ImuPublisher(Node):
                 values = [float(x) for x in line.split(',')] # Split the line by commas and convert each value to a float
                 # Check if the number of values is correct (9 values for IMU data)
 
-                if len(values) == 9:
+                # read proximity sensor data
+                proxsens_msg = Float64MultiArray() # create instance of F64MA for proximity sensors msg
+                proxsens_msg.data.append(values[:5])  #first 5 values (dist for each of five sensors)
+                                                      #sensor order TODO (ie [0]=Front Right, [1]=Front Left, etc)
+                self.publisher_ProxSens(proxsens_msg)
+
+                
+                #if values include IMU data, read IMU data
+                if len(values) == 14:
                     imu_msg = Imu() # Create an instance of the Imu message type
                     # Set the header information for the IMU message
                     imu_msg.header.stamp = self.get_clock().now().to_msg()
                     imu_msg.header.frame_id = "imu_link" # Set the frame ID for the IMU data
                     # Set the orientation, angular velocity, and linear acceleration data
 
-                    roll, pitch, yaw = values[:3] 
-                    gx, gy, gz = values[3:6] # Gyroscope data
+                    roll, pitch, yaw = values[5:8] 
+                    gx, gy, gz = values[8:11] # Gyroscope data
                     # Get the gyroscope data (angular velocity)
-                    ax, ay, az = values[6:9] # Accelerometer data
+                    ax, ay, az = values[11:14] # Accelerometer data
                     # Get the accelerometer data (linear acceleration)
 
                     # Convert roll, pitch, yaw to quaternion
