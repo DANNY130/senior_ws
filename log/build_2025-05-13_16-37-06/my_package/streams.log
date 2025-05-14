@@ -1,0 +1,17 @@
+[2.974s] Invoking command in '/home/olympusolutions/senior_ws/build/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data
+[4.472s] running develop
+[5.711s] running egg_info
+[5.811s] writing my_package.egg-info/PKG-INFO
+[5.813s] writing dependency_links to my_package.egg-info/dependency_links.txt
+[5.821s] writing entry points to my_package.egg-info/entry_points.txt
+[5.823s] writing requirements to my_package.egg-info/requires.txt
+[5.823s] writing top-level names to my_package.egg-info/top_level.txt
+[5.987s] reading manifest file 'my_package.egg-info/SOURCES.txt'
+[5.991s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[6.064s] running build_ext
+[6.065s] Creating /home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages/my-package.egg-link (link to .)
+[6.067s] Installing my_node script to /home/olympusolutions/senior_ws/install/my_package/lib/my_package
+[6.070s] 
+[6.070s] Installed /home/olympusolutions/senior_ws/build/my_package
+[6.071s] running symlink_data
+[6.327s] Invoked command in '/home/olympusolutions/senior_ws/build/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olympusolutions/senior_ws/build/my_package/build --no-deps symlink_data

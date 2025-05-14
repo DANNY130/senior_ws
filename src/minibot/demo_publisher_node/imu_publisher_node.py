@@ -4,6 +4,7 @@ import rclpy  # ROS 2 Python client library
 import serial  # For serial communication with IMU
 from rclpy.node import Node  # Base class for ROS 2 nodes
 from sensor_msgs.msg import Imu  # Message type for IMU data
+from std_msgs.msg  import Float64MultiArray
 import math  # For mathematical operations (e.g., trigonometry)
 
 # IMU Publisher Node class
@@ -29,9 +30,9 @@ class ImuPublisher(Node):
 
                 # read proximity sensor data
                 proxsens_msg = Float64MultiArray() # create instance of F64MA for proximity sensors msg
-                proxsens_msg.data.append(values[:5])  #first 5 values (dist for each of five sensors)
+                proxsens_msg.data = values[:5]  #first 5 values (dist for each of five sensors)
                                                       #sensor order TODO (ie [0]=Front Right, [1]=Front Left, etc)
-                self.publisher_ProxSens(proxsens_msg)
+                self.publisher_ProxSens.publish(proxsens_msg)
 
                 
                 #if values include IMU data, read IMU data

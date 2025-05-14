@@ -1,14 +1,1 @@
-twist_mux:
-  ros__parameters:
-    topics:
-      navigation:
-        topic   : nav_vel
-        timeout : 0.5
-        priority: 10
-        stamped : true
-
-      joystick:
-        topic   : joy_vel
-        timeout : 0.5
-        priority: 100
-        stamped : true
+/home/olympusolutions/senior_ws/src/minibot/config/twist_mux.yaml

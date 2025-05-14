@@ -1,2 +1,1 @@
-int32 mot_1_enc_val
-int32 mot_2_enc_val
+/home/olympusolutions/senior_ws/src/serial_motor_demo/serial_motor_demo_msgs/msg/EncoderVals.msg

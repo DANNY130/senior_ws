@@ -1,0 +1,557 @@
+[0.046s] Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/sllidar_ros2
+[0.378s] -- The C compiler identification is GNU 13.3.0
+[0.678s] -- The CXX compiler identification is GNU 13.3.0
+[0.826s] -- Detecting C compiler ABI info
+[1.415s] -- Detecting C compiler ABI info - done
+[1.438s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.440s] -- Detecting C compile features
+[1.444s] -- Detecting C compile features - done
+[1.489s] -- Detecting CXX compiler ABI info
+[2.209s] -- Detecting CXX compiler ABI info - done
+[2.269s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.270s] -- Detecting CXX compile features
+[2.276s] -- Detecting CXX compile features - done
+[2.295s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.438s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.990s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.332s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.710s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.838s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.075s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.296s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.953s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.967s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[6.608s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[6.758s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.960s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.476s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[7.987s] -- Found std_srvs: 5.3.5 (/opt/ros/jazzy/share/std_srvs/cmake)
+[9.171s] -- Configuring done (9.1s)
+[9.294s] -- Generating done (0.1s)
+[9.324s] -- Build files have been written to: /home/olympusolutions/senior_ws/build/sllidar_ros2
+[10.272s] Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/olympusolutions/senior_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olympusolutions/senior_ws/install/sllidar_ros2
+[10.273s] Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/sllidar_ros2 -- -j4 -l4
+[10.704s] [  5%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o[0m
+[23.552s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[23.553s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[23.553s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[23.553s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[23.553s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.553s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[23.553s]       |                [01;35m[K^[m[K
+[23.554s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.554s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[23.554s]       |                    [01;35m[K^[m[K
+[29.311s] [ 10%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[30.055s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[30.056s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[30.056s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[30.056s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[30.056s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[30.056s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[30.056s]       |                [01;35m[K^[m[K
+[30.056s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[30.056s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[30.056s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[30.056s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[30.056s]       |                    [01;35m[K^[m[K
+[30.118s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/arch/linux/arch_linux.h:42[m[K,
+[30.118s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:41[m[K:
+[30.118s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::[01;32m[KsendTo[m[K(const rp::net::SocketAddress*, const void*, size_t)[m[K’:
+[30.118s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:733:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[30.119s]   733 |             assert([01;35m[Kans == len[m[K);
+[30.119s]       |                    [01;35m[K~~~~^~~~~~[m[K
+[30.396s] [ 15%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[31.137s] [ 20%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/dataunpacker.cpp.o[0m
+[31.797s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[31.797s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[31.797s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[31.798s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunnpacker_commondef.h:41[m[K,
+[31.798s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:39[m[K:
+[31.798s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[31.798s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[31.798s]       |                [01;35m[K^[m[K
+[31.801s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[31.801s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[31.802s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[31.802s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[31.802s]       |                    [01;35m[K^[m[K
+[31.958s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.cpp:40[m[K:
+[31.958s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[31.958s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.959s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[31.959s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[31.959s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.959s]    54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[31.959s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~[m[K
+[31.959s] 
+[31.959s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.959s]    54 | SampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[31.959s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[31.959s] 
+[31.959s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.960s]    54 | Decoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[31.960s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[31.960s] 
+[31.960s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[31.960s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.960s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[31.960s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[31.960s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.960s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[31.960s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[31.960s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.960s]    56 | l void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[31.961s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[31.961s] 
+[31.961s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[31.961s]    56 | dingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[31.961s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[31.961s] 
+[32.390s] [ 25%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o[0m
+[33.069s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[33.069s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[33.069s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[33.069s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[33.069s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39[m[K:
+[33.070s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[33.070s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[33.070s]       |                [01;35m[K^[m[K
+[33.070s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[33.070s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[33.070s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[33.070s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[33.070s]       |                    [01;35m[K^[m[K
+[33.211s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40[m[K:
+[33.211s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[33.211s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.212s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[33.212s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[33.213s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.213s]    54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[33.214s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~[m[K
+[33.214s] 
+[33.214s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.214s]    54 | SampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[33.215s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[33.215s] 
+[33.215s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.215s]    54 | Decoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[33.215s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[33.215s] 
+[33.216s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[33.216s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.216s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[33.216s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[33.216s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.216s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[33.217s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[33.217s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.217s]    56 | l void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[33.217s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[33.217s] 
+[33.217s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[33.217s]    56 | dingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[33.217s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[33.217s] 
+[33.228s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:[m[K In member function ‘[01m[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::[01;32m[K_onScanNodeDenseCapsuleData[m[K(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)[m[K’:
+[33.228s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:30:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[33.228s]   763 |             const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[33.228s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33.483s] [ 30%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o[0m
+[34.181s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[34.181s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[34.181s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[34.182s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[34.182s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39[m[K:
+[34.182s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[34.182s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[34.182s]       |                [01;35m[K^[m[K
+[34.182s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[34.182s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[34.182s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[34.183s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[34.183s]       |                    [01;35m[K^[m[K
+[34.339s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:40[m[K:
+[34.339s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[34.339s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.339s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[34.340s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[34.340s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.340s]    54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[34.340s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~[m[K
+[34.340s] 
+[34.340s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.340s]    54 | SampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[34.340s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[34.340s] 
+[34.340s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.341s]    54 | Decoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[34.341s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[34.341s] 
+[34.341s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[34.341s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.341s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[34.341s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[34.341s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.341s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[34.342s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[34.342s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.342s]    56 | l void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[34.342s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[34.342s] 
+[34.342s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[34.342s]    56 | dingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[34.342s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[34.343s] 
+[34.548s] [ 35%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o[0m
+[35.206s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[35.206s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[35.207s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[35.207s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[35.207s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39[m[K:
+[35.207s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[35.207s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[35.207s]       |                [01;35m[K^[m[K
+[35.207s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[35.207s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[35.207s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[35.207s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[35.208s]       |                    [01;35m[K^[m[K
+[35.348s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:40[m[K:
+[35.348s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[35.348s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.349s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[35.349s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[35.349s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.349s]    54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[35.349s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~[m[K
+[35.349s] 
+[35.349s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.349s]    54 | SampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[35.349s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[35.349s] 
+[35.349s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.349s]    54 | Decoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[35.350s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[35.350s] 
+[35.350s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[35.350s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.350s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[35.350s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[35.350s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.350s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[35.350s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[35.350s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.350s]    56 | l void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[35.350s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[35.350s] 
+[35.351s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[35.351s]    56 | dingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[35.351s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[35.351s] 
+[35.532s] [ 40%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o[0m
+[36.137s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[36.137s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[36.137s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[36.137s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[36.137s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[36.137s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[36.137s]       |                [01;35m[K^[m[K
+[36.138s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[36.138s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[36.138s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[36.138s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[36.138s]       |                    [01;35m[K^[m[K
+[36.174s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/hal/thread.cpp:43[m[K:
+[36.174s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::[01;32m[Kcreate[m[K(thread_proc_t, void*)[m[K’:
+[36.174s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:52:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[36.174s]    52 |     pthread_create((pthread_t *)&newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[36.174s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[36.175s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::[01;32m[Kjoin[m[K(long unsigned int)[m[K’:
+[36.175s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:176:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.175s]   176 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[36.175s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[36.307s] [ 45%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[36.898s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[36.898s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[36.898s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[36.898s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[36.899s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[36.899s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[36.899s]       |                [01;35m[K^[m[K
+[36.899s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[36.899s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[36.899s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[36.899s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[36.899s]       |                    [01;35m[K^[m[K
+[36.968s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[Kconnect[m[K(const char*, _u32, _u32)[m[K’:
+[36.968s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.968s]    67 | lt RPlidarDriver::connect(const char *path, _u32 portOrBaud, [01;35m[K_u32 flag[m[K)
+[36.968s]       |                                                              [01;35m[K~~~~~^~~~[m[K
+[36.968s] 
+[36.968s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[Kreset[m[K(_u32)[m[K’:
+[36.968s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.968s]   101 |     u_result RPlidarDriver::reset([01;35m[K_u32 timeout[m[K)
+[36.968s]       |                                   [01;35m[K~~~~~^~~~~~~[m[K
+[36.969s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[KgetScanDataWithInterval[m[K(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[36.969s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:180:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.969s]   180 | tScanDataWithInterval([01;35m[Krplidar_response_measurement_node_t * nodebuffer[m[K, size_t & count)
+[36.969s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[36.969s] 
+[36.969s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:180:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[36.969s]   180 | erval(rplidar_response_measurement_node_t * nodebuffer, [01;35m[Ksize_t & count[m[K)
+[36.969s]       |                                                         [01;35m[K~~~~~~~~~^~~~~[m[K
+[36.970s] 
+[37.127s] [ 50%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_async_transceiver.cpp.o[0m
+[37.727s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[37.727s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[37.728s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[37.728s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:35[m[K:
+[37.728s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[37.728s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[37.728s]       |                [01;35m[K^[m[K
+[37.728s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[37.728s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[37.729s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[37.729s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[37.729s]       |                    [01;35m[K^[m[K
+[37.838s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.cpp:44[m[K:
+[37.838s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[37.838s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[37.838s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[37.838s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[38.062s] [ 55%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o[0m
+[38.095s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[38.095s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_crc.h:36[m[K,
+[38.095s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[38.095s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[38.095s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[38.095s]       |                [01;35m[K^[m[K
+[38.095s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[38.095s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[38.095s]       |                    [01;35m[K^[m[K
+[38.137s] [ 60%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[38.762s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[38.762s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[38.762s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[38.762s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[38.762s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[38.762s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[38.763s]       |                [01;35m[K^[m[K
+[38.763s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[38.763s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[38.763s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[38.763s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[38.763s]       |                    [01;35m[K^[m[K
+[38.933s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:50[m[K:
+[38.933s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[38.934s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.934s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[38.934s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[38.934s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.934s]    54 |    virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[38.934s]       |                                                        [01;35m[K~~~~~^~~~~~~~~~[m[K
+[38.934s] 
+[38.934s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.934s]    54 | SampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[38.934s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[38.934s] 
+[38.935s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.935s]    54 | Decoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[38.935s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[38.935s] 
+[38.935s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[38.935s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.935s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[38.935s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[38.935s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.935s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[38.935s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[38.935s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.935s]    56 | l void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[38.936s]       |                                                 [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[38.936s] 
+[38.936s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.936s]    56 | dingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[38.936s]       |                                                         [01;35m[K~~~~~~~^~~~[m[K
+[38.936s] 
+[38.948s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:51[m[K:
+[38.948s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[38.948s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.948s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[38.948s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[38.985s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[Kreset[m[K(sl_u32)[m[K’:
+[38.986s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:511:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.986s]   511 |         sl_result reset([01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[38.986s]       |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[38.990s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KstartScan[m[K(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[38.990s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:586:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.990s]   586 | sl_result startScan(bool force, bool useTypicalScan, [01;35m[Ksl_u32 options = 0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[38.990s]       |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[38.990s] 
+[38.993s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[Kstop[m[K(sl_u32)[m[K’:
+[38.993s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:763:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.993s]   763 |         sl_result stop([01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[38.993s]       |                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[38.996s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KgetFrequency[m[K(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[38.996s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:880:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.996s]   880 | e& scanMode, [01;35m[Kconst sl_lidar_response_measurement_node_hq_t* nodes[m[K, size_t count, float& frequency)
+[38.996s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[38.996s] 
+[38.999s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KgetMotorInfo[m[K(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[38.999s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1023:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.999s]  1023 |    sl_result getMotorInfo(LidarMotorInfo &motorInfo, [01;35m[Ksl_u32 timeoutInMs[m[K)
+[38.999s]       |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[39.000s] 
+[39.001s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ku_result sl::SlamtecLidarDriver::[01;32m[KgetScanModeCount[m[K(sl_u16&, sl_u32)[m[K’:
+[39.001s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1199:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[39.001s]  1199 |         u_result getScanModeCount(sl_u16& modeCount, [01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[39.001s]       |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[39.070s] /home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp: In instantiation of ‘[01m[Kvoid sl::RawSampleNodeHolder<T>::[01;32m[KpushNode[m[K(_u64, const T*) [35m[K[with T = sl_lidar_response_measurement_node_hq_t; _u64 = long unsigned int][m[K[m[K’:
+[39.070s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1648:42:[m[K   required from here
+[39.071s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:202:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimestamp_uS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[39.071s]   202 |         void pushNode([01;35m[K_u64 timestamp_uS[m[K, const T* node)
+[39.071s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[39.367s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[39.367s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:83:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[39.367s]    83 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[39.367s]       |                 [01;35m[K^~~~~~~[m[K
+[39.368s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:75:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[Kconvert[m[K(const sl_lidar_response_measurement_node_t&, sl_lidar_response_measurement_node_hq_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[39.368s]    75 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_t& from, sl_lidar_response_measurement_node_hq_t& to)
+[39.368s]       |                 [01;35m[K^~~~~~~[m[K
+[39.369s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:70:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[KprintDeprecationWarn[m[K(const char*, const char*)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[39.369s]    70 |     static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[39.369s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[40.264s] [ 65%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidarprotocol_codec.cpp.o[0m
+[40.917s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[40.917s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[40.917s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[40.917s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:35[m[K:
+[40.918s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[40.918s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[40.918s]       |                [01;35m[K^[m[K
+[40.918s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[40.918s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K:
+[40.918s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[40.918s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[40.918s]       |                    [01;35m[K^[m[K
+[41.062s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_lidarprotocol_codec.cpp:49[m[K:
+[41.063s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[41.063s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[41.063s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[41.063s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[41.226s] [ 70%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[41.580s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[41.580s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[41.580s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33[m[K:
+[41.580s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[41.580s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[41.580s]       |                [01;35m[K^[m[K
+[41.580s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[41.580s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[41.581s]       |                    [01;35m[K^[m[K
+[41.682s] [ 75%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[42.026s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[42.026s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[42.026s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33[m[K:
+[42.026s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[42.026s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[42.027s]       |                [01;35m[K^[m[K
+[42.027s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[42.027s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[42.027s]       |                    [01;35m[K^[m[K
+[42.032s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::[01;32m[KsetStatus[m[K(_u32)[m[K’:
+[42.032s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:109:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[42.032s]   109 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[42.032s]       |                        [01;35m[K~~~~~^~~~[m[K
+[42.128s] [ 80%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[42.481s] In file included from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:41[m[K,
+[42.481s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[42.481s]                  from [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33[m[K:
+[42.482s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[42.482s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[42.482s]       |                [01;35m[K^[m[K
+[42.482s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[42.482s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[42.482s]       |                    [01;35m[K^[m[K
+[42.487s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::[01;32m[KsetStatus[m[K(_u32)[m[K’:
+[42.488s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:112:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[42.488s]   112 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[42.488s]       |                        [01;35m[K~~~~~^~~~[m[K
+[42.582s] [ 85%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[43.169s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::[01;32m[Kopen[m[K(const char*, uint32_t, uint32_t)[m[K’:
+[43.169s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.169s]    97 | _serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[43.169s]       |                                                         [01;35m[K~~~~~~~~~^~~~~[m[K
+[43.169s] 
+[43.169s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::[01;32m[Kflush[m[K(_u32)[m[K’:
+[43.170s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.170s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[43.170s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[43.170s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::[01;32m[Kwaitforsent[m[K(_u32, size_t*)[m[K’:
+[43.170s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.170s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[43.170s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[43.170s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::[01;32m[Kwaitforrecv[m[K(_u32, size_t*)[m[K’:
+[43.170s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[43.170s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[43.170s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[43.172s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::[01;32m[KcancelOperation[m[K()[m[K’:
+[43.172s] [01m[K/home/olympusolutions/senior_ws/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:427:5:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[43.172s]   427 |     [01;35m[K(int)::write(_selfpipe[1], "x", 1)[m[K;
+[43.172s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[43.326s] [ 90%] [32m[1mLinking CXX executable sllidar_node[0m
+[43.954s] [ 90%] Built target sllidar_node
+[44.001s] [ 95%] [32mBuilding CXX object CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o[0m
+[56.170s] [100%] [32m[1mLinking CXX executable sllidar_client[0m
+[57.083s] [100%] Built target sllidar_client
+[57.112s] Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/sllidar_ros2 -- -j4 -l4
+[57.114s] Invoking command in '/home/olympusolutions/senior_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/sllidar_ros2
+[57.132s] -- Install configuration: ""
+[57.133s] -- Execute custom install script
+[57.134s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[57.154s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py
+[57.173s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py
+[57.193s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py
+[57.217s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[57.237s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py
+[57.256s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[57.276s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[57.295s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[57.319s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[57.339s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py
+[57.359s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[57.378s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py
+[57.398s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py
+[57.421s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py
+[57.441s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py
+[57.461s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[57.480s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py
+[57.500s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[57.523s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[57.546s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[57.566s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[57.586s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py
+[57.607s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[57.630s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[57.650s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[57.669s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[57.688s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[57.713s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[57.733s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[57.752s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[57.772s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[57.792s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[57.816s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[57.836s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[57.856s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[57.876s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[57.896s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[57.920s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[57.940s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[57.960s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[57.980s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[57.999s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[58.024s] -- Symlinking: /home/olympusolutions/senior_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[58.049s] Invoked command in '/home/olympusolutions/senior_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olympusolutions/senior_ws/install/twist_stamper:/home/olympusolutions/senior_ws/install/serial_motor_demo:/home/olympusolutions/senior_ws/install/my_package:/home/olympusolutions/senior_ws/install/listener_package:/home/olympusolutions/senior_ws/install/joy_tester:/home/olympusolutions/senior_ws/install/extender_arduino:/home/olympusolutions/senior_ws/install/diffdrive_arduino:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/sllidar_ros2
