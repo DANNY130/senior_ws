@@ -15,6 +15,7 @@ class ImuPublisher(Node):
     def __init__(self):
         super().__init__('imu_publisher')
         self.publisher_ = self.create_publisher(Imu, 'imu/data_raw', 10)
+        self.publisher_PwrMon = self.create_publisher(Float64MultiArray, 'PwrMon', 10)
         self.publisher_ProxSens = self.create_publisher(Float64MultiArray, 'ProxSens', 10)
         self.serial_port = serial.Serial('/dev/ttyACM2', 115200, timeout=1)  # Change port if needed
     # Set the serial port to read data from the IMU
@@ -28,11 +29,16 @@ class ImuPublisher(Node):
                 values = [float(x) for x in line.split(',')] # Split the line by commas and convert each value to a float
                 # Check if the number of values is correct (9 values for IMU data)
 
-                # read proximity sensor data
-                proxsens_msg = Float64MultiArray() # create instance of F64MA for proximity sensors msg
-                proxsens_msg.data = values[:5]  #first 5 values (dist for each of five sensors)
+                # read power monitoring data
+                pwrmon_msg = Float64MultiArray()  # Create an instance of Float64MultiArray for the power monitor message
+                pwrmon_msg.data = values[:5]  #first 5 values (temp, voltage, current, SoC, errorcode)
+                self.publisher_PwrMon.publish(pwrmon_msg)
+                
+                # read proximity sensor data - deprecated until wired
+                #proxsens_msg = Float64MultiArray() # create instance of F64MA for proximity sensors msg
+                #proxsens_msg.data = values[:5]  #first 5 values (dist for each of five sensors)
                                                       #sensor order TODO (ie [0]=Front Right, [1]=Front Left, etc)
-                self.publisher_ProxSens.publish(proxsens_msg)
+                #self.publisher_ProxSens.publish(proxsens_msg)
 
                 
                 #if values include IMU data, read IMU data
