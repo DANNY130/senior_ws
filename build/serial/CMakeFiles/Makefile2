@@ -223,9 +223,9 @@ CMakeFiles/serial_example.dir/clean:
 # Target rules for target tests/CMakeFiles/serial-test.dir
 
 # All Build rule for target.
+tests/CMakeFiles/serial-test.dir/all: CMakeFiles/serial.dir/all
 tests/CMakeFiles/serial-test.dir/all: gtest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/serial-test.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-tests/CMakeFiles/serial-test.dir/all: CMakeFiles/serial.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/serial-test.dir/build.make tests/CMakeFiles/serial-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/serial-test.dir/build.make tests/CMakeFiles/serial-test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/olympusolutions/senior_ws/build/serial/CMakeFiles --progress-num=9,10 "Built target serial-test"
@@ -251,9 +251,9 @@ tests/CMakeFiles/serial-test.dir/clean:
 # Target rules for target tests/CMakeFiles/serial-test-timer.dir
 
 # All Build rule for target.
+tests/CMakeFiles/serial-test-timer.dir/all: CMakeFiles/serial.dir/all
 tests/CMakeFiles/serial-test-timer.dir/all: gtest/CMakeFiles/gtest.dir/all
 tests/CMakeFiles/serial-test-timer.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-tests/CMakeFiles/serial-test-timer.dir/all: CMakeFiles/serial.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/serial-test-timer.dir/build.make tests/CMakeFiles/serial-test-timer.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/serial-test-timer.dir/build.make tests/CMakeFiles/serial-test-timer.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/olympusolutions/senior_ws/build/serial/CMakeFiles --progress-num=11,12 "Built target serial-test-timer"

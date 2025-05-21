@@ -6,5 +6,6 @@
     },
     "python.analysis.extraPaths": [
         "./src/minibot/demo_publisher_node"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/olympusolutions/senior_ws/src/minibot"
 }

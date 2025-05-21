@@ -1,0 +1,36 @@
+running develop
+Removing /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial-motor-demo.egg-link (link to .)
+running egg_info
+writing ../../../build/serial_motor_demo/serial_motor_demo.egg-info/PKG-INFO
+writing dependency_links to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/dependency_links.txt
+writing entry points to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/entry_points.txt
+writing requirements to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/requires.txt
+writing top-level names to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/top_level.txt
+reading manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/olympusolutions/senior_ws/build/serial_motor_demo/build
+creating /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib
+creating /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+copying serial_motor_demo/__init__.py -> /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+copying serial_motor_demo/driver.py -> /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+copying serial_motor_demo/gui.py -> /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+running install
+running install_lib
+creating /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+copying /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo/__init__.py -> /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+copying /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo/driver.py -> /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+copying /home/olympusolutions/senior_ws/build/serial_motor_demo/build/lib/serial_motor_demo/gui.py -> /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+byte-compiling /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/driver.py to driver.cpython-312.pyc
+byte-compiling /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/gui.py to gui.cpython-312.pyc
+running install_data
+copying resource/serial_motor_demo -> /home/olympusolutions/senior_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+copying package.xml -> /home/olympusolutions/senior_ws/install/serial_motor_demo/share/serial_motor_demo
+running install_egg_info
+Copying ../../../build/serial_motor_demo/serial_motor_demo.egg-info to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo-0.0.0-py3.12.egg-info
+running install_scripts
+Installing driver script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+Installing gui script to /home/olympusolutions/senior_ws/install/serial_motor_demo/lib/serial_motor_demo
+writing list of installed files to '/home/olympusolutions/senior_ws/build/serial_motor_demo/install.log'

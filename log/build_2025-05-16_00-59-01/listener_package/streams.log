@@ -1,0 +1,53 @@
+[2.060s] Invoking command in '/home/olympusolutions/senior_ws/build/listener_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/olympusolutions/senior_ws/build/listener_package/build
+[2.684s] running develop
+[3.024s] Removing /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener-package.egg-link (link to .)
+[3.171s] Invoked command in '/home/olympusolutions/senior_ws/build/listener_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/olympusolutions/senior_ws/build/listener_package/build
+[3.172s] Invoking command in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/listener_package build --build-base /home/olympusolutions/senior_ws/build/listener_package/build install --record /home/olympusolutions/senior_ws/build/listener_package/install.log --single-version-externally-managed install_data --force
+[3.847s] running egg_info
+[3.893s] writing ../../../../build/listener_package/listener_package.egg-info/PKG-INFO
+[3.894s] writing dependency_links to ../../../../build/listener_package/listener_package.egg-info/dependency_links.txt
+[3.895s] writing entry points to ../../../../build/listener_package/listener_package.egg-info/entry_points.txt
+[3.896s] writing requirements to ../../../../build/listener_package/listener_package.egg-info/requires.txt
+[3.896s] writing top-level names to ../../../../build/listener_package/listener_package.egg-info/top_level.txt
+[3.991s] reading manifest file '../../../../build/listener_package/listener_package.egg-info/SOURCES.txt'
+[3.992s] adding license file 'LICENSE'
+[3.992s] writing manifest file '../../../../build/listener_package/listener_package.egg-info/SOURCES.txt'
+[3.993s] running build
+[3.993s] running build_py
+[3.993s] creating /home/olympusolutions/senior_ws/build/listener_package/build
+[3.994s] creating /home/olympusolutions/senior_ws/build/listener_package/build/lib
+[3.994s] creating /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[3.994s] copying listener_package/__init__.py -> /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[3.995s] copying listener_package/publisher_member_function.py -> /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[3.996s] copying listener_package/phone_listener.py -> /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[3.997s] copying listener_package/map_publisher.py -> /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[3.998s] copying listener_package/subscriber_member_function.py -> /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[4.001s] copying listener_package/tcp_map_node.py -> /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package
+[4.005s] running install
+[4.019s] running install_lib
+[4.078s] creating /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.079s] copying /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package/__init__.py -> /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.080s] copying /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package/publisher_member_function.py -> /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.080s] copying /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package/phone_listener.py -> /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.080s] copying /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package/map_publisher.py -> /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.087s] copying /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package/subscriber_member_function.py -> /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.087s] copying /home/olympusolutions/senior_ws/build/listener_package/build/lib/listener_package/tcp_map_node.py -> /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package
+[4.087s] byte-compiling /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package/__init__.py to __init__.cpython-312.pyc
+[4.087s] byte-compiling /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+[4.087s] byte-compiling /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package/phone_listener.py to phone_listener.cpython-312.pyc
+[4.091s] byte-compiling /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package/map_publisher.py to map_publisher.cpython-312.pyc
+[4.091s] byte-compiling /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package/subscriber_member_function.py to subscriber_member_function.cpython-312.pyc
+[4.091s] byte-compiling /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package/tcp_map_node.py to tcp_map_node.cpython-312.pyc
+[4.092s] running install_data
+[4.092s] copying resource/listener_package -> /home/olympusolutions/senior_ws/install/listener_package/share/ament_index/resource_index/packages
+[4.092s] copying package.xml -> /home/olympusolutions/senior_ws/install/listener_package/share/listener_package
+[4.093s] running install_egg_info
+[4.133s] Copying ../../../../build/listener_package/listener_package.egg-info to /home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages/listener_package-0.0.0-py3.12.egg-info
+[4.139s] running install_scripts
+[4.439s] Installing listener script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[4.440s] Installing map_publisher script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[4.442s] Installing phone_listener script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[4.443s] Installing talker script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[4.448s] Installing tcp_map_node script to /home/olympusolutions/senior_ws/install/listener_package/lib/listener_package
+[4.450s] writing list of installed files to '/home/olympusolutions/senior_ws/build/listener_package/install.log'
+[4.614s] Invoked command in '/home/olympusolutions/senior_ws/src/riley_ws/src/listener_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/olympusolutions/senior_ws/build/listener_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olympusolutions/senior_ws/install/listener_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/listener_package build --build-base /home/olympusolutions/senior_ws/build/listener_package/build install --record /home/olympusolutions/senior_ws/build/listener_package/install.log --single-version-externally-managed install_data --force

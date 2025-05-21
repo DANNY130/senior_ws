@@ -1,0 +1,34 @@
+[0.130s] Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial -- -j4 -l4
+[0.707s] [ 28%] Built target serial
+[0.897s] [ 42%] Built target gtest_main
+[1.204s] [ 57%] Built target serial_example
+[1.465s] [ 71%] Built target gtest
+[1.678s] [ 85%] Built target serial-test
+[2.033s] [100%] Built target serial-test-timer
+[2.230s] Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/olympusolutions/senior_ws/build/serial -- -j4 -l4
+[2.242s] Invoking command in '/home/olympusolutions/senior_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial
+[2.378s] -- Install configuration: ""
+[2.389s] -- Execute custom install script
+[2.397s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/lib/libserial.a
+[2.398s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/include/serial/serial.h
+[2.401s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/include/serial/v8stdint.h
+[2.414s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/library_path.sh
+[2.414s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/library_path.dsv
+[2.416s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[2.423s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[2.432s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[2.441s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[2.442s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/path.sh
+[2.442s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/environment/path.dsv
+[2.459s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.bash
+[2.462s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.sh
+[2.462s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.zsh
+[2.478s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/local_setup.dsv
+[2.478s] -- Symlinking: /home/olympusolutions/senior_ws/install/serial/share/serial/package.dsv
+[2.603s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/ament_index/resource_index/packages/serial
+[2.614s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.615s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[2.615s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[2.615s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[2.615s] -- Up-to-date symlink: /home/olympusolutions/senior_ws/install/serial/share/serial/package.xml
+[2.841s] Invoked command in '/home/olympusolutions/senior_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/olympusolutions/senior_ws/build/serial

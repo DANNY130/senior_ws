@@ -9,8 +9,8 @@ class GripperTeleopNode(Node):
     def __init__(self):
         super().__init__('gripper_teleop_node')
         self.declare_parameter('topic', '/gripper_controller/commands')
-        self.declare_parameter('axis_left', 5)
-        self.declare_parameter('axis_right', 4)
+        self.declare_parameter('axis_left', 4)
+        self.declare_parameter('axis_right', 5)
         self.declare_parameter('scale', 1.57)
         self.declare_parameter('enable_button', 3)
 
@@ -26,9 +26,15 @@ class GripperTeleopNode(Node):
     def joy_callback(self, msg):
         if msg.buttons[self.enable_button]:
             command = Float64MultiArray()
+            left_cmd = msg.axes[self.axis_left] * self.scale - .065
+            right_cmd = (1.57 - msg.axes[self.axis_right] * self.scale) + .07
+            if( left_cmd < 0.49):
+                left_cmd = 0.49
+            if( right_cmd > 1.15):
+                right_cmd = 1.15
             command.data = [
-                msg.axes[self.axis_left] * self.scale,  # Command for gripper_left_joint
-                (1.57 - msg.axes[self.axis_right] * self.scale)/2  # Command for gripper_right_joint, inverted
+                left_cmd,  # Command for gripper_left_joint
+                right_cmd # Command for gripper_right_joint, inverted
             ]
             self.publisher_.publish(command)
 

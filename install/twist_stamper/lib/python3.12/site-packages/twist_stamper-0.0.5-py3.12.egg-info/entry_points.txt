@@ -1,0 +1,3 @@
+[console_scripts]
+twist_stamper = twist_stamper.twist_stamper:main
+twist_unstamper = twist_stamper.twist_unstamper:main
