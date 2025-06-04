@@ -66,32 +66,44 @@ void setup() {
       ;
   }
 
-  Serial.println("IMU Initialized");
+  //Serial.println("IMU Initialized");
 
   filter.begin(sensorRate);  // Initialize filter with sensor rate
 
+
 //check initializing ultrasonic sensors
+//convention:
+//1:
+//2:
+//3:
+//4: Left Side
+//5: 
   for (int i = 0; i < numSensors; i++) {
     pinMode(trigPins[i], OUTPUT);
     pinMode(echoPins[i], INPUT);
   }
-  Serial.println("Ultrasonic system online.");
+  //Serial.println("Ultrasonic system online.");
 
 
-  /* -----waiting on hardware testing--------
+
+  ///* -----waiting on hardware testing--------
   //Initialize INA226 parameters, see Lib for all value options
-  Serial.println("Initializing INA226");
+  //Serial.println("Initializing INA226");
   Wire.begin();
   //Serial.println("Wire Begun");
   ina226.init();
   //Serial.println("INA226 Initialized");
-  //ina226.setAverage(AVERAGE_1); // number of samples for shunt and bus voltage to be averaged.
-  ina226.setConversionTime(CONV_TIME_588);     // time for each sample measurement in us. Time for 1 sample shuntV and busV = ct x 2
+  ina226.setAverage(AVERAGE_16); // number of samples for shunt and bus voltage to be averaged.
+  ina226.setConversionTime(CONV_TIME_332);     // time for each sample measurement in us. Time for 1 sample shuntV and busV = ct x 2
   ina226.setResistorRange(SHUNT_OHM, 32.768);  // choose resistor 2.5 mOhm and gain range up to 32.768 A. Current calculated from IC datasheet.
   //Serial.println("Conv time and Resistor range set - if stuck here INA226 disconnected");
   ina226.waitUntilConversionCompleted();       //if you comment this line the first data might be zero
   //Serial.println("Setup Complete");
-  ------------------------------------------*/
+  
+  delay(50); //delay to ensure proper initialization of SoC
+  SoC_pct = findNearestSoC(ina226.getBusVoltage_V(), lookupTable_30, tableSize_30) - 10.0;
+  SoC_Ams = SoC_FULL_Ams / 100 * SoC_pct;
+ // ------------------------------------------*/
 }
 
 
@@ -101,30 +113,26 @@ void loop() {
   float xGyro, yGyro, zGyro;                  // Gyroscope data
   float roll, pitch, yaw;                     // Euler angles
   int sensorValue = 0;                        // variable to read analog pin value
- 
+
   for (int i = 0; i < numSensors; i++) {
 
     float distance = readUltrasonicDistance(trigPins[i], echoPins[i]);
 
     // Serial.print(sensorLocations[i]);
     Serial.print(distance);
-    
-    if (i < (numSensors - 1)) {
-        Serial.print(",");
-    }
-    
+    Serial.print(",");
   }
- 
- /* -----------Waiting on hardware testing--------------
- float shuntVoltage_mV, busVoltage_V;        // values measured by INA226
+  
+ //------------POWER MONITOR------------------------
+  float shuntVoltage_mV, busVoltage_V;        // values measured by INA226
   float supplyVoltage_V, current_A, power_W;  // values calculated, either by INA226 or by arduino
   float chargeChange_Ams = 0.0;  // 
   float tempCelsius = 0.0;                    // initialized to prevent false cooling alert
   uint8_t errorCode = 0;                      // error codes: 0 = allclear, 1 = overcurrent, 2 = negative current, 3 = undervoltage
 
-  // Temperature Sensing
+  //Temperature Sensing
   sensorValue = analogRead(A0);
-  tempCelsius = 100 * (3.3 * sensorValue / 4095 - 0.5);  // V = 3.3V * Analog / 4095bits, T = 100(V - 0.5)
+  tempCelsius = (3.3 * sensorValue / 1023.0 - 0.4) / .0195;  // V = 3.3V * Analog / 10bits, T = (V - 0.4)/(19.5mV/C)
 
   // Power Sensing
   ina226.readAndClearFlags();
@@ -141,6 +149,9 @@ void loop() {
   sampleTime_us = micros() - prevTime_us;  //  time in microseconds since last measurement
   if (current_A <= IDLE_CURRENT) {
     idleTime_ms += sampleTime_us / 1000;  //  start counting idle time in ms
+  }
+  else {
+    idleTime_ms = 0;
   }
 
   //sets bool flags for 10min and 30min OCV check, battery monitor calibration
@@ -174,25 +185,25 @@ void loop() {
   SoC_pct = SoC_Ams * 100 / SoC_FULL_Ams;
 
 
-  if (current_A >= 29.0) {
-    errorCode = 1;
-  } else if (current_A < 0.0) {
-    errorCode = 2;
+  if (current_A >= 25.0) {
+    errorCode = 1;  //overcurrent
+  } else if (current_A < -0.1) {
+    errorCode = 2;  //reverse current
   } else if (supplyVoltage_V < 10.0) {
-    errorCode = 3;
+    errorCode = 3;  //undervoltage
   }
 
-  Serial.print(tempCelsius); Serial.println("C");
+  Serial.print(tempCelsius); //Serial.print("C");
   Serial.print(","); 
-  Serial.print(supplyVoltage_V); Serial.print("V");
+  Serial.print(supplyVoltage_V); //Serial.print("V");
   Serial.print(","); 
-  Serial.print(current_A); Serial.println("A");
+  Serial.print(current_A); //Serial.print("A");
   Serial.print(",");
-  Serial.print(SoC_pct); Serial.print("%");
+  Serial.print(SoC_pct); //Serial.print("%");
   Serial.print(",");
   Serial.print(errorCode);
-  -------------------------------------------
-  */
+ // -------------------------------------------
+
 
 
   if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) {  // Check if data is available
@@ -229,16 +240,17 @@ void loop() {
 
   Serial.println();
 
-  delay(1000);
+  //delay(1000); //for testing purposes
 }
 
 
 /**
-*FUNCTION DEFINITION
+*FUNCTION DEFINITION TODO
 *
 *
 **/
 int findNearestSoC(float inputVoltage, const VoltageSoC table[], int size) {
+  if (inputVoltage > 13.4) return 100; //full battery
   if (size == 0) return 0;  // empty table
 
   int left = 0, right = size - 1;
