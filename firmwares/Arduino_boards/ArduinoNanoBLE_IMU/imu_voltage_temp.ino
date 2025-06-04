@@ -7,8 +7,8 @@
 
 /**Proximity Sensor Vars**/
 const int numSensors = 5;
-const int trigPins[numSensors] = {2, 4, 6, 8, 10};
-const int echoPins[numSensors] = {3, 5, 7, 9, 11};
+const int trigPins[numSensors] = {2, 5, 7, 8, 11};
+const int echoPins[numSensors] = {3, 4, 6, 9, 10};
 
 /**SoC Vars**/
 struct VoltageSoC {
@@ -73,11 +73,11 @@ void setup() {
 
 //check initializing ultrasonic sensors
 //convention:
-//1:
-//2:
-//3:
+//1: BROKEN Right Front
+//2: Right Side
+//3: Left Front
 //4: Left Side
-//5: 
+//5: Back 
   for (int i = 0; i < numSensors; i++) {
     pinMode(trigPins[i], OUTPUT);
     pinMode(echoPins[i], INPUT);
@@ -123,7 +123,8 @@ void loop() {
     Serial.print(",");
   }
   
- //------------POWER MONITOR------------------------
+ 
+ // -----------Waiting on hardware testing--------------
   float shuntVoltage_mV, busVoltage_V;        // values measured by INA226
   float supplyVoltage_V, current_A, power_W;  // values calculated, either by INA226 or by arduino
   float chargeChange_Ams = 0.0;  // 
